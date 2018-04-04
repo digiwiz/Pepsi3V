@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewChild } from '@angular/core';
-import { Slides } from 'ionic-angular';
+
 
 
 @Component({
