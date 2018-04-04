@@ -1,0 +1,208 @@
+<div class="overview-page"><!-- side menu -->
+    <ion-row>
+        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white; position:absolute; z-index:99;" >
+          <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+            </svg>
+          </button>
+        </div><!-- side menu -->
+
+      <div style="width: 1024px; height:768px; position: relative; background-image: url(assets/img/Overview/Overview_background.png);">
+          <div style="z-index:1; width: 1024px; height:350px;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/Overview/Pepsi_3V_Tool_iPad_IntroPageFR.png" /></div>
+          <ion-row>
+            <div style="width:1024px;" style="  margin: 0 auto; padding-left:90px;">
+
+
+<!-- Button Variety -->
+                <button [class.active]="type === 'variety'" class=" easing overview-button btn_variety" title="" (click)="type = 'variety'; view = 'fountain'" >
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 339.2 397" style="enable-background:new 0 0 339.2 397;" xml:space="preserve">
+
+                  <g id="Layer_2" class="st0">
+                    <g class="st1">
+                      <radialGradient id="SVGID_1_" cx="172.9019" cy="210.9133" r="283.9622" gradientUnits="userSpaceOnUse">
+                        <stop  offset="0" style="stop-color:#00ADEE"/>
+                        <stop  offset="0.3643" style="stop-color:#00ACED"/>
+                        <stop  offset="0.5603" style="stop-color:#00A3E5"/>
+                        <stop  offset="0.8746" style="stop-color:#008CCF"/>
+                        <stop  offset="0.9949" style="stop-color:#0081C5"/>
+                      </radialGradient>
+                      <circle class="st2" cx="172.9" cy="210.9" r="284"/>
+                    </g>
+                    <g class="st1">
+                      <path class="st3" d="M172.9,464.7c112.6,0,208.1-73.7,240.7-175.5H-67.8C-35.2,391,60.3,464.7,172.9,464.7z"/>
+                    </g>
+                  </g>
+                  <g id="Layer_1">
+                    <g>
+                      <g>
+                        <g>
+                          <path class="st4" d="M223.6,222.2h-96.8L109.5,20.8c0,0,62,33.9,135.7-0.1c-0.2,3.2-7.1,47.6-9.3,68.9
+                            C229.6,148.7,223.6,222.2,223.6,222.2z"/>
+                          <ellipse class="st5" cx="177.3" cy="18.9" rx="65.5" ry="16.2"/>
+                          <ellipse class="st4" cx="175.2" cy="220.5" rx="48.8" ry="17.1"/>
+                        </g>
+                        <path class="st3" d="M0,61.5c0,0,5,28,16.1,39.9c2.3,4.6,0.9,12.4,0.9,12.4s-0.5,14.7,2.3,21.6s-3.2,23,1.4,31.2
+                          c4.6,8.3,2.3,38.6,6.4,44.1s-13.8,11.5-5.5,48.2c4.1,1.8,45.4-9.2,68.4-4.6c23,4.6,38.1-4.1,38.1-4.1s15.1-7.8,29.4-2.8
+                          c1.4-21.1-7.3-43.2-12.9-43.6c0,0,2.8-24.3,0-27.5c-2.8-3.2-5.5-37.6-5.5-41.3s-3.2-37.6-6.9-42.2c2.3-6,8.7-23,5.5-45
+                          c-10.1,4.6-54.2,7.8-73,7.8S10.1,65.6,0,61.5z"/>
+                        <g>
+                          <path class="st3" d="M310.5,38.2c0,0-15-2.3-16.6-1.7c-1.6,0.6-4.6,11.8-4.6,11.8s-1.4,3.8,0,4.6c1.6,3.3-3.2,0.9-3.7,2.1
+                            c-0.6,1.2,3.5,1.5,4,2.8c0.6,1.3-0.8,4-0.8,4S256.9,72.8,255,84.1c-0.2,1.4-0.1,2.9-0.1,2.9l-12.6,53.6c0,0,0.3,3.6-1.7,7
+                            c-1.9,3.4-2.4,12.4,0.7,20.6s-4.3,14.6-4.3,14.6s-5.5,4.6-2.7,17.1c2.9,12.5-8.8,15.8-8.8,15.8s-6.5,6.9-4,18.2
+                            s2.5,18.8,6.8,21.2s2.3,8.3,19.1,5.7c10.2-1.6,14.9,1.8,20,6.2"/>
+                          <path class="st3" d="M310.5,38.2c0,0,14.4,4.8,15.6,6.1c1.2,1.3-1.3,12.5-1.3,12.5s-0.5,4.1-2.1,4.1c-2.9,2.2,2.4,2.2,2.4,3.6
+                            c-0.1,1.3-3.8-0.2-4.9,0.7s-1.1,4-1.1,4s23.4,24.3,19.9,35.3c-0.4,1.4-1.3,2.6-1.3,2.6l-13.3,53.4c0,0-1.9,3.1-1.7,7
+                            c0.2,3.9-3.5,12.1-10,18c-6.5,5.9-2.9,15-2.9,15s2.8,6.6-5.5,16.5c-8.3,9.8,0.6,18.1,0.6,18.1s2.7,9.1-4.7,18
+                            c-7.4,8.9-10.9,15.6-15.8,15.7c-4.9,0.1-5.9,6.4-19.6-3.7c-8.5-6.3-14.1-5.3-20.6-3.6"/>
+                        </g>
+                      </g>
+                    </g>
+                    <text transform="matrix(0.9907 0 0 1 34.156 373.9801)"><tspan x="0" y="0" class="st3 st6 st7 st8">V</tspan><tspan x="42.9" y="0" class="st3 st6 st7 st9">A</tspan><tspan x="92" y="0" class="st3 st6 st7">RIÉTÉ</tspan></text>
+                  </g>
+                  </svg>
+
+                </button>
+
+<!-- Button Visibility -->
+                <button [class.active]="type === 'visibility'" class=" easing overview-button btn_visibility" title="" (click)="type = 'visibility'; view = 'tabletent'" >
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 365.6 396.3" style="enable-background:new 0 0 365.6 396.3;" xml:space="preserve">
+
+                <g id="Layer_2" class="st0">
+                  <g class="st1">
+                    <radialGradient id="SVGID_1_" cx="182.5909" cy="210.1463" r="283.9622" gradientUnits="userSpaceOnUse">
+                      <stop  offset="0" style="stop-color:#00ADEE"/>
+                      <stop  offset="0.3643" style="stop-color:#00ACED"/>
+                      <stop  offset="0.5603" style="stop-color:#00A3E5"/>
+                      <stop  offset="0.8746" style="stop-color:#008CCF"/>
+                      <stop  offset="0.9949" style="stop-color:#0081C5"/>
+                    </radialGradient>
+                    <circle class="st2" cx="182.6" cy="210.1" r="284"/>
+                  </g>
+                  <g class="st1">
+                    <path class="st3" d="M182.6,462.8c112.6,0,208.1-73.7,240.7-175.5H-58.1C-25.5,389.1,69.9,462.8,182.6,462.8z"/>
+                  </g>
+                </g>
+                <g id="Layer_1">
+                  <g>
+                    <g>
+                      <circle class="st4" cx="183.6" cy="167" r="30"/>
+                      <path class="st4" d="M20.1,109.4l49-65.5c0,0,10.2-12.7,21-14l10.2-14c0,0,7-15.9,30.5-15.9s29.9,27.4,29.9,27.4l-1.3,24.8
+                        c0,0,8.9,5.7,7,16.5c10.8-4.5,10.8-7,28,1.3l-4.5,80.8l-20.4,2.5c0,0-11.4-54.1-65.5-55.3C50,96.7,20.1,109.4,20.1,109.4z"/>
+                      <path class="st4" d="M341.9,109.4l-49-65.5c0,0-10.2-12.7-21-14l-10.2-14c0,0-7-15.9-30.5-15.9c-23.5,0-29.9,27.4-29.9,27.4
+                        l1.3,24.8c0,0-8.9,5.7-7,16.5c-10.5-7.3-17.9-7.1-29.6,0.3l6,81.8l20.4,2.5c0,0,11.4-54.1,65.5-55.3
+                        C312,96.7,341.9,109.4,341.9,109.4z"/>
+                      <circle class="st5" cx="88.4" cy="167" r="75.4"/>
+                      <circle class="st5" cx="277.2" cy="167" r="75.4"/>
+                    </g>
+                  </g>
+                  <text transform="matrix(0.9907 0 0 1 17.3356 373.213)"><tspan x="0" y="0" class="st3 st6 st7 st8">V</tspan><tspan x="50.7" y="0" class="st3 st6 st7 st9">I</tspan><tspan x="73" y="0" class="st3 st6 st7 st9">S</tspan><tspan x="114.6" y="0" class="st3 st6 st7">I</tspan><tspan x="137.3" y="0" class="st3 st6 st7 st9">B</tspan><tspan x="182.3" y="0" class="st3 st6 st7">I</tspan><tspan x="205.7" y="0" class="st3 st6 st7">L</tspan><tspan x="241.7" y="0" class="st3 st6 st7">I</tspan><tspan x="266.1" y="0" class="st3 st6 st7 st9">T</tspan><tspan x="299.9" y="0" class="st3 st6 st7">É</tspan></text>
+                </g>
+                </svg>
+                </button>
+
+<!-- Button Value -->
+                <button [class.active]="type === 'value'" class=" easing overview-button btn_value" title="" (click)="type = 'value'; view = 'innovationwindow'" >
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 220.7 421.3" style="enable-background:new 0 0 220.7 421.3;" xml:space="preserve">
+
+                <g id="Layer_2" class="st0">
+                  <g class="st1">
+                    <radialGradient id="SVGID_1_" cx="122.0017" cy="237.7094" r="283.9622" gradientUnits="userSpaceOnUse">
+                      <stop  offset="0" style="stop-color:#00ADEE"/>
+                      <stop  offset="0.3643" style="stop-color:#00ACED"/>
+                      <stop  offset="0.5603" style="stop-color:#00A3E5"/>
+                      <stop  offset="0.8746" style="stop-color:#008CCF"/>
+                      <stop  offset="0.9949" style="stop-color:#0081C5"/>
+                    </radialGradient>
+                    <circle class="st2" cx="122" cy="237.7" r="284"/>
+                  </g>
+                  <g class="st1">
+                    <path class="st3" d="M122,492c112.6,0,208.1-73.7,240.7-175.5h-481.4C-86.1,418.3,9.4,492,122,492z"/>
+                  </g>
+                </g>
+                <g id="Layer_1">
+                  <g>
+                    <g>
+                      <g>
+                        <path class="st3" d="M96.6,293.9v-21.1c-13.4-1.7-25.1-5.2-34.6-10.5c-13.3-7.5-25.9-17.5-37.3-29.9l-0.8-0.9l31.7-32.9l0.9,1
+                          c18.9,20.4,37.4,30.7,55,30.7c8.8,0,16.4-3.1,22.7-9.3c6.3-6.2,9.5-13.5,9.5-21.8c0-7-2-13.3-6.1-18.5
+                          c-4.2-5.3-12.4-10.9-24.5-16.5c-25-11.7-42.2-21.1-51.1-28c-8.9-6.9-15.7-14.9-20.2-23.5c-4.4-8.7-6.7-18.1-6.7-27.9
+                          c0-16.3,6-30.5,17.7-42.1C64.5,31.4,79.2,25.1,96.6,24V1.2h32.2v25c9.9,2.4,18.4,5.7,25.4,9.8c7.2,4.2,15.7,11.3,25.4,21.2
+                          l0.9,0.9l-32.3,31.7l-0.9-0.9c-13.6-14.1-27.2-21.3-40.3-21.3c-7.7,0-13.9,2.1-18.7,6.2c-4.8,4.1-7.1,8.7-7.1,14
+                          c0,4.4,2.1,8.9,6.3,13.3c4.2,4.6,12.9,9.7,25.8,15c23.4,9.8,39.6,18.3,48.3,25.2c8.7,7,15.5,15.5,20.2,25.3
+                          c4.7,9.8,7.1,20.9,7.1,33.1c0,12.1-2.5,23.5-7.5,33.9c-5,10.3-11.6,18.6-19.5,24.7c-7.7,5.9-18.9,10.5-33.1,13.6v22.1H96.6z"/>
+                        <path class="st3" d="M127.5,2.5v24.7c10.2,2.4,18.9,5.7,26,9.9c7.1,4.1,15.5,11.2,25.2,21l-30.5,30
+                          c-13.9-14.4-27.6-21.7-41.2-21.7c-8,0-14.5,2.2-19.5,6.5c-5,4.3-7.5,9.3-7.5,14.9c0,4.8,2.2,9.5,6.6,14.2
+                          c4.3,4.8,13.1,9.9,26.2,15.3c23.4,9.8,39.4,18.1,48,25c8.6,6.9,15.3,15.2,19.9,24.9c4.6,9.7,6.9,20.5,6.9,32.5
+                          c0,12-2.5,23.1-7.4,33.3c-4.9,10.2-11.3,18.3-19.1,24.2c-7.8,6-19,10.5-33.6,13.5v21.9H97.8v-20.9c-13.8-1.6-25.5-5.1-35.2-10.5
+                          c-13.3-7.4-25.6-17.3-36.9-29.6l30-31.1c19.3,20.7,37.9,31.1,55.9,31.1c9.2,0,17-3.2,23.6-9.6c6.6-6.4,9.9-14,9.9-22.7
+                          c0-7.3-2.1-13.8-6.3-19.3c-4.3-5.5-12.6-11.2-24.9-16.9c-25.1-11.7-42-21-50.8-27.8c-8.8-6.9-15.4-14.6-19.8-23.1
+                          c-4.4-8.6-6.6-17.7-6.6-27.3c0-16,5.8-29.8,17.4-41.2C65.5,32.2,80.1,26,97.8,25.2V2.5H127.5 M130,0h-2.5H97.8h-2.5v2.5v20.3
+                          c-17.2,1.3-31.7,7.7-43.2,19c-12,11.9-18.1,26.3-18.1,43c0,10,2.3,19.6,6.8,28.5c4.5,8.8,11.4,16.9,20.5,23.9
+                          c9,6.9,26.2,16.4,51.3,28.1c11.9,5.5,20,11,24,16.2c3.8,5,5.8,11,5.8,17.8c0,8.1-3,14.9-9.1,20.9c-6.2,6-13.3,8.9-21.9,8.9
+                          c-17.2,0-35.4-10.2-54.1-30.3l-1.8-1.9l-1.8,1.9l-30,31.1l-1.6,1.7l1.6,1.7c11.5,12.5,24.1,22.6,37.6,30.1
+                          c9.4,5.3,20.8,8.8,33.9,10.5v18.7v2.5h2.5h29.7h2.5v-2.5v-19.9c14-3.1,25-7.7,32.7-13.6c8.1-6.2,14.7-14.6,19.8-25.1
+                          c5.1-10.5,7.7-22.1,7.7-34.4c0-12.3-2.4-23.6-7.2-33.6c-4.8-10-11.7-18.6-20.6-25.7c-8.8-7-25.1-15.6-48.6-25.4
+                          c-12.8-5.3-21.3-10.2-25.3-14.7l0,0l0,0c-3.9-4.2-6-8.4-6-12.5c0-4.9,2.2-9.2,6.6-13c4.5-3.9,10.5-5.9,17.9-5.9
+                          c12.8,0,26.1,7,39.4,20.9l1.7,1.8l1.8-1.8l30.5-30l1.8-1.7l-1.7-1.8c-9.8-10-18.4-17.2-25.7-21.4c-6.8-4-15.1-7.2-24.7-9.7V2.5
+                          V0L130,0z"/>
+                      </g>
+                    </g>
+                  </g>
+                  <text transform="matrix(0.9907 0 0 1 0 398.2645)"><tspan x="0" y="0" class="st3 st4 st5 st6">VALEUR</tspan></text>
+                </g>
+                </svg>
+                </button>
+
+            </div>
+          </ion-row>
+
+            <div class="description"><!-- key facts -->
+
+              <div [ngSwitch]="type">
+                  <ion-list *ngSwitchCase="'variety'">
+                      <h2>VARIÉTÉ</h2>
+                      <ul>
+                          <li>Quel est le nombre adéquat de produits/marques par catégorie?</li>
+                          <li>Quels sont les UGS/marques prioritaires par catégorie?</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:white;"></div>
+                      <div id="element2" class="circle" style="background:#519bec;"></div>
+                      <div id="element3" class="circle" style="background:#519bec;"></div>
+
+                  </ion-list>
+
+                 <ion-list *ngSwitchCase="'visibility'">
+                      <h2>VISIBILITÉ</h2>
+                      <ul>
+                          <li>Quels sont les meilleurs outils de marchandisage à mettre à exécution?</li>
+                          <li>Où ces outils devraient-ils être placés pour maximiser la fréquence d'achat?</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:#519bec;"></div>
+                      <div id="element2" class="circle" style="background:white;"></div>
+                      <div id="element3" class="circle" style="background:#519bec;"></div>
+                  </ion-list>
+
+                 <ion-list *ngSwitchCase="'value'">
+                      <h2>VALEUR</h2>
+                      <ul>
+                          <li>Quels produits suscitent l'enthousiasme des consommateurs?</li>
+                          <li>Quels prix et combos permettent d'accroître l'essai et la valeur des achats?</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:#519bec;"></div>
+                      <div id="element2" class="circle" style="background:#519bec;"></div>
+                      <div id="element3" class="circle" style="background:white;"></div>
+                  </ion-list>
+
+              </div> <!--[ngSwitch]= type for key facts -->
+
+            </div><!-- key insights -->
+
+      </div>
+
+
+    </ion-row>
+</div>

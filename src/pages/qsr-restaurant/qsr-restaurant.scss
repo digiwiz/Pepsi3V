@@ -1,0 +1,85 @@
+.qsr-restaurant-page {
+
+.beveragecooler {left: 180px; top: 145px;}
+.fountain {left: 123px; top: 202px;}
+.fritosnackrack {left: 490px; top: 260px;}
+.perfectparings {left: 540px; top: 190px;}
+.menuboards {left: 355px; top: 125px;}
+.tabletent {left: 230px; top: 235px;}
+.sandwichboard {left: 900px; top: 350px;}
+.pushpullsign {left: 725px; top: 180px;}
+.innovationshowcase {left: 225px; top: 195px;}
+.marketingwindowcling {left: 870px; top: 165px;}
+.innovationwindow {left: 154px; top: 155px;}
+.snackracktopper {left: 310px; top: 230px;}
+.staffsuggestion {left: 485px; top: 180px;}
+
+background-color: $pepsico-lightblueoffwhite;
+
+
+/* Environment views section */
+
+.environment-view-qsr-int-value {width:524px;}
+.environment-view-qsr-ext-value {width:344px;}
+.environment-view-qsr-int-visibility {width:524px;}
+.environment-view-qsr-ext-visibility {width:344px;}
+.environment-view-qsr-int-variety {width:888px;}
+.environment-view-qsr-ext-variety {width: 0px; margin-left:0;}
+
+.imgHolder-qsr-int-value,
+.imgHolder-qsr-int-visibility,
+.imgHolder-qsr-int-variety,
+.imgHolder-qsr-ext-value,
+.imgHolder-qsr-ext-visibility,
+.imgHolder-qsr-ext-variety {
+    overflow:hidden;
+    height:354px;
+    position:relative;
+    }
+
+.imgHolder-qsr-int-value, .imgHolder-qsr-int-visibility {width:524px;}
+.imgHolder-qsr-ext-value, .imgHolder-qsr-ext-visibility {width:344px;}
+.imgHolder-qsr-int-variety {width:888px;}
+.imgHolder-qsr-ext-variety {width:0px;}
+
+.qsr-int-value,
+.qsr-ext-value,
+.qsr-int-visibility,
+.qsr-ext-visibility,
+.qsr-int-variety,
+.qsr-ext-variety {
+    height:354px;
+/*    z-index:-1; */
+    display:block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    }
+
+.qsr-int-value { width:1165px; height:600px; left: -250px; top: -130px; }
+.qsr-ext-value { width:816px; height:420px; left: -300px; top: -25px; }
+.qsr-int-visibility { width:1165px; height:600px; left: -250px; top: -130px; }
+.qsr-ext-visibility { width:816px; height:420px; left: -300px; top: -25px; }
+.qsr-int-variety { width:1458px; height:750px; left: -200px; top: -200px; }
+.qsr-ext-variety { width:816px; height:420px; left: -300px; top: -25px; }
+
+.qsr-int-value img,
+.qsr-ext-value img,
+.qsr-int-visibility img,
+.qsr-ext-visibility img,
+.qsr-int-variety img,
+.qsr-ext-variety img {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    }
+
+
+}
+
+
+
+
+

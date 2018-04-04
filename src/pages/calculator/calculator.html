@@ -1,0 +1,328 @@
+<div class="calculator-page">
+    <ion-row>
+        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white;" >
+          <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+            </svg>
+          </button>
+        </div><!-- side menu -->
+
+        <div style="width:971px;" >
+          <ion-row>
+            <div class="title-header">PROFIT CALCULATOR</div>
+          </ion-row>
+
+          <ion-row>
+            <div  class="calculator-form shadow">
+                <p class="calculator-steps">PLEASE ENTER ALL THE VALUES</p>
+
+              <form [formGroup]="todo" (ngSubmit)="logForm()">
+                <ion-item>
+                  <ion-label class="calculator-label" >CASE PURCHASE PRICE
+                  <span [hidden]="todo.controls.casepurchaseprice.valid || todo.controls.casepurchaseprice.value==null " danger padding-left style="color:red;">Price is not valid!</span>
+                  <br/> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span class="icon-dollar">$</span></ion-label>
+                  <ion-input #casepurchaseprice type="number" inputmode="numeric" formControlName="casepurchaseprice"
+                            (touchstart)="slide = 'out'; this.todo.controls.casepurchaseprice.reset(); " ></ion-input>
+
+                </ion-item>
+
+                <ion-item>
+                  <ion-label class="calculator-label">UNITS PER CASE
+                  <span [hidden]="todo.controls.unitspercase.valid || todo.controls.unitspercase.value==null" danger padding-left style="color:red;">Number is not valid!</span>
+                  <br/> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span class="icon-dollar">#</span></ion-label>
+                  <ion-input type="number" pattern="[0-9]*" inputmode="numeric" formControlName="unitspercase"
+                            (touchstart)=" slide = 'out'; this.todo.controls.unitspercase.reset(); " ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label class="calculator-label">UNIT RETAIL PRICE
+                  <span [hidden]="todo.controls.unitretailcase.valid || todo.controls.unitretailcase.value==null" danger padding-left style="color:red;">Price is not valid!</span>
+                  <br/> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span class="icon-dollar">$</span></ion-label>
+                  <ion-input type="number" inputmode="numeric" formControlName="unitretailcase"
+                            (touchstart)="slide = 'out'; this.todo.controls.unitretailcase.reset(); " ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label class="calculator-label">UNIT VOLUME
+                  <span [hidden]="todo.controls.unitvolume.valid || todo.controls.unitvolume.value==null" danger padding-left style="color:red;">Number is not valid</span>
+                  <br/> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . <span class="icon-dollar">#</span></ion-label>
+                  <ion-input type="number" pattern="[0-9]*" inputmode="numeric" formControlName="unitvolume"
+                            (touchstart)="slide = 'out'; this.todo.controls.unitvolume.reset(); " ></ion-input>
+                </ion-item>
+
+                <button ion-button type="reset" style="margin-left:16px;"
+                            (click)="
+                            todo.profit = 0;
+                            todo.loss = 0;
+                            slide = 'out';
+                            this.todo.reset();" >RE-SET</button>
+                <button ion-button type="submit" style="margin-left:675px;"
+                            [disabled]="!todo.controls.casepurchaseprice.valid || !todo.controls.unitspercase.valid || !todo.controls.unitretailcase.valid || !todo.controls.unitvolume.valid  "
+                            (click)="
+                            todo.profit =  (todo.controls.unitvolume.value  * ((todo.controls.unitretailcase.value) - (todo.controls.casepurchaseprice.value / todo.controls.unitspercase.value)) ) ;
+                            todo.profit =  (todo.profit + 0.005);
+                            todo.loss =  -1*(todo.profit - 0.005);
+
+                            casepurchaseprice.setFocus();
+                            slide = 'in'; reset=0;" >SUBMIT</button>
+
+              </form>
+            </div>
+          </ion-row>
+
+           <ion-row>
+            <div  class="calculator-view shadow easing">
+
+
+
+              <div class="odometer-theme-example" style="margin:0 auto; padding-left: 100px; padding-bottom: 300px; padding-top: 16px; position:relative; overflow:hidden;">
+
+                <span *ngIf="todo.profit >=0 || todo.profit ==null" class="title-header">TOTAL PROFIT $</span>
+                <span *ngIf="todo.loss > 0" class="title-header" style="color:red">TOTAL LOSS $</span>
+
+                <div  class="odometer odometer-auto-theme" >
+                  <div class="odometer-inside">
+                    <span class="odometer-digit">
+                      <span *ngIf="todo.profit >999.99 || todo.loss >999.99" class="odometer-digit-spacer">8</span>
+                      <span class="odometer-digit-inner">
+                        <span class="odometer-ribbon">
+                          <span class="odometer-ribbon-inner">
+                            <div *ngIf="todo.profit >=0" id="ring-4" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.profit%10000 - todo.profit%1000)/1000) +'deg)'">
+                              <div *ngIf="todo.profit >999.99" class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                            <div *ngIf="todo.loss >0" id="ring-4" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.loss%10000 - todo.loss%1000)/1000) +'deg)'">
+                              <div *ngIf="todo.profit >999.99" class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+
+                    <span *ngIf="todo.profit >999.99 || todo.loss >999.99" class="odometer-formatting-mark">,</span>
+
+                    <span class="odometer-digit">
+                      <span class="odometer-digit-spacer">8</span>
+                      <span class="odometer-digit-inner">
+                        <span class="odometer-ribbon">
+                          <span class="odometer-ribbon-inner">
+                            <div *ngIf="todo.profit >=0" id="ring-3" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.profit%1000 - todo.profit%100)/100) +'deg)'">
+                              <div *ngIf="todo.profit >99.99" class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                            <div *ngIf="todo.loss >0" id="ring-3" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.loss%1000 - todo.loss%100)/100) +'deg)'">
+                              <div *ngIf="todo.profit >99.99" class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                              <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+
+                    <span class="odometer-digit">
+                      <span class="odometer-digit-spacer">8</span>
+                      <span class="odometer-digit-inner">
+                        <span class="odometer-ribbon">
+                          <span class="odometer-ribbon-inner">
+                            <div *ngIf="todo.profit >=0" id="ring-2" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.profit%100 - todo.profit%10)/10) +'deg) '" >
+                                <div  *ngIf="todo.profit >9.99 || todo.loss >9.99" class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                            <div *ngIf="todo.loss >0"id="ring-2" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.loss%100 - todo.loss%10)/10) +'deg) '" >
+                                <div  *ngIf="todo.profit >9.99 || todo.loss >9.99" class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+
+                    <span class="odometer-digit">
+                      <span class="odometer-digit-spacer">8</span>
+                      <span class="odometer-digit-inner">
+                        <span class="odometer-ribbon">
+                          <span class="odometer-ribbon-inner">
+                            <div *ngIf="todo.profit >=0" id="ring-1" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.profit%10 - todo.profit%1)) +'deg) '" >
+                                <div class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                            <div *ngIf="todo.loss >0" id="ring-1" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.loss%10 - todo.loss%1)) +'deg) '" >
+                                <div class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                    <span class="odometer-formatting-mark odometer-radix-mark">.</span>
+
+                    <span class="odometer-digit">
+                      <span class="odometer-digit-spacer">8</span>
+                      <span class="odometer-digit-inner">
+                        <span class="odometer-ribbon">
+                          <span class="odometer-ribbon-inner">
+                            <div *ngIf="todo.profit >=0" id="ring-1" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.profit%1 - todo.profit%.1)*10) +'deg) '" >
+                                <div class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                            <div *ngIf="todo.loss >0" id="ring-1" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.loss%1 - todo.loss%.1)*10) +'deg) '" >
+                                <div class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+
+                    <span class="odometer-digit">
+                      <span class="odometer-digit-spacer">8</span>
+                      <span class="odometer-digit-inner">
+                        <span class="odometer-ribbon">
+                          <span class="odometer-ribbon-inner">
+                            <div *ngIf="todo.profit >0" id="ring-1" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.profit%.1 - todo.profit%.01)*100) +'deg) '" >
+                                <div class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                            <div *ngIf="todo.loss >0" id="ring-1" class="ring easing" style="position: fixed;" [style.-webkit-transform]="'rotateX(-'+ 36*((todo.loss%.1 - todo.loss%.01)*100) +'deg) '" >
+                                <div class="odometer-value" style="-webkit-transform: rotateX(0deg)  translate3d(0px,0px,100px); ">0</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(36deg)  translate3d(0px,0px,100px); ">1</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(72deg)  translate3d(0px,0px,100px); ">2</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(108deg)  translate3d(0px,0px,100px); ">3</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(144deg)  translate3d(0px,0px,100px); ">4</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(180deg)  translate3d(0px,0px,100px); ">5</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(216deg)  translate3d(0px,0px,100px); ">6</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(252deg)  translate3d(0px,0px,100px); ">7</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(288deg)  translate3d(0px,0px,100px); ">8</div>
+                                <div class="odometer-value" style="-webkit-transform: rotateX(324deg)  translate3d(0px,0px,100px); ">9</div>
+                            </div>
+
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+
+
+                  </div>
+                </div>
+
+
+                <div class="easing" [class.slide-in-gatorade]="slide==='in'" [class.slide-out-gatorade]="slide==='out'"><img src="assets/img/Calculator/Gatorade.png" width="86" style="-webkit-transform: rotate(-25deg);"/></div>
+                <div class="easing" [class.slide-in-doritos]="slide=== 'in'" [class.slide-out-doritos]="slide==='out'"><img src="assets/img/Calculator/Doritos.png" width="172" style="-webkit-transform: rotate(-18deg);"/></div>
+                <div class="easing" [class.slide-in-quaker]="slide==='in'" [class.slide-out-quaker]="slide==='out'"><img src="assets/img/Calculator/Quaker.png" width="215" style="-webkit-transform: rotate(-10deg);"/></div>
+                <div class="easing" [class.slide-in-pureleaf]="slide==='in'" [class.slide-out-pureleaf]="slide==='out'"><img src="assets/img/Calculator/Pure_Leaf.png" width="88" style="-webkit-transform: rotate(20deg);"/></div>
+                <div class="easing" [class.slide-in-lays]="slide==='in'" [class.slide-out-lays]="slide==='out'"><img src="assets/img/Calculator/Lays.png" width="186" style="-webkit-transform: rotate(22deg);"/></div>
+                <div class="easing" [class.slide-in-pepsi]="slide=== 'in'" [class.slide-out-pepsi]="slide==='out'"><img src="assets/img/Calculator/Pepsi.png" width="115" style="-webkit-transform: rotate(8deg);"/></div>
+
+              </div>
+            </div>
+          </ion-row>
+        </div>
+    </ion-row>
+</div>
+
+
+
+
+

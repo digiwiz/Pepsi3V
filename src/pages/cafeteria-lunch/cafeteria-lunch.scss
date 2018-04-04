@@ -1,0 +1,105 @@
+.cafeteria-lunch-page {
+
+background-color: $pepsico-lightblueoffwhite;
+
+.snackracktopper {left:452px; top: 220px;}
+.innovationwindow {left: 250px; top: 260px;}
+.marketingprogram {left: 110px; top: 212px;}
+.staffsuggestion {left: 375px; top: 230px;}
+.staffsuggestion-station {left: 700px; top: 200px;}
+.fritosnackrack {left: 345px; top: 225px;}
+.beveragecooler {left: 195px; top: 200px;}
+.galvanizedtub {left: 520px; top: 258px;}
+.galvanizedtubcling {left: 520px; top: 258px;}
+.menuboards {left: 300px; top: 160px;}
+.perfectparings {left: 235px; top: 230px;}
+.perfectparings-station {left: 645px; top: 215px;}
+.innovationshowcase {left: 765px; top: 260px;}
+.countertopsnackrack {left: 866px; top: 186px;}
+
+
+
+.environment-view-cafeteria-lunch-value {width:508px;}
+.environment-view-cafeteria-station-value {width: 360px; margin-left:16px;}
+.environment-view-cafeteria-lunch-visibility {width:508px;}
+.environment-view-cafeteria-station-visibility {width: 360px; margin-left:16px;}
+.environment-view-cafeteria-lunch-variety {width:508px;}
+.environment-view-cafeteria-station-variety {width: 360px; margin-left:16px;}
+
+
+.imgHolder-cafeteria-lunch-value,
+.imgHolder-cafeteria-lunch-visibility,
+.imgHolder-cafeteria-lunch-variety,
+.imgHolder-cafeteria-station-value,
+.imgHolder-cafeteria-station-visibility,
+.imgHolder-cafeteria-station-variety {
+    overflow:hidden;
+    height:354px;
+    position:relative;
+    }
+
+.imgHolder-cafeteria-lunch-value, .imgHolder-cafeteria-lunch-visibility, .imgHolder-cafeteria-lunch-variety {width:508px;}
+.imgHolder-cafeteria-station-value, .imgHolder-cafeteria-station-visibility, .imgHolder-cafeteria-station-variety {width:360px;}
+
+.cafeteria-lunch-value,
+.cafeteria-station-value,
+.cafeteria-lunch-visibility,
+.cafeteria-station-visibility,
+.cafeteria-lunch-variety,
+.cafeteria-station-variety {
+    height:354px;
+    display:block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    }
+
+
+.cafeteria-lunch-value {left: -100px; width:777px; height:400px;}
+.cafeteria-station-value {left: -50px; width:777px; height:400px;}
+.cafeteria-lunch-visibility, .cafeteria-lunch-variety {left: -200px; width:777px; height:400px;}
+.cafeteria-station-visibility, .cafeteria-station-variety {left: -200px; width:777px; height:400px;}
+
+
+.cafeteria-lunch-value img,
+.cafeteria-station-value img,
+.cafeteria-lunch-visibility img,
+.cafeteria-station-visibility img,
+.cafeteria-lunch-variety img,
+.cafeteria-station-variety img {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    }
+
+
+
+/* Value */
+.innovationwindow ul {line-height: 1.6em;font-size: .9em;}
+.marketingprogram ul {line-height: 1.6em;font-size: .9em;}
+.staffsuggestion ul {line-height: 1em;font-size: .9em;}
+.snackracktopper ul {line-height: 1.6em;font-size: .9em;}
+.staffsuggestion ul {line-height: 1.6em;font-size: .9em;}
+.innovationshowcase ul {line-height: 1.6em;font-size: .9em;}
+
+/* Variety */
+.beveragecooler ul {line-height: 1.6em;font-size: .9em;}
+.marketingprogram ul {line-height: 1.6em;font-size: .9em;}
+.galvanizedtub ul {line-height: 1.6em;font-size: .9em;}
+.countertopsnackrack ul {line-height: 1.6em;font-size: .9em;}
+.fritosnackrack ul {line-height: 1.6em;font-size: .9em;}
+
+/* Visibility */
+.galvanizedtubcling ul {line-height: 1.6em;font-size: .9em;}
+.menuboards ul {line-height: 1.6em;font-size: .9em;}
+.perfectparings ul {line-height: 1.6em;font-size: .9em;}
+
+
+
+}
+
+
+
+
