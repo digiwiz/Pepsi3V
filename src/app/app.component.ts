@@ -2,12 +2,25 @@ import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
+//import { StatusBar } from 'ionic-native';
+
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
+import { OverviewPage } from '../pages/overview/overview';
+import { QsrRestaurantPage } from '../pages/qsr-restaurant/qsr-restaurant';
+import { RecreationPage } from '../pages/recreation/recreation';
+import { CasualPage } from '../pages/casual/casual';
+import { CafeteriaBreakfastPage } from '../pages/cafeteria-breakfast/cafeteria-breakfast';
+import { CafeteriaLunchPage } from '../pages/cafeteria-lunch/cafeteria-lunch';
+import { CalculatorPage } from '../pages/calculator/calculator';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { HelloIonicFRPage } from '../pages/hello-ionic-FR/hello-ionic-FR';
+import { OverviewFRPage } from '../pages/overview-FR/overview-FR';
+import { QsrRestaurantFRPage } from '../pages/qsr-restaurant-FR/qsr-restaurant-FR';
+import { RecreationFRPage } from '../pages/recreation-FR/recreation-FR';
+import { CasualFRPage } from '../pages/casual-FR/casual-FR';
+import { CafeteriaBreakfastFRPage } from '../pages/cafeteria-breakfast-FR/cafeteria-breakfast-FR';
+import { CafeteriaLunchFRPage } from '../pages/cafeteria-lunch-FR/cafeteria-lunch-FR';
+import { CalculatorFRPage } from '../pages/calculator-FR/calculator-FR';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,21 +29,38 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
+  rootPage: any = HelloIonicPage;
   pages: Array<{title: string, component: any}>;
+
+  public language = "EN";
+  public pagenumber = 0;
 
   constructor(
     public platform: Platform,
-    public menu: MenuController,
-    public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public menu: MenuController
   ) {
     this.initializeApp();
 
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Overview', component: OverviewPage },
+      { title: 'Cafeteria Breakfast', component: CafeteriaBreakfastPage },
+      { title: 'Cafeteria Lunch', component: CafeteriaLunchPage },
+      { title: 'Casual', component: CasualPage },
+      { title: 'QSR', component: QsrRestaurantPage },
+      { title: 'Recreation', component: RecreationPage },
+      { title: 'Calculator', component: CalculatorPage },
+
+      { title: 'Hello Ionic FR', component: HelloIonicFRPage },
+      { title: 'Overview FR', component: OverviewFRPage },
+      { title: 'Cafétérias DÉJEUNER', component: CafeteriaBreakfastFRPage },
+      { title: 'Cafétérias DÎNER', component: CafeteriaLunchFRPage },
+      { title: 'Secteur des restaurants décontractés', component: CasualFRPage },
+      { title: 'Restauration rapide', component: QsrRestaurantFRPage },
+      { title: 'Secteur récréatif', component: RecreationFRPage },
+      { title: 'Calculator FR', component: CalculatorFRPage }
+
     ];
   }
 
@@ -38,8 +68,9 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      //StatusBar.styleDefault();
+      this.menu.close();
+
     });
   }
 
@@ -49,4 +80,5 @@ export class MyApp {
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
   }
+
 }

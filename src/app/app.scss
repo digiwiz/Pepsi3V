@@ -1,4 +1,4 @@
-// http://ionicframework.com/docs/theming/
+// http://ionicframework.com/docs/v2/theming/
 
 
 // App Global Sass
@@ -14,3 +14,466 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+// Futura Font
+
+$futura-font-path: "../assets/fonts" !default;
+
+/* Futura-Bold webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src:  local("Futura Bold"),
+          local("Futura-Bold"),
+          url('#{$futura-font-path}/Futura-Bold.ttf')  format('truetype'),
+          url('#{$futura-font-path}/Futura-Bold.woff') format('woff');
+    }
+
+/* Futura-Book webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura-Book';
+    font-style: normal;
+    font-weight: 400;
+    src:  local("Futura Book"),
+          local("Futura-Book"),
+          url('#{$futura-font-path}/Futura-Book.ttf')  format('truetype'),
+          url('#{$futura-font-path}/Futura-Book.woff') format('woff');
+    }
+
+/* Futura-Light-Italic webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura-Light-Italic';
+    font-style: normal;
+    font-weight: 300;
+    src:  local("Futura Light"),
+          local("Futura-Light")
+          url('Futura-Light-Italic.ttf')  format('truetype'),
+          url('Futura-Light-Italic.woff') format('woff');
+    }
+
+/* Futura-Light webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura-Light';
+    font-style: normal;
+    src:  local("Futura Light"),
+          local("Futura-Light"),
+          url('Futura-Light.ttf')  format('truetype'),
+          url('Futura-Light.woff') format('woff');
+    }
+
+/* Futura-Medium webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src:  local("Futura Medium"),
+          local("Futura-Medium"),
+          url('#{$futura-font-path}/Futura-Medium.ttf')  format('truetype'),
+          url('#{$futura-font-path}/Futura-Medium.woff') format('woff');
+
+    }
+
+/* Futura-Medium webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src:  local("Roboto Regular"),
+          local("Roboto-Regular"),
+          url('#{$futura-font-path}/Roboto-Regular-webfont.ttf')  format('truetype'),
+          url('#{$futura-font-path}/Roboto-Regular-webfont.woff') format('woff');
+
+    }
+
+
+
+
+/* SofiaProSemiBold webfont (new-bulletproof) */
+@font-face {
+  font-family: 'SofiaProSemiBold';
+  src: url('SofiaProSemiBold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  src:  local("SofiaProSemiBold"),
+        local("SofiaProSemiBold"),
+        url('#{$futura-font-path}/SofiaProSemiBold.ttf')  format('truetype'),
+        url('#{$futura-font-path}/SofiaProSemiBold.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+/* colors */
+
+$pepsico-darkblue: #17294e;
+$pepsico-brightblue: #4b80b9;
+$pepsico-lightblue: #beccdc;
+$pepsico-lightblueoffwhite: #e5eaee;
+$pepsico-red: #e8112d;
+
+
+.item-inner, .label-md {
+  border-bottom: 0px solid #ffffff;
+}
+
+.menutoggle {
+  fill: $pepsico-brightblue;
+}
+
+
+ion-icon.icon-md {
+  font-size: 3em;
+  color: $pepsico-brightblue;
+  }
+
+
+.shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    overflow: hidden;
+    background-color: none;
+    }
+
+.padding-left {margin-left: 16px;}
+
+.easing {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    }
+
+.title-header {
+    margin-top: 32px;
+    width: 600px;
+    font-family: Futura-Bold;
+    line-height: 24px;
+    font-size: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: $pepsico-darkblue;
+    }
+
+.button-md {
+  background-color: white;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+
+  top: 11px;
+  left: 1px;
+  }
+.button-md:hover {
+  background-color: white;
+  }
+
+button.bar-button-md {
+    margin-left: 240px;
+}
+
+.bar-button-menutoggle-md ion-icon {
+  font-size: 3em;
+  color: $pepsico-brightblue;
+  }
+
+ion-list.list-md {
+    border-bottom: 15px;
+}
+
+.menu-item,
+.menu-item-child {
+  text-align: left;
+  color: $pepsico-brightblue;
+  background: none;
+  height:32px;
+  width:265px;
+  font-family: Futura-Medium;
+  font-size: 1.2em;
+  line-height: 32px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  }
+ .menu-item-child {
+  font-size: 1.2em;
+  line-height: 24px;
+  padding-left: 32px;
+  height:24px;
+  width:250px;}
+
+.menu-inner {
+  position:absollute;
+  z-index:80;
+  overflow:hidden;
+  width:240px;
+  }
+
+.menu-logo {
+    display: block;
+    }
+
+.show-menu .menu-logo {
+    display: block;
+    }
+
+
+
+
+/* Environment views section */
+
+.title-box {
+    padding-left: 16px;
+    font-family: Futura-Medium;
+    height: 45px;
+    line-height: 43px;
+    font-size: 16px;
+    color: white;
+    background: $pepsico-darkblue;
+    }
+
+/* Menu Tabs */
+.btn_variety .st0,
+.btn_visibility .st0,
+.btn_value .st0 {fill:#4B81BA;}
+
+.btn_variety .st1,
+.btn_visibility .st1 {fill:#ADBED1;}
+
+.btn_variety.active .st0,
+.btn_visibility.active .st0,
+.btn_value.active .st0 {fill:$pepsico-lightblue;}
+
+.btn_variety.active .st1,
+.btn_visibility.active .st1 {fill:white;}
+
+
+button.segment-button {
+    float: right;
+    height:32px;
+    margin-top:32px;
+    margin-bottom:16px;
+    width:128px;
+    font-family: Futura-Medium;
+    font-size: 12px;
+    line-height: 32px;
+    margin-left: 16px;
+    padding:0;
+    color: $pepsico-brightblue;
+    background-color: white;
+    }
+button.segment-button svg {
+  vertical-align: middle;
+  height:32px;
+  width:32px;
+  padding-right:8px;
+  }
+button.segment-button.active {
+    color: white;
+    background-color: $pepsico-brightblue;
+    }
+
+.hotspot {
+    background-color: white;
+    }
+
+
+
+
+
+/* Key Facts Section */
+
+.insights {
+    background: white;
+    width: 368px;
+    height: 240px;
+    margin-top:16px;
+    }
+.insights h2 {
+    padding-top: 16px;
+    padding-left:16px;
+    line-height: 1em;
+    font-size: 1.5em;
+    font-family: Futura-Bold;
+    }
+.insights ol {list-style: none; counter-reset: li}
+
+.insights li {
+  padding-right:16px;
+  counter-increment: li;
+  font-family: Roboto;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: #909090;
+  margin:0 0 10px 0;
+  }
+.insights li::before {
+  content: counter(li);
+  color: $pepsico-darkblue;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-family: Futura-Bold;
+  }
+
+.insights p {
+  font-family: Roboto;
+  line-height: 1.2em;
+  font-size: .8em;
+  color: #909090;
+  padding-left:40px;
+  }
+
+/* Image slider section */
+
+.slider-section {
+    background-color: white;
+    width: 504px;
+    height: 240px;
+    margin-left: 16px;
+    margin-top: 16px;
+    position: relative;              /* 1 */
+    }
+
+img.slide-image {
+    vertical-align: middle;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    opacity:1;
+    -moz-transition: opacity 1s; /* Firefox 4 */
+    -webkit-transition: opacity 1s; /* Safari and Chrome */
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    }
+img.fade-in {
+    opacity:0;
+    -moz-transition: opacity 1s; /* Firefox 4 */
+    -webkit-transition: opacity 1s; /* Safari and Chrome */
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    }
+img.fade-in-slow {
+    opacity:.5;
+    -moz-transition: opacity 5s; /* Firefox 4 */
+    -webkit-transition: opacity 5s; /* Safari and Chrome */
+    -o-transition: opacity 5s;
+    transition: opacity 5s;
+    }
+
+.slider-section-img {
+    position:relative;
+    float: left;
+    width: 200px;
+    height: 234px;
+    }
+.slider-section-copy {
+    float: left;
+    width: 288px;
+    height: 234px;
+    text-align: left;
+    }
+.slider-section h2 {
+    color: $pepsico-darkblue;
+    font-family: Roboto;
+    font-size: 1.2em;
+    line-height: 1em;
+    padding-left: 16px;
+    margin-top: 32px;
+    }
+.slider-section ul,
+.slider-section p {
+    font-family: Roboto;
+    line-height: 1.6em;
+    font-size: .9em;
+    color: #909090;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin: 0;
+    margin-top:10px;
+    position: absolute;               /* 2 */
+    top: 50%;                         /* 3 */
+    transform: translate(0, -50%);    /* 4 */
+    }
+
+
+.slider-section li {
+    margin:0 0 10px 0;
+    }
+
+
+/* Bullseye SVG animations */
+
+.btn-bullseye {position: absolute; z-index: 2;}
+.btn-bullseye {
+    width: 36px;
+    height: 36px;
+    padding:0;
+    background:transparent;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    }
+button.btn-bullseye .st0{fill:none;stroke:none;stroke-miterlimit:15;}
+button.btn-bullseye .st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:15;}
+button.btn-bullseye .st2{fill:$pepsico-brightblue;}
+button.btn-bullseye .st3{fill:$pepsico-brightblue;stroke:$pepsico-brightblue;stroke-width:1.5;stroke-miterlimit:15;}
+button.btn-bullseye .st4{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:15;}
+
+button.btn-bullseye.active .st2{fill:$pepsico-red;}
+button.btn-bullseye.active .st3{fill:$pepsico-red;}
+
+
+ion-menu {
+  overflow: visible !important;  /* or 'visible' whatever */
+  width: 72px;
+  float: none;
+}
+
+button.item-ios {
+  background-image:none;
+}
+
+
+/*
+$menu-ios-background:            $background-ios-color !default;
+$menu-ios-box-shadow-color:      rgba(0, 0, 0, .25) !default;
+$menu-ios-box-shadow:            0 0 10px $menu-ios-box-shadow-color !default;
+
+
+.ios .menu-inner {
+  background: $menu-ios-background;
+}
+
+.ios .menu-content-reveal {
+  box-shadow: $menu-ios-box-shadow;
+}
+
+.ios .menu-content-push {
+  box-shadow: $menu-ios-box-shadow;
+}
+
+.ios ion-menu[type=overlay] .menu-inner {
+  box-shadow: $menu-ios-box-shadow;
+}
+*/
