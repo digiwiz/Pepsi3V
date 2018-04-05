@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 
@@ -42,6 +44,8 @@ import { CalculatorFRPage } from '../pages/calculator-FR/calculator-FR';
     CalculatorFRPage
   ],
   imports: [
+    BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp,{
       menuType: 'overlay',
       platforms: {

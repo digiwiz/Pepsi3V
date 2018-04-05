@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 
 export class CafeteriaLunchPage {
 
-  mySlideOptions = {
-    initialSlide: 0,
-    pager: true
-  };
 
   public view = "beveragecooler";
   public type = "variety";

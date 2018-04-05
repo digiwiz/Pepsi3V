@@ -193,7 +193,7 @@
 <!-- Variety -->
                       <div *ngSwitchCase="'beveragecooler'">
                         <div [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Cooler - One-Door G.jpg" class="slide-image"></ion-slide>
@@ -221,7 +221,7 @@
                       </div><!-- *ngSwitchCase beveragevendor -->
                       <div *ngSwitchCase="'countertopsnackrack'">
                         <div [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Frito Countertop Rack - 2 shelf A.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Frito Countertop Rack - 3 shelf A.jpg" class="slide-image"></ion-slide>
                           </ion-slides>
@@ -277,7 +277,7 @@
                         </div><!-- *ngSwitchCase menuboards -->
                       <div *ngSwitchCase="'perfectparings'" >
                         <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) A.jpg" class="slide-image shadow"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) B.jpg" class="slide-image shadow"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Perfect Pairing - Drop in Inserts - Acrylic Large.jpg" class="slide-image"></ion-slide>

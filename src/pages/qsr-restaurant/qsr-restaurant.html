@@ -178,7 +178,7 @@
 <!-- Variety -->
                       <div class="beveragecooler" *ngSwitchCase="'beveragecooler'">
                         <div [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image"></ion-slide>
@@ -204,7 +204,7 @@
                       </div><!-- *ngSwitchCase fountain -->
                       <div class="fritosnackrack" *ngSwitchCase="'fritosnackrack'">
                             <div [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                              <ion-slides [options]="mySlideOptions">
+                              <ion-slides pager="true">
                                 <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 1ft A.jpg" class="slide-image"></ion-slide>
                                 <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 2ft A.jpg" class="slide-image"></ion-slide>
                                 <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 3ft A.jpg" class="slide-image"></ion-slide>
@@ -221,7 +221,7 @@
 <!-- Visibility -->
                       <div class="perfectparings" *ngSwitchCase="'perfectparings'" >
                         <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) A.jpg" class="slide-image shadow"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) B.jpg" class="slide-image shadow"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Perfect Pairing - Drop in Inserts - Acrylic Large.jpg" class="slide-image"></ion-slide>
@@ -247,7 +247,7 @@
                         </div><!-- *ngSwitchCase menuboards -->
                       <div class="tabletent" *ngSwitchCase="'tabletent'">
                         <div [class.fade-in]="view === 'tabletent'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Table Tents - Plastic 1.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Table Tents - Plastic 2.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Table Tents - Acrylic Small.jpg" class="slide-image"></ion-slide>
@@ -263,7 +263,7 @@
                       </div><!-- *ngSwitchCase tabletent -->
                       <div class="sandwichboard" *ngSwitchCase="'sandwichboard'" >
                         <div [class.fade-in]="view === 'sandwichboard'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Sandwich Board A - Pepsi.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Sandwich Board B - Pure Leaf.jpg" class="slide-image"></ion-slide>
                           </ion-slides>
@@ -277,7 +277,7 @@
                       </div> <!-- *ngSwitchCase="'sandwichboard -->
                       <div class="pushpullsign" *ngSwitchCase="'pushpullsign'" >
                         <div [class.fade-in]="view === 'pushpullsign'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/PushPull EN 1.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/PushPull EN 2.jpg" class="slide-image"></ion-slide>
                           </ion-slides>
@@ -304,7 +304,7 @@
                       </div><!-- *ngSwitchCase staffsuggestion -->
                       <div class="snackracktopper" *ngSwitchCase="'snackracktopper'">
                         <div [class.fade-in]="view === 'snackracktopper'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Frito Snack Rack Topper - Perfect Pairing 1 EN.jpg" class="slide-image shadow"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Frito Snack Rack Topper - Perfect Pairing 2 EN.jpg" class="slide-image shadow"></ion-slide>
                           </ion-slides>
@@ -319,7 +319,7 @@
                       </div><!-- *ngSwitchCase snackracktopper -->
                       <div class="marketingwindowcling" *ngSwitchCase="'marketingwindowcling'">
                         <div [class.fade-in]="view === 'marketingwindowcling'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides [options]="mySlideOptions">
+                          <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Marketing Window - Sports A EN.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Marketing Window - Sports B EN.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Marketing Window - Sports C EN.jpg" class="slide-image"></ion-slide>
