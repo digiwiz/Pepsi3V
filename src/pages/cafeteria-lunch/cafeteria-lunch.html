@@ -162,26 +162,26 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li *ngIf="key === 'lunch'">Top 10 SKUs account for over 70% of BTG sales*</li>
-                          <li *ngIf="key === 'lunch'">PepsiCo has a strong portfolio of #1 brands – beverages & foods</li>
-                          <li *ngIf="key === 'cash'">More than half of beverage and salty snack sales are driven by impulse purchases</li>
+                          <li *ngIf="key === 'lunch'">Pursue Pockets of Growth…Flavoured CSDs growing +1%</li>
+                          <li *ngIf="key === 'lunch'">Water, Isotonics, Tea & Juice Categories to grow a combined 5% over the next 5 years</li>
+                          <li *ngIf="key === 'lunch'">Salty Category is significant and growing 2% YTD</li>
+                          <li *ngIf="key === 'cash'">Nearly 40% of single-serve salty snack purchases are made on impulse - offer the right variety of products to maximize impulse purchases</li>
                       </ol>
-                      <p *ngIf="key === 'lunch'">*(FY 2015 – 591mL and 547mL)</p>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'visibility'">
                       <ol>
-                          <li *ngIf="key === 'lunch'">Menu is the single biggest driver of incidence – 52%. Appetizing photography is key</li>
-                          <li *ngIf="key === 'lunch'">Leverage our core brands to create perfect pairings</li>
-                          <li *ngIf="key === 'cash'">Ensuring high visibility at the point of sale will drive impulse purchases</li>
+                          <li *ngIf="key === 'lunch'">Menu is the single most important driver of on premise sales - 64% of consumers are more likely to make a purchase if it's on the menu boards</li>
+                          <li *ngIf="key === 'lunch'">Inclusion in combos is also very influential - leverage Perfect Pairings</li>
+                          <li *ngIf="key === 'cash'">Capitalize on consumer impulsivity by executing countertop bottle and Frito stand in the cash zone to suggest add-ons and maximize sales</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
-                          <li>Great value is a driver of both traffic & incidence</li>
-                          <li *ngIf="key === 'lunch'">Combos, innovation, and marketing programs can strengthen your value proposition</li>
-                          <li *ngIf="key === 'cash'">Innovation offers great value for consumers and staff suggestions play an important role in closing the sale</li>
+                          <li *ngIf="key === 'lunch'">Lunch is the largest on-site foodservice daypart by traffic</li>
+                          <li *ngIf="key === 'lunch'">Use combos, innovation, and marketing programs to capitalize on the busiest daypart and maximize cheque size</li>
+                          <li *ngIf="key === 'cash'">Capitalize on consumer impulsivity - Executing around the cash area  can maximize combo and innovation sales</li>
 
 
                       </ol>
@@ -195,39 +195,97 @@
                   <div [ngSwitch]="view">
 <!-- Variety -->
                       <div class="beveragecooler" *ngSwitchCase="'beveragecooler'">
-                        <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - PC8 PL.jpg" class="slide-image"></ion-slide>
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Beverage Cooler</h2>
+                                <ul>
+                                  <li>Segment-specific POGs make sure the right mix of products are offered to satisfy the consumer</li>
+                                  <li>Fully executed POGs will help drive sales while avoiding out-of-stocks</li>
+                                  <li>Comprehensive POGs by segment and cooler type are available on Advantage</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Beverage Cooler</h2>
+                                <ul>
+                                  <li>PepsiCo has an Advantage Flavours Portfolio to Drive Growth</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Beverage Cooler</h2>
+                                <ul>
+                                  <li>Water, Tea, Juice &Isotonic to grow a combined 5% over the next 5 years</li>
+                                  <li>Tea expected to Grow 3x more than LRB - Close Distribution Gaps on Pure Leaf</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+
                           </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                            <h2>Beverage Cooler</h2>
-                            <ul>
-                              <li>Fully executed POGs ensure the right variety of products are available, driving sales and repeat purchases</li>
-                              <li>Combos, innovation, and marketing programs can strengthen your value proposition</li>
-                              <li>Comprehensive POGs are available on Advantage</li>
-                            </ul>
-                          </div>
+
                       </div><!-- *ngSwitchCase beveragecooler -->
+
                       <div class="fritosnackrack" *ngSwitchCase="'fritosnackrack'">
-                        <div [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 1ft A.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 2ft A.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 3ft A.jpg" class="slide-image"></ion-slide>
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Frito Snack Rack - 1ft A.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Frito Snack Rack</h2>
+                                <ul>
+                                  <li>Use the appropriate racking to execute our regional POGs, which offer the right set of snacks to the consumer to drive sales while avoiding out-of-stocks</li>
+                                  <li>Racks can be ordered through the MSO Portal and full POGs are available on Advantage</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                                <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 2ft A.jpg" class="slide-image"></ion-slide>
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Beverage Cooler</h2>
+                                <ul>
+                                  <li>PepsiCo has an Advantage Flavours Portfolio to Drive Growth</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Frito Snack Rack - 3ft A.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Beverage Cooler</h2>
+                                <ul>
+                                  <li>Water, Tea, Juice &Isotonic to grow a combined 5% over the next 5 years</li>
+                                  <li>Tea expected to Grow 3x more than LRB - Close Distribution Gaps on Pure Leaf</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+
                           </ion-slides>
-                        </div>
-                        <div style="float: left;width: 288px; height: 234px; text-align: left;">
-                          <h2>Frito Snack Rack</h2>
-                          <ul>
-                            <li>Fully executed POGs ensure the right variety of products are available, driving sales and repeat purchases</li>
-                            <li>Snack racks can be ordered through the MSO portal</li>
-                          </ul>
-                        </div>
+
                       </div><!-- *ngSwitchCase fritosnackrack -->
+
+
                       <div class="galvanizedtub" *ngSwitchCase="'galvanizedtub'">
                         <div [class.fade-in]="view === 'galvanizedtub'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
@@ -302,10 +360,11 @@
                               <h2>Menu Boards</h2>
                               <ul>
                                 <li>Having a presence on the menu board is integral to driving sales and incremental purchases</li>
-                                <li>Leverage the digital assets available on Advantage and the PepsiCo Art Gallery for menu board images.</li>
+                                <li>Leverage the digital assets available on Advantage and the PepsiCo Art Gallery for menu board images</li>
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase menuboards -->
+
                       <div class="galvanizedtubcling" *ngSwitchCase="'galvanizedtubcling'">
                         <div [class.fade-in]="view === 'galvanizedtubcling'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
