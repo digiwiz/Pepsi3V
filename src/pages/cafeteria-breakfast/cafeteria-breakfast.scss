@@ -1,0 +1,96 @@
+.cafeteria-breakfast-page {
+
+.btn-bullseye {position: absolute; z-index: 2;}
+
+.quakerseasonalflavours {left: 540px; top: 150px;}
+.premiumproducts {left: 700px; top: 160px;}
+
+.quakermuffinrack {left: 480px; top: 140px;}
+.iqorack {left: 830px; top: 200px;}
+.galvanizedtub {left: 640px; top: 180px;}
+
+.quakermuffinrackheader {left: 540px; top: 120px;}
+.quakerflavourcards {left: 540px; top: 220px;}
+.breakfastpos {left: 590px; top: 180px;}
+.galvanizedtubcling {left: 650px; top: 190px;}
+
+background-color: $pepsico-lightblueoffwhite;
+
+/* Environment views section */
+
+.environment-view-cafeteria-breakfast-int-value {width:900px;}
+.environment-view-cafeteria-breakfast-ext-value {width: 0px; margin-left:0;}
+.environment-view-cafeteria-breakfast-int-visibility {width:900px;}
+.environment-view-cafeteria-breakfast-ext-visibility {width: 0px; margin-left:0;}
+.environment-view-cafeteria-breakfast-int-variety {width:900px;}
+.environment-view-cafeteria-breakfast-ext-variety {width: 0px; margin-left:0;}
+
+.imgHolder-cafeteria-breakfast-int-value,
+.imgHolder-cafeteria-breakfast-int-visibility,
+.imgHolder-cafeteria-breakfast-int-variety,
+.imgHolder-cafeteria-breakfast-ext-value,
+.imgHolder-cafeteria-breakfast-ext-visibility,
+.imgHolder-cafeteria-breakfast-ext-variety {
+    overflow:hidden;
+    height:354px;
+    position:relative;
+    }
+
+.imgHolder-cafeteria-breakfast-int-value, .imgHolder-cafeteria-breakfast-int-visibility, .imgHolder-cafeteria-breakfast-int-variety {width:900px;}
+.imgHolder-cafeteria-breakfast-ext-value, .imgHolder-cafeteria-breakfast-ext-visibility, .imgHolder-cafeteria-breakfast-ext-variety {width:0px;}
+
+.cafeteria-breakfast-int-value,
+.cafeteria-breakfast-ext-value,
+.cafeteria-breakfast-int-visibility,
+.cafeteria-breakfast-ext-visibility,
+.cafeteria-breakfast-int-variety,
+.cafeteria-breakfast-ext-variety {
+    display:block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    width:1320px;
+    height:680px;
+    left:-410px;
+    top:-190px;
+    }
+
+.cafeteria-breakfast-int-value img,
+.cafeteria-breakfast-ext-value img,
+.cafeteria-breakfast-int-visibility img,
+.cafeteria-breakfast-ext-visibility img,
+.cafeteria-breakfast-int-variety img,
+.cafeteria-breakfast-ext-variety img {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    }
+
+
+
+
+/* Variety */
+.quakermuffinrack ul {line-height: 1.2em; font-size: .9em; padding-top:30px;}
+.iqorack ul {line-height: 1.2em;font-size: .9em; padding-top:40px;}
+.galvanizedtub ul {line-height: 1.4em;font-size: .9em;}
+
+/* Visibility */
+.quakermuffinrackheader ul {line-height: 1.6em;font-size: .9em; padding-top:10px;}
+.quakerflavourcards ul {line-height: 1.4em;font-size: .9em; padding-top:10px;}
+.breakfastpos ul {line-height: 1.3em;font-size: .9em; padding-top:40px;}
+.galvanizedtubcling ul {line-height: 1.2em;font-size: .9em; padding-top:40px;}
+
+/* Value */
+.quakerseasonalflavours ul {line-height: 1.2em;font-size: .9em; padding-top:40px;}
+.premiumproducts ul {line-height: 1.4em;font-size: .9em; padding-top:20px;}
+
+
+}
+
+
+
+
+
+

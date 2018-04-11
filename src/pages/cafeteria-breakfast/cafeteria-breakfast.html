@@ -1,7 +1,7 @@
 
-<div class="cafeteria-breakfast-page"><!-- side menu -->
+<ion-grid class="cafeteria-breakfast-page"><!-- side menu -->
     <ion-row>
-        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white;" >
+        <div  class="shadow" style="width:72px;  margin-right: 32px; height:768px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
             <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -11,13 +11,11 @@
 
         <div style="width:884px;" >
           <ion-row>
-            <div class="title-header">CAFETERIA BREAKFAST</div>
+            <ion-col col-6 class="title-header">CAFETERIA BREAKFAST</ion-col>
 
-            <div style="width:600px;">
-
+            <ion-col col-6 no-padding >
                 <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'quakerseasonalflavours'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
                       c0-2.4-0.5-4.2-1.5-5.4c-1-1.2-2.4-1.8-4-1.8c-1.7,0-3,0.5-3.8,1.5c-0.8,1-1.2,2.2-1.2,3.7c0,1.5,0.4,2.7,1.3,3.7
@@ -27,10 +25,8 @@
                     </svg>
                   VALUE
                 </button>
-
                 <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'quakermuffinrackheader'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
                     <path class="st0" d="M68.3,12.7C67,10.9,65.1,9.4,63,8.5c-1.1-2.1-2.8-4.3-3.7-5.2c-1.3-1.2-3-1.9-4.9-1.9c-4,0-7.3,3.3-7.3,7.3
                       c0,1.6-0.1,3,0.1,4.2c-0.8,1.1-1.4,2.4-1.8,3.8c-0.8-0.6-1.9-1-3-1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0.4-3,1
                       c-0.4-1.4-1-2.6-1.8-3.8c0.2-1.2,0.1-2.6,0.1-4.2c0-4-3.3-7.3-7.3-7.3c-1.9,0-3.6,0.7-4.9,1.9c-0.9,0.8-2.6,3.1-3.7,5.2
@@ -45,10 +41,8 @@
                   </svg>
                   VISIBILITY
                 </button>
-
                 <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'quakermuffinrack'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
                   <path class="st0" d="M-215.9,383.1c0-2.1-7.9-2.1-8.3-2.1c-0.4,0-8.3,0.1-8.3,2.1c0,0.4,0.3,0.7,0.8,1l1.6,23.7
                     c0,0.8,2.6,1.5,5.9,1.5c3.3,0,5.9-0.7,5.9-1.5l1.7-23.7C-216.1,383.8-215.9,383.5-215.9,383.1z M-224.2,381.9c4.5,0,7.1,0.8,7.3,1.2
                     c-0.3,0.5-2.9,1.2-7.3,1.2c-4.5,0-7.1-0.8-7.3-1.2C-231.3,382.7-228.7,381.9-224.2,381.9z"/>
@@ -64,14 +58,8 @@
                   </svg>
                   VARIETY
                 </button>
-
-
-
-            </div>
-
+            </ion-col>
           </ion-row>
-
-
 
           <ion-row>
                 <div  [class.environment-view-cafeteria-breakfast-int-value]="type === 'value'" [class.environment-view-cafeteria-breakfast-int-visibility]="type === 'visibility'" [class.environment-view-cafeteria-breakfast-int-variety]="type === 'variety'" class="shadow easing">
@@ -83,7 +71,6 @@
                       <div *ngIf="view === 'premiumproducts'" style="z-index:1;"><img [class.fade-in]="view === 'premiumproducts'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Value_premiumproducts.png" /></div>
 
                       <div *ngIf="view === 'quakermuffinrack'" style="z-index:1;"><img [class.fade-in]="view === 'quakermuffinrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Variety_quakermuffinrack.png" /></div>
-                      <div *ngIf="view === 'iqorack'" style="z-index:1;"><img [class.fade-in]="view === 'iqorack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Variety_iqorack.png" /></div>
                       <div *ngIf="view === 'galvanizedtub'" style="z-index:1;"><img [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Variety_galvanizedtub.png" /></div>
 
                       <div *ngIf="view === 'quakermuffinrackheader'" style="z-index:1;"><img [class.fade-in]="view === 'quakermuffinrackheader'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Visibility_quakermuffinrackheader.png" /></div>
@@ -106,7 +93,6 @@
 
               <div *ngSwitchCase="'variety'">
                       <button [class.active]="view === 'quakermuffinrack'" class="btn-bullseye quakermuffinrack" title="" (click)="view = 'quakermuffinrack'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'iqorack'" class="btn-bullseye iqorack" title="" (click)="view = 'iqorack'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'galvanizedtub'" class="btn-bullseye galvanizedtub" title="" (click)="view = 'galvanizedtub'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase variety -->
 
@@ -123,7 +109,6 @@
 
           </ion-row>
 
-
           <ion-row>
             <div class="insights shadow"><!-- key facts -->
               <h2>KEY FACTS</h2>
@@ -131,21 +116,22 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li>Breakfast is the fastest growing meal occasion and 55% of purchases include a juice</li>
-                          <li>Muffins are the #3 selling breakfast item on menus and Top 6 flavours account for 60% of sales</li>
+                          <li>Leverage our strong brands - Tropicana and Quaker - to activate breakfast; one of the fastest growing meal occasions</li>
+                          <li>Muffins are the #2 item in the breakfast category and growing, while juice is the top chilled beverage ordered with breakfast</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'visibility'">
                       <ol>
-                          <li>Tropicana and Quaker can deliver a powerful start with fruit, fibre, protein, and nutrients - POS provides visibility to these claims</li>
+                          <li>Our eye-catching POS tools are designed to inform consumers of the nutritional qualities of our breakfast offerings</li>
+                          <li>Brands like Tropicana and Quaker deliver a powerful morning start and POS provides Visibility to these claims</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
-                          <li>Great value is a driver of both traffic and incidence</li>
-                          <li>Seasonal innovation and strong nutritional credentials can drive added value to consumers</li>
+                          <li>Top motivations for breakfast choices include portability/convenience, taste, and healthier options</li>
+                          <li>Seasonal innovations and strong nutritional credentials can drive added value to consumers and grow sales</li>
                       </ol>
                   </ion-list>
 
@@ -155,46 +141,9 @@
 
             <div class="shadow slider-section" style="width: 498px; margin-left: 16px;"><!-- image slider section -->
                   <div [ngSwitch]="view">
-<!-- Value -->
-                      <div *ngSwitchCase="'quakerseasonalflavours'">
-                        <div [class.fade-in]="view === 'quakerseasonalflavours'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal ID Magnets_EN_FA_1.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal ID Magnets_EN_FA_2.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal_FALL_Poster_EN_FA.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal_SPRING_Poster_EN_FA.jpg" class="slide-image shadow"></ion-slide>
-                          </ion-slides>
-                        </div>
-                          <div class="slider-section-copy">
-                            <h2>Quaker Seasonal Flavours</h2>
-                            <ul>
-                              <li>Seasonal flavours offer consumers the muffins that fit best for the time of year</li>
-                              <li>Proper execution and timing of the seasonal flavours will satisfy consumers and capture sales</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase quakerseasonalflavours -->
 
-                      <div *ngSwitchCase="'premiumproducts'">
-                        <div [class.fade-in]="view === 'premiumproducts'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Montellier Logo.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                          <div class="slider-section-copy">
-                            <h2>Premium Products</h2>
-                            <ul>
-                              <li>Consumers value the taste, nutrition, and quality of our premium products</li>
-                              <li>Highlighting premium products in prominent areas can help add value for consumers</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase premiumproducts -->
 <!-- Variety -->
-                      <div *ngSwitchCase="'quakermuffinrack'">
+                      <div class="quakermuffinrack" *ngSwitchCase="'quakermuffinrack'">
                         <div [class.fade-in]="view === 'quakermuffinrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Quaker Muffin Rack 1.jpg" class="slide-image "></ion-slide>
@@ -205,22 +154,13 @@
                           <div class="slider-section-copy">
                             <h2>Quaker Muffin Rack</h2>
                             <ul>
-                              <li>Muffins are a top breakfast seller and it's important to make sure the right flavours are available - the top 6 flavours account for 60% of sales</li>
+                              <li>Consumers trust the Quaker brand and our muffin portfolio covers the main flavour categories</li>
+                              <li>Our top 6 muffin flavours make up 60% of our sales; use seasonal flavours to capture incremental sales</li>
                               <li>Quaker Muffin Racks can be ordered through the MSO Portal</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase quakermuffinrack -->
 
-                      <div *ngSwitchCase="'iqorack'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'iqorack'" onload="this.style.opacity='1';" src="assets/img/Slides/Quaker Rack.jpg" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>IQO Rack</h2>
-                            <ul>
-                              <li>Ensuring the right variety of instant oatmeal flavours are available and displayed will help ensure that consumers are satisfied with their breakfast options</li>
-                              <li>IQO Racks can be ordered through the MSO Portal</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase iqorack -->
                       <div *ngSwitchCase="'galvanizedtub'">
                         <div [class.fade-in]="view === 'galvanizedtub'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
@@ -235,7 +175,7 @@
                           <div class="slider-section-copy">
                             <h2>Galvanized Tub</h2>
                             <ul>
-                              <li>Galvanized tubs are perfect for presenting chilled items on countertops without the need for electricity</li>
+                              <li>Keep chilled beverages at arms' reach in high traffic areas to drive incremental impulse sales of morning beverages</li>
                               <li>Galvanized Tubs can be ordered through the MSO Portal</li>
                             </ul>
                           </div>
@@ -302,10 +242,50 @@
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase galvanizedtubcling -->
+
+<!-- Value -->
+                      <div *ngSwitchCase="'quakerseasonalflavours'">
+                        <div [class.fade-in]="view === 'quakerseasonalflavours'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal ID Magnets_EN_FA_1.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal ID Magnets_EN_FA_2.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal_FALL_Poster_EN_FA.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal_SPRING_Poster_EN_FA.jpg" class="slide-image shadow"></ion-slide>
+                          </ion-slides>
+                        </div>
+                          <div class="slider-section-copy">
+                            <h2>Quaker Seasonal Flavours</h2>
+                            <ul>
+                              <li>Seasonal flavours offer consumers the muffins that fit best for the time of year</li>
+                              <li>Proper execution and timing of the seasonal flavours will satisfy consumers and capture sales</li>
+                            </ul>
+                          </div>
+                      </div><!-- *ngSwitchCase quakerseasonalflavours -->
+
+                      <div *ngSwitchCase="'premiumproducts'">
+                        <div [class.fade-in]="view === 'premiumproducts'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Montellier Logo.png" class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
+                          <div class="slider-section-copy">
+                            <h2>Premium Products</h2>
+                            <ul>
+                              <li>Consumers value the taste, nutrition, and quality of our premium products</li>
+                              <li>Highlighting premium products in prominent areas can help add value for consumers</li>
+                            </ul>
+                          </div>
+                      </div><!-- *ngSwitchCase premiumproducts -->
+
                   </div> <!-- [ngSwitch]="view" -->
             </div>
           </ion-row>
         </div>
 
     </ion-row>
-</div>
+</ion-grid>
