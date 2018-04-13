@@ -186,7 +186,8 @@
                           <div class="slider-section-copy">
                             <h2>Quaker Muffin Rack Header</h2>
                             <ul>
-                              <li>Quaker Muffin Rack Headers can be ordered through the MSO Portal</li>
+                              <li>Headers help communicate the quality and freshness of Quaker Muffins and can draw consumers in to try a new flavour</li>
+                              <li>Quaker Muffin Rack Headers will be included in all new rack orders.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase quakermuffinrackheader -->
@@ -202,27 +203,43 @@
                           <div class="slider-section-copy">
                             <h2>Quaker Flavour Cards</h2>
                             <ul>
-                              <li>Execution of the Quaker flavour cards will highlight our products and provide clarity to the consumers to help with their purchase decisions</li>
-                              <li>Quaker Flavour Cards can be ordered through the MSO Portal</li>
+                              <li>Execute the Quaker Flavour Cards/Magnets to highlight the muffin flavours, providing clarity to the consumers and influencing their purchase decisions</li>
+                              <li>All flavours available! Cards can be ordered through the MSO Portal and Magnets are included in new rack orders</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase quakerflavourcards -->
-                      <div *ngSwitchCase="'breakfastpos'">
-                        <div [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+
+                      <div class="breakfastpos" *ngSwitchCase="'breakfastpos'">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Breakfast POS - Quaker.JPG" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Breakfast POS - Trop Muffin.JPG" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Breakfast POS - Trop Oatmeal.JPG" class="slide-image shadow"></ion-slide>
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Breakfast POS</h2>
+                                <ul>
+                                  <li>Highly visible POS materials that focus on the nutritionals and benefits of our breakfast offerings can help grow morning sales</li>
+                                  <li>Expand culinary opportunities by using SQO in Overnight Oats and meet the popular consumer trend</li>
+                                  <li>Breakfast POS can be ordered through the MSO Portal</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+                            <ion-slide>
+                              <div class="slider-section-img" [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';">
+                                <img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <h2>Breakfast POS</h2>
+                                <ul>
+                                  <li>Pancakes are amongst the top 10 most consumed food items at breakfast</li>
+                                  <li>Showcase Aunt Jemima through digital assets to create impactful pancake events</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
                           </ion-slides>
-                        </div>
-                          <div class="slider-section-copy">
-                            <h2>Breakfast POS</h2>
-                            <ul>
-                              <li>Highly-visibile POS materials that focus on the nutritionals and benefits of our breakfast portfolio can help grow sales</li>
-                              <li>Breakfast POS can be ordered through the MSO Portal</li>
-                            </ul>
-                          </div>
                       </div><!-- *ngSwitchCase breakfastpos -->
+
+
                       <div *ngSwitchCase="'galvanizedtubcling'">
                         <div [class.fade-in]="view === 'galvanizedtubcling'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
@@ -256,8 +273,8 @@
                           <div class="slider-section-copy">
                             <h2>Quaker Seasonal Flavours</h2>
                             <ul>
-                              <li>Seasonal flavours offer consumers the muffins that fit best for the time of year</li>
-                              <li>Proper execution and timing of the seasonal flavours will satisfy consumers and capture sales</li>
+                              <li>Consumers look for seasonal flavours to try something new - especially Millennials, the largest portion of the Canadian workforce</li>
+                              <li>Promote rotating seasonal flavours to satisfy consumer tastes and capture incremental sales</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase quakerseasonalflavours -->
