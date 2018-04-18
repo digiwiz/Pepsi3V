@@ -146,8 +146,8 @@
                       <div class="quakermuffinrack" *ngSwitchCase="'quakermuffinrack'">
                         <div [class.fade-in]="view === 'quakermuffinrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Muffin Rack 1.jpg" class="slide-image "></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Muffin Rack 2.jpg" class="slide-image "></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/FS17182_QUAKER_HEADER CARD_ENG_P6_Artboard.png" class="slide-image "></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/MAGNET ID_BLUEBERRY.png" class="slide-image "></ion-slide>
                           </ion-slides>
                         </div>
 
@@ -164,12 +164,13 @@
                       <div *ngSwitchCase="'galvanizedtub'">
                         <div [class.fade-in]="view === 'galvanizedtub'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Montellier Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN (2).png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Naked Strawberry Banana 450 mL Dry Straight ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappucino 281 mL ENG.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
@@ -180,9 +181,16 @@
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase galvanizedtub -->
+
+
 <!-- Visibility -->
-                      <div *ngSwitchCase="'quakermuffinrackheader'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'quakermuffinrackheader'" onload="this.style.opacity='1';" src="assets/img/Slides/Quaker Rack Header - FS16014_Quaker Rebrand_Header Card_EN_P3.jpg" class="slide-image"></div>
+                      <div class="quakermuffinrackheader" *ngSwitchCase="'quakermuffinrackheader'">
+                      <div [class.fade-in]="view === 'quakermuffinrackheader'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/Slides/FS17182_Quaker Header Card_FR_P1_Artboard.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/FS17182_QUAKER_HEADER CARD_ENG_P6_Artboard.png" class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
                           <div class="slider-section-copy">
                             <h2>Quaker Muffin Rack Header</h2>
                             <ul>
@@ -191,13 +199,11 @@
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase quakermuffinrackheader -->
+
                       <div *ngSwitchCase="'quakerflavourcards'">
                         <div [class.fade-in]="view === 'quakerflavourcards'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/FS16014_Quaker Rebrand_ID_Magnet_3_5x1_EN_P2_BANANA.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/FS16014_Quaker Rebrand_ID_Magnet_3_5x1_EN_P2_BLUEBERRY.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/FS16014_Quaker Rebrand_ID_Magnet_3_5x1_EN_P2_CARROT.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/FS16014_Quaker Rebrand_ID_Magnet_3_5x1_EN_P2_CHUNKSOCHOCOLATE.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/MAGNET ID_BLUEBERRY.png" class="slide-image shadow"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
@@ -209,13 +215,18 @@
                           </div>
                       </div><!-- *ngSwitchCase quakerflavourcards -->
 
-                      <div class="breakfastpos" *ngSwitchCase="'breakfastpos'">
+
+
+
+
+
+                      <div *ngSwitchCase="'breakfastpos'">
                           <ion-slides pager="true">
                             <ion-slide>
                               <div class="slider-section-img" [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';">
-                                <img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image">
+                                <img src="assets/img/Slides/FS18052_P13_ChocChunk 900 x 900 px_FA ENG.png" class="slide-image">
                               </div>
-                              <div class="slider-section-copy">
+                              <div class="slider-section-copy breakfastpos">
                                 <h2>Breakfast POS</h2>
                                 <ul>
                                   <li>Highly visible POS materials that focus on the nutritionals and benefits of our breakfast offerings can help grow morning sales</li>
@@ -226,9 +237,9 @@
                             </ion-slide>
                             <ion-slide>
                               <div class="slider-section-img" [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';">
-                                <img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image">
+                                <img src="assets/img/Slides/FS18066 AuntJemimaPancakeTuesday_900x900_ENG_HiRes.png" class="slide-image">
                               </div>
-                              <div class="slider-section-copy">
+                              <div class="slider-section-copy breakfastpos">
                                 <h2>Breakfast POS</h2>
                                 <ul>
                                   <li>Pancakes are amongst the top 10 most consumed food items at breakfast</li>
@@ -240,22 +251,23 @@
                       </div><!-- *ngSwitchCase breakfastpos -->
 
 
-                      <div *ngSwitchCase="'galvanizedtubcling'">
+                      <div class="galvanizedtubcling" *ngSwitchCase="'galvanizedtubcling'">
                         <div [class.fade-in]="view === 'galvanizedtubcling'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Montellier Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN (2).png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Naked Strawberry Banana 450 mL Dry Straight ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappucino 281 mL ENG.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
                             <h2>Galvanized Tub Cling</h2>
                             <ul>
-                              <li>It's important for the right Clings to be executed with the Galvanized Tubs to catch consumer attention</li>
-                              <li>A range of branded Clings come with the Galvanized Tubs when they are ordered through the MSO Portal</li>
+                              <li>Execute the right Branded Cling on the Galvanized Tub to catch consumer attention and highlight featured Breakfast products</li>
+                              <li>A range of Branded Clings come with the Galvanized Tubs when they are ordered through the MSO Portal</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase galvanizedtubcling -->
@@ -264,10 +276,7 @@
                       <div *ngSwitchCase="'quakerseasonalflavours'">
                         <div [class.fade-in]="view === 'quakerseasonalflavours'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal ID Magnets_EN_FA_1.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal ID Magnets_EN_FA_2.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal_FALL_Poster_EN_FA.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Rack Seasonal Flavours/FS16014_Quaker_Seasonal_SPRING_Poster_EN_FA.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/MAGNET ID_BLUEBERRY.png" class="slide-image shadow"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
@@ -282,19 +291,20 @@
                       <div *ngSwitchCase="'premiumproducts'">
                         <div [class.fade-in]="view === 'premiumproducts'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Montellier Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN (2).png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Naked Strawberry Banana 450 mL Dry Straight ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappucino 281 mL ENG.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
                             <h2>Premium Products</h2>
                             <ul>
-                              <li>Consumers value the taste, nutrition, and quality of our premium products</li>
-                              <li>Highlighting premium products in prominent areas can help add value for consumers</li>
+                              <li>Our breakfast options provide the portability, great taste, and healthy credentials that consumers look for to start their day</li>
+                              <li>Highlight our premium chilled breakfast products in Galvanized Tubs in prominent areas to highlight these features</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase premiumproducts -->
