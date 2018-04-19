@@ -386,10 +386,10 @@ img.fade-in-slow {
 .slider-section-copy {
     float: left;
     width: 288px;
-    height: 234px;
+
     text-align: left;
     }
-.slider-section h2 {
+.slider-section-copy h2 {
     color: $pepsico-darkblue;
     font-family: Roboto;
     font-size: 1.2em;
@@ -397,27 +397,23 @@ img.fade-in-slow {
     padding-left: 16px;
     margin-top: 32px;
     }
-.slider-section ul,
-.slider-section p {
-    font-family: Roboto;
-    line-height: 1.6em;
-    font-size: .9em;
+.slider-section-copy ul {
     color: #909090;
     margin-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
-
+    padding-left: 32px;
+    padding-right: 5px;
+    text-align:left;
+    height: 165px;
+    padding-bottom:20px;
     margin: 0;
     margin-top:10px;
-    position: absolute;               /* 2 */
-    top: 50%;                         /* 3 */
-    transform: translate(0, -50%);    /* 4 */
+    }
+.slider-section-copy li {
+    font-family: Roboto;
+    line-height: 1.2em;
+    font-size: 14px;
     }
 
-
-.slider-section li {
-    margin:0 0 10px 0;
-    }
 
 
 /* Bullseye SVG animations */

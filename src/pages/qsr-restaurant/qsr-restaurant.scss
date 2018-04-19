@@ -17,14 +17,21 @@
 background-color: $pepsico-lightblueoffwhite;
 
 
+.slider-section-copy ul,
+.slider-section-copy p {
+    line-height: 1.1em;
+    font-size: .9em;
+}
+
+
 /* Environment views section */
 
 .environment-view-qsr-int-value {width:524px;}
 .environment-view-qsr-ext-value {width:344px;}
 .environment-view-qsr-int-visibility {width:524px;}
 .environment-view-qsr-ext-visibility {width:344px;}
-.environment-view-qsr-int-variety {width:888px;}
-.environment-view-qsr-ext-variety {width: 0px; margin-left:0;}
+.environment-view-qsr-int-variety {width:882px !important;}
+.environment-view-qsr-ext-variety {width: 0px !important; margin-left:0;}
 
 .imgHolder-qsr-int-value,
 .imgHolder-qsr-int-visibility,
@@ -39,7 +46,7 @@ background-color: $pepsico-lightblueoffwhite;
 
 .imgHolder-qsr-int-value, .imgHolder-qsr-int-visibility {width:524px;}
 .imgHolder-qsr-ext-value, .imgHolder-qsr-ext-visibility {width:344px;}
-.imgHolder-qsr-int-variety {width:888px;}
+.imgHolder-qsr-int-variety {width:882px;}
 .imgHolder-qsr-ext-variety {width:0px;}
 
 .qsr-int-value,
@@ -76,6 +83,28 @@ background-color: $pepsico-lightblueoffwhite;
     width:100%;
     }
 
+
+
+/* Value */
+.innovationwindow ul {line-height: 1.5em;font-size: .9em; padding-top:30px;}
+.innovationshowcase ul {line-height: 1.5em;font-size: .9em; padding-top:40px;}
+.snackracktopper ul {line-height: 1.3em;font-size: .9em; padding-top:50px;}
+.staffsuggestion ul {line-height: 1.2em;font-size: .9em; padding-top:50px;}
+.marketingwindowcling ul {line-height: 1.3em;font-size: .9em; padding-top:50px;}
+
+/* Variety */
+.fountain ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
+.beveragecooler ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
+.fritosnackrack ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
+
+
+
+/* Visibility */
+.tabletent ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
+.menuboards ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
+.perfectparings ul {line-height: 1.3em;font-size: .9em; padding-top:30px;}
+.pushpullsign ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
+.sandwichboard ul {line-height: 1.5em;font-size: .9em; padding-top:0px;}
 
 }
 

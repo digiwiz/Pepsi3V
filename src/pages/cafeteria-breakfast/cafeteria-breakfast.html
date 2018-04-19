@@ -1,7 +1,6 @@
-
 <ion-grid class="cafeteria-breakfast-page"><!-- side menu -->
     <ion-row>
-        <div  class="shadow" style="width:72px;  margin-right: 32px; height:768px; background: white;" >
+        <div class="shadow" style="width:72px;  margin-right: 32px; height:768px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
             <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -143,7 +142,7 @@
                   <div [ngSwitch]="view">
 
 <!-- Variety -->
-                      <div class="quakermuffinrack" *ngSwitchCase="'quakermuffinrack'">
+                      <div *ngSwitchCase="'quakermuffinrack'">
                         <div [class.fade-in]="view === 'quakermuffinrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/FS17182_QUAKER_HEADER CARD_ENG_P6_Artboard.png" class="slide-image "></ion-slide>
@@ -184,8 +183,8 @@
 
 
 <!-- Visibility -->
-                      <div class="quakermuffinrackheader" *ngSwitchCase="'quakermuffinrackheader'">
-                      <div [class.fade-in]="view === 'quakermuffinrackheader'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                      <div *ngSwitchCase="'quakermuffinrackheader'">
+                        <div [class.fade-in]="view === 'quakermuffinrackheader'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/FS17182_Quaker Header Card_FR_P1_Artboard.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/FS17182_QUAKER_HEADER CARD_ENG_P6_Artboard.png" class="slide-image"></ion-slide>
@@ -215,18 +214,13 @@
                           </div>
                       </div><!-- *ngSwitchCase quakerflavourcards -->
 
-
-
-
-
-
                       <div *ngSwitchCase="'breakfastpos'">
                           <ion-slides pager="true">
                             <ion-slide>
                               <div class="slider-section-img" [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';">
                                 <img src="assets/img/Slides/FS18052_P13_ChocChunk 900 x 900 px_FA ENG.png" class="slide-image">
                               </div>
-                              <div class="slider-section-copy breakfastpos">
+                              <div class="slider-section-copy">
                                 <h2>Breakfast POS</h2>
                                 <ul>
                                   <li>Highly visible POS materials that focus on the nutritionals and benefits of our breakfast offerings can help grow morning sales</li>
@@ -239,7 +233,7 @@
                               <div class="slider-section-img" [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';">
                                 <img src="assets/img/Slides/FS18066 AuntJemimaPancakeTuesday_900x900_ENG_HiRes.png" class="slide-image">
                               </div>
-                              <div class="slider-section-copy breakfastpos">
+                              <div class="slider-section-copy">
                                 <h2>Breakfast POS</h2>
                                 <ul>
                                   <li>Pancakes are amongst the top 10 most consumed food items at breakfast</li>
@@ -250,8 +244,7 @@
                           </ion-slides>
                       </div><!-- *ngSwitchCase breakfastpos -->
 
-
-                      <div class="galvanizedtubcling" *ngSwitchCase="'galvanizedtubcling'">
+                      <div *ngSwitchCase="'galvanizedtubcling'">
                         <div [class.fade-in]="view === 'galvanizedtubcling'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>

@@ -1,6 +1,6 @@
-<div class="qsr-restaurant-page">
+<ion-grid class="qsr-restaurant-page">
     <ion-row>
-        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white;" >
+        <div class="shadow" style="width:72px; height:768px; margin-right: 32px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
             <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -10,13 +10,11 @@
 
         <div style="width:884px;" >
           <ion-row>
-            <div class="title-header">QUICK SERVICE RESTAURANT</div>
+            <ion-col col-6 class="title-header">CAFETERIAQUICK SERVICE RESTAURANT</ion-col>
 
-            <div style="width:600px;">
-
+            <ion-col col-6 no-padding >
                 <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'innovationwindow'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
                       c0-2.4-0.5-4.2-1.5-5.4c-1-1.2-2.4-1.8-4-1.8c-1.7,0-3,0.5-3.8,1.5c-0.8,1-1.2,2.2-1.2,3.7c0,1.5,0.4,2.7,1.3,3.7
@@ -26,10 +24,8 @@
                     </svg>
                   VALUE
                 </button>
-
                 <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'tabletent'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
                     <path class="st0" d="M68.3,12.7C67,10.9,65.1,9.4,63,8.5c-1.1-2.1-2.8-4.3-3.7-5.2c-1.3-1.2-3-1.9-4.9-1.9c-4,0-7.3,3.3-7.3,7.3
                       c0,1.6-0.1,3,0.1,4.2c-0.8,1.1-1.4,2.4-1.8,3.8c-0.8-0.6-1.9-1-3-1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0.4-3,1
                       c-0.4-1.4-1-2.6-1.8-3.8c0.2-1.2,0.1-2.6,0.1-4.2c0-4-3.3-7.3-7.3-7.3c-1.9,0-3.6,0.7-4.9,1.9c-0.9,0.8-2.6,3.1-3.7,5.2
@@ -45,10 +41,8 @@
 
                   VISIBILITY
                 </button>
-
                 <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'fountain'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
                   <path class="st0" d="M-215.9,383.1c0-2.1-7.9-2.1-8.3-2.1c-0.4,0-8.3,0.1-8.3,2.1c0,0.4,0.3,0.7,0.8,1l1.6,23.7
                     c0,0.8,2.6,1.5,5.9,1.5c3.3,0,5.9-0.7,5.9-1.5l1.7-23.7C-216.1,383.8-215.9,383.5-215.9,383.1z M-224.2,381.9c4.5,0,7.1,0.8,7.3,1.2
                     c-0.3,0.5-2.9,1.2-7.3,1.2c-4.5,0-7.1-0.8-7.3-1.2C-231.3,382.7-228.7,381.9-224.2,381.9z"/>
@@ -62,15 +56,9 @@
                     c0.7-0.1,1-0.5,1.5-0.9c0.6-0.5,1.1-1,1.2-1.8l0.1-0.8c0.1-0.9-0.1-1.8-0.4-2.6c0.4-0.7,0.6-1.5,0.7-2.3c0.1-0.9,0.1-1.7,0-2.4
                     c0.6-0.6,1-1.3,1.1-2.1L-205.5,392.4z"/>
                   </svg>
-
                   VARIETY
                 </button>
-
-
-
-
-            </div>
-
+            </ion-col>
           </ion-row>
 
           <ion-row>
@@ -172,7 +160,7 @@
 
             </div><!-- key insights -->
 
-            <div class="shadow slider-section"><!-- image slider section -->
+            <div class="shadow slider-section" style="width: 498px; margin-left: 16px;"><!-- image slider section -->
 
                   <div [ngSwitch]="view">
 <!-- Variety -->
@@ -361,4 +349,4 @@
         </div>
 
     </ion-row>
-</div>
+</ion-grid>
