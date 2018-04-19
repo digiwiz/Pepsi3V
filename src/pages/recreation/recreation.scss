@@ -1,4 +1,4 @@
-.recreation-restaurant-page {
+.recreation-page {
 
 .btn-bullseye {position: absolute; z-index: 2;}
 
@@ -16,6 +16,15 @@
 .featurechalkboard {left: 400px; top: 210px;}
 .menuboards {left: 597px; top: 147px;}
 .perfectparings {left: 445px; top: 325px;}
+
+
+
+.slider-section-copy ul,
+.slider-section-copy p {
+    line-height: 1.1em;
+    font-size: .9em;
+}
+
 
 
 background-color: $pepsico-lightblueoffwhite;
@@ -79,6 +88,14 @@ background-color: $pepsico-lightblueoffwhite;
   }
 
 
+/* Value */
+.innovationwindow ul {line-height: 1.3em;font-size: .9em; padding-top:50px;}
+
+
+/* Variety */
+
+
+/* Visibility */
 
 }
 
