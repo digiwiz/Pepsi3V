@@ -84,7 +84,7 @@
                     <div [class.casual-takeout-value]="type === 'value'" [class.casual-takeout-visibility]="type === 'visibility'" [class.casual-takeout-variety]="type === 'variety'" class="easing" >
                       <img src="assets/img/Casual/Casual_Takeout.png" />
                       <div *ngIf="view === 'snackracktopper'" style="z-index:1;"><img [class.fade-in]="view === 'snackracktopper'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_snackracktopper.png" /></div>
-                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_innovationshowcase.png" /></div>
+                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
                       <div *ngIf="view === 'innovationwindow'" style="z-index:1;"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_innovationwindow.png" /></div>
                       <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_staffsuggestion_takeout.png" /></div>
                       <div *ngIf="view === 'staffsuggestion-takeout'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion-takeout'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_staffsuggestion_takeout.png" /></div>
@@ -182,10 +182,10 @@
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
-                            <h2>Menu</h2>
+                            <h2>Beverage Variety</h2>
                             <ul>
-                              <li>Ensure availability of our core beverages, along with appropriate products that pair well with the offerings</li>
-                              <li>Many locations provide the opportunity for both fountain and packaged products</li>
+                              <li>Consumers look for different types of beverages to pair with their main dishes to complete their meal experience</li>
+                              <li>Capture sales from all consumer preferences by offering both fountain and bottled beverages</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase menu -->
@@ -230,7 +230,7 @@
                         </div>
                       </div><!-- *ngSwitchCase beveragecooler -->
 
-                      <div class="fritosnackrack" *ngSwitchCase="'fritosnackrack'">
+                      <div *ngSwitchCase="'fritosnackrack'">
                         <div [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slides pager="true">

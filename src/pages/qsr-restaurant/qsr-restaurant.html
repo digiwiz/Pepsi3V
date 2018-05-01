@@ -75,7 +75,7 @@
                       <div *ngIf="view === 'tabletent'" style="z-index:1;"><img [class.fade-in]="view === 'tabletent'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Visibility_tabletent.png" /></div>
                       <div *ngIf="view === 'snackracktopper'" style="z-index:1;"><img [class.fade-in]="view === 'snackracktoppert'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_snackracktopper.png" /></div>
                       <div *ngIf="view === 'innovationwindow'" style="z-index:1;"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_innovationwindow.png" /></div>
-                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_innovationshowcase.png" /></div>
+                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
 <!--                      <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_staffsuggestion.png" /></div>      -->
 
 
@@ -203,8 +203,11 @@
                         </div>
                       </div><!-- *ngSwitchCase beveragecooler -->
 
-                      <div class="fountain" *ngSwitchCase="'fountain'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/Slides/Fountain - SV175.jpg" class="slide-image"></div>
+                      <div *ngSwitchCase="'fountain'">
+                        <div [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                            <img src="assets/img/Slides/RC IN1 8 Valve Planogram-01.png" class="slide-image">
+
+                        </div>
                         <div class="slider-section-copy">
                           <h2>Fountain</h2>
                           <ion-slides pager="true">
@@ -227,9 +230,12 @@
                       <div *ngSwitchCase="'fritosnackrack'">
                         <div [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30011450_Lay's_Classic_66g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013134_Sun Chips_Harvest Cheddar_40g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013366_30013367_Cheetos_Crunchy_57g_DOM_IMP.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013448_Miss Vickie's_Original_40g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30048909_Oven Baked_Lay's_Original_66g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/45g_Dor_Nacho.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -293,7 +299,7 @@
                             </div>
                         </div><!-- *ngSwitchCase menuboards -->
 
-                      <div class="tabletent" *ngSwitchCase="'tabletent'">
+                      <div *ngSwitchCase="'tabletent'">
                         <div [class.fade-in]="view === 'tabletent'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Table Tents - Plastic 1.jpg" class="slide-image"></ion-slide>
@@ -311,7 +317,7 @@
                         </div>
                       </div><!-- *ngSwitchCase tabletent -->
 
-                      <div class="sandwichboard" *ngSwitchCase="'sandwichboard'" >
+                      <div *ngSwitchCase="'sandwichboard'" >
                         <div [class.fade-in]="view === 'sandwichboard'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/2017_NSM_WEB_STBN_2004.jpg"></ion-slide>
@@ -328,11 +334,11 @@
                         </div>
                       </div> <!-- *ngSwitchCase="'sandwichboard -->
 
-                      <div class="pushpullsign" *ngSwitchCase="'pushpullsign'" >
+                      <div *ngSwitchCase="'pushpullsign'" >
                         <div [class.fade-in]="view === 'pushpullsign'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/PushPull EN 1.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PushPull EN 2.jpg" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsi Pull.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsi Push.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -346,23 +352,20 @@
 
 <!-- Value -->
                       <div *ngSwitchCase="'fountain2'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/Slides/Fountain - SV175.jpg" class="slide-image"></div>
+                        <div [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/Slides/17663 PepsiCo Fountain Cup EN.jpg" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsi Fountain Cup 3D Bilingual.png" class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
                         <div class="slider-section-copy">
                           <h2>Fountain</h2>
-                          <ion-slides pager="true">
-                            <ion-slide>
+
                                 <ul>
                                   <li>Drive volume and customer penny profit with trading up fountain cups to 21oz</li>
                                   <li>Take part in promotional fountain cup programs to generate excitement and drive beverage sales and velocities</li>
                                 </ul>
-                            </ion-slide>
-                            <ion-slide>
-                                <ul>
-                                  <li>Grow the core with Flavoured CSDs</li>
-                                  <li>Increase Space for flavours on Fountain 8 valve for new outlets and upgrade existing 6-valve equipment</li>
-                                </ul>
-                            </ion-slide>
-                          </ion-slides>
+
                         </div>
                       </div><!-- *ngSwitchCase fountain2 -->
 

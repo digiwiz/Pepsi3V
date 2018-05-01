@@ -95,7 +95,7 @@
                       <div *ngIf="view === 'perfectparings-station'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Visibility_perfectparings.png" /></div>
                       <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_staffsuggestion.png" /></div>
                       <div *ngIf="view === 'staffsuggestion-station'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion-station'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_staffsuggestion.png" /></div>
-                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_innovationshowcase.png" /></div>
+                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
 
                     </div>
                   </div>
@@ -206,7 +206,7 @@
                             </ion-slide>
                             <ion-slide>
                                 <ul>
-                                  <li>Water, Tea, Juice &Isotonic to grow a combined 5% over the next 5 years</li>
+                                  <li>Water, Tea, Juice & Isotonic to grow a combined 5% over the next 5 years</li>
                                   <li>Tea expected to Grow 3x more than LRB - Close Distribution Gaps on Pure Leaf</li>
                                 </ul>
                             </ion-slide>
@@ -217,9 +217,9 @@
                       <div *ngSwitchCase="'fritosnackrack'">
                         <div [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30014186_30014187_Cheetos_Crunchy__Big Grab_70g_DOM_IMP.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30014189_SunChips_Harvest Cheddar_Big Grab_60g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/70g_Dor_Nacho.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -249,7 +249,6 @@
                             <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN (2).png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Strawberry Banana 450 mL Dry Straight ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappucino 281 mL ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/CAN_GrabnGo_Guacamole.png" class="slide-image"></ion-slide>
@@ -278,9 +277,12 @@
                       <div *ngSwitchCase="'countertopsnackrack'">
                         <div [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/30014186_30014187_Cheetos_Crunchy__Big Grab_70g_DOM_IMP.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/30014189_SunChips_Harvest Cheddar_Big Grab_60g.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/70g_Dor_Nacho.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30011450_Lay's_Classic_66g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013134_Sun Chips_Harvest Cheddar_40g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013366_30013367_Cheetos_Crunchy_57g_DOM_IMP.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013448_Miss Vickie's_Original_40g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30048909_Oven Baked_Lay's_Original_66g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/45g_Dor_Nacho.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -295,11 +297,7 @@
 <!-- Visibility -->
                       <div *ngSwitchCase="'perfectparings'" >
                         <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image shadow"></ion-slide>
-                          </ion-slides>
+                            <img src="assets/img/Slides/RC IN1 Foodservice App-01.jpg" class="slide-image shadow">
                         </div>
                         <div class="slider-section-copy">
                           <h2>Perfect Parings</h2>
@@ -312,16 +310,12 @@
                       </div> <!-- *ngSwitchCase="'perfectparings -->
                       <div *ngSwitchCase="'perfectparings-station'" >
                         <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image shadow"></ion-slide>
-                          </ion-slides>
+                            <img src="assets/img/Slides/RC IN1 Foodservice App-01.jpg" class="slide-image shadow">
                         </div>
                         <div class="slider-section-copy">
                           <h2>Perfect Parings</h2>
                           <ul>
-                            <li>Leverage portfolio variety to pair the right beverages with the right food on your menu to maximize reach</li>
+                            <li>Suggesting beverage and snack pairings with main orders creates an enticing complement to the consumer's meal and can help grow sales</li>
                             <li>Leverage +100 new beverage & food images available on PepsiCo Art Gallery</li>
                             <li>Acrylic stands can be ordered the  MSO Portal</li>
                           </ul>
@@ -360,7 +354,6 @@
                             <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN (2).png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Strawberry Banana 450 mL Dry Straight ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappucino 281 mL ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/CAN_GrabnGo_Guacamole.png" class="slide-image"></ion-slide>
