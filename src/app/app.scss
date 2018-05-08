@@ -118,6 +118,18 @@ $pepsico-lightblueoffwhite: #e5eaee;
 $pepsico-red: #e8112d;
 
 
+
+h3 {
+    color: $pepsico-darkblue;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 1em;
+    padding-left: 216px;
+    margin-top: 32px;
+    }
+
+
+
 .item-inner, .label-md {
   border-bottom: 0px solid #ffffff;
 }
@@ -332,6 +344,7 @@ button.segment-button.active {
   padding-left:40px;
   }
 
+
 /* Image slider section */
 
 .slider-section {
@@ -342,16 +355,44 @@ button.segment-button.active {
     margin-top: 16px;
     position: relative;              /* 1 */
     }
+.slider-section-img {
+    position:relative;
+    float: left;
+    width: 200px;
+    height: 174px;
+    }
+.slider-section-copy {
+    float: left;
+    width: 288px;
+    text-align: left;
+    }
+.slider-section-copy ul {
+    color: #909090;
+    margin-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 5px;
+    text-align:left;
+    height: 165px;
+    padding-bottom:20px;
+    margin: 0;
+    margin-top:10px;
+    }
+.slider-section-copy li {
+    font-family: Roboto;
+    line-height: 1.2em;
+    font-size: 12px;
+    padding-bottom: 5px;
+    }
 
 img.slide-image {
     vertical-align: middle;
     max-width: 150px;
-    max-height: 150px;
+    max-height: 120px;
     width: auto;
     height: auto;
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: auto;
@@ -377,42 +418,7 @@ img.fade-in-slow {
     transition: opacity 5s;
     }
 
-.slider-section-img {
-    position:relative;
-    float: left;
-    width: 200px;
-    height: 234px;
-    }
-.slider-section-copy {
-    float: left;
-    width: 288px;
 
-    text-align: left;
-    }
-.slider-section-copy h2 {
-    color: $pepsico-darkblue;
-    font-family: Roboto;
-    font-size: 1.2em;
-    line-height: 1em;
-    padding-left: 16px;
-    margin-top: 32px;
-    }
-.slider-section-copy ul {
-    color: #909090;
-    margin-bottom: 32px;
-    padding-left: 32px;
-    padding-right: 5px;
-    text-align:left;
-    height: 165px;
-    padding-bottom:20px;
-    margin: 0;
-    margin-top:10px;
-    }
-.slider-section-copy li {
-    font-family: Roboto;
-    line-height: 1.2em;
-    font-size: 14px;
-    }
 
 
 

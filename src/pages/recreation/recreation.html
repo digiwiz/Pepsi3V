@@ -115,7 +115,7 @@
 
           <ion-row>
             <div class="insights shadow"><!-- key facts -->
-              <h2>KEY FACTS</h2>
+              <h3>KEY FACTS</h3>
               <div [ngSwitch]="type">
                   <ion-list *ngSwitchCase="'variety'">
 
@@ -149,50 +149,53 @@
 
 
 <!-- Variety -->
+
+
                       <div *ngSwitchCase="'beveragecooler'">
-                        <div [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/7UP 591 mL Dry Straight ENG.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ARTO LIFE WTR 1L MOMO Bottle Dry Straight BIL.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Aquafina 591 mL Eminence Bottle Dry Straight Bilingual (1).png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Crush Orange 591mL Dry 3D Bilingual.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Dr Pepper 591mL Dry Straight BIlingual.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Mountain Dew 591mL DRY Straight Bilingual_MTN DEW_NEW__BOTTLE_Rev3.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Schweppes Ginger Ale 591 mL Dry Straight Bilingual.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/7 Up Lemon Lemon Original 355mL Dry ENG.png" class="slide-image" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <h2>Beverage Cooler</h2>
-                          <ion-slides pager="true">
-                            <ion-slide>
-                                <ul>
+                        <h3>Beverage Cooler</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
                                   <li>Our Recreation POGs appeal to the location's consumers - both athletes and fans</li>
                                   <li>Use the appropriate type of cooler to execute our segment-specific POGs to drive sales and repeat purchase</li>
                                   <li>Comprehensive POGs are available on Advantage</li>
-                                </ul>
-                            </ion-slide>
-                            <ion-slide>
-                                <ul>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
                                   <li>PepsiCo has an Advantage Flavours Portfolio to Drive Growth</li>
-                                </ul>
-                            </ion-slide>
-                            <ion-slide>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler_2.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
                                 <ul>
                                   <li>Water, Tea, Juice &Isotonic to grow a combined 5% over the next 5 years</li>
-                                  <li>Tea expected to Grow 3x more than LRB - Close Distribution Gaps on Pure Leaf</li>
+                                  <li>Close Distribution Gaps on Pure Leaf</li>
                                 </ul>
-                            </ion-slide>
-                          </ion-slides>
-                        </div>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
                       </div><!-- *ngSwitchCase beveragecooler -->
 
-
                       <div *ngSwitchCase="'beveragevendor'">
-                      <div class="slider-section-img"><img [class.fade-in]="view === 'beveragevendor'" onload="this.style.opacity='1';" src="assets/img/Slides/G Bolt.png" class="slide-image"></div>
+                        <h3>Beverage Vendor</h3>
+                        <div class="slider-section-img">
+                          <img [class.fade-in]="view === 'beveragevendor'" onload="this.style.opacity='1';" src="assets/img/Slides/G Bolt.png" class="slide-image">
+                        </div>
                         <div class="slider-section-copy">
-                            <h2>Beverage Vendor</h2>
                             <ul>
                               <li>Focus on the consumer that will primarily use the vendor and tailor product variety: hydration and nutrition for athletes, broader variety for fans</li>
                               <li>Leverage branded fascia's as appropriate for the location</li>
@@ -202,37 +205,41 @@
                       </div><!-- *ngSwitchCase beveragevendor -->
 
                       <div *ngSwitchCase="'countertopsnackrack'">
-                        <div [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/30014186_30014187_Cheetos_Crunchy__Big Grab_70g_DOM_IMP.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/30014189_SunChips_Harvest Cheddar_Big Grab_60g.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/70g_Dor_Nacho.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <h2>Countertop Snack Rack</h2>
-                          <ion-slides pager="true">
-                            <ion-slide>
+                        <h3>Countertop Snack Rack</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Frito Snack Rack - 1ft A.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
                                 <ul>
                                   <li>Use the Countertop Snack Racks to capture impulse snack sales at the Concession as consumers place their orders</li>
                                   <li>Countertop Snack Racks can be ordered through the MSO Portal</li>
                                 </ul>
-                            </ion-slide>
-                            <ion-slide>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Frito_Snack_Rack.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
                                 <ul>
                                   <li>Big Grab is growing 5x faster than the Salty Category</li>
                                   <li>Big Grab delivers more penny profit for retailers</li>
                                   <li>Use 1ft Rack to execute Big Grab near beverage cooler if vending machine not available</li>
                                 </ul>
-                            </ion-slide>
-                          </ion-slides>
-                        </div>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
                       </div><!-- *ngSwitchCase countertopsnackrack -->
 
                       <div *ngSwitchCase="'fountain'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/Slides/RC IN1 8 Valve Planogram-01.png" class="slide-image"></div>
+                          <h3>Fountain</h3>
+                          <div class="slider-section-img">
+                            <img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/Slides/RC IN1 8 Valve Planogram-01.png" class="slide-image">
+                          </div>
                           <div class="slider-section-copy">
-                            <h2>Fountain</h2>
+
                             <ul>
                               <li>Grow the core with Flavoured CSDs</li>
                               <li>Increase Space for flavours on Fountain 8 valve for new outlets and upgrade existing 6-valve equipment</li>
@@ -242,9 +249,9 @@
 
 <!-- Visibility -->
                       <div *ngSwitchCase="'brandedbanner'">
+                            <h3>Branded Banner</h3>
                             <div class="slider-section-img"><img  [class.fade-in]="view === 'brandedbanner'" onload="this.style.opacity='1';" src="assets/img/Slides/G Logo.png" class="slide-image"></div>
                             <div class="slider-section-copy">
-                              <h2>Branded Banner</h2>
                               <ul>
                                 <li>Gatorade and Muscle MLK are brands with high consumer recognition that resonate with athletes</li>
                                 <li>Branded banners and large POS can be developed using local budgets or marketing declining balances</li>
@@ -253,9 +260,9 @@
                         </div><!-- *ngSwitchCase brandedbanner -->
 
                       <div *ngSwitchCase="'featurechalkboard'">
+                            <h3>Feature Chalkboard</h3>
                             <div class="slider-section-img"><img  [class.fade-in]="view === 'featurechalkboard'" onload="this.style.opacity='1';" src="assets/img/Slides/Menu Feature Chalk Board - Pepsi.jpg" class="slide-image"></div>
                             <div class="slider-section-copy">
-                              <h2>Feature Chalkboard</h2>
                               <ul>
                                 <li>Feature chalk boards touch on the top four influencers of Takeout orders: menu presence, combo inclusion, special promotions, and feature items</li>
                                 <li>Feature chalk boards can be ordered through the MSO Portal</li>
@@ -264,40 +271,35 @@
                         </div><!-- *ngSwitchCase featurechalkboard -->
 
                       <div *ngSwitchCase="'menuboards'">
-                        <div [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                        <h3>Menu Boards</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/PepsiCo Trop TPP Original No Pulp 355mL Strt W_Glass Straw.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass 7Up_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass BriskIceTea_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass BriskLemonade_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Diet Pepsi_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Dr_Pepper_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass MountainDew_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass OrangeCrush_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Pepsi_02.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Schwepps_02.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/PepsiCo 7Up Lemon Lemon Original 355 mL W_Glass EN.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Pepsi_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass BriskIceTea_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass MountainDew_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Dr_Pepper_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCo Trop TPP Original No Pulp 355mL Strt W_Glass Straw.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
-                              <h2>Menu Boards</h2>
                               <ul>
                                 <li>64% of consumers are more likely to make a purchase if it's included on the menu. Menu inclusion is the strongest driver of sales</li>
-                                <li>Leverage the digital assets available on Advantage and the +100 new beverage and foods images available on the PepsiCo Art Gallery for menu board inclusions</li>
+                                <li>Leverage the digital assets available on Advantage and the PepsCo Art Gallery for menu board images</li>
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase menuboards -->
 
                       <div *ngSwitchCase="'perfectparings'" >
-                        <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                        <h3>Perfect Parings</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
-                          <h2>Perfect Parings</h2>
                           <ul>
                             <li>As fans typically visit the concession more than athletes, execute Perfect Pairings POS to suggest products that complete their meal</li>
                             <li>Perfect Pairing easel backs and inserts (for acrylic stands) can be ordered through the MSO Portal</li>
@@ -307,9 +309,9 @@
 
 <!-- Value -->
                       <div *ngSwitchCase="'hydrationmarketingposter'">
+                          <h3>Hydration Marketing Poster</h3>
                           <div class="slider-section-img"><img [class.fade-in]="view === 'hydrationmarketingposter'" onload="this.style.opacity='1';" src="assets/img/Slides/Hydration POS EN.jpg" class="slide-image"></div>
                           <div class="slider-section-copy">
-                            <h2>Hydration Marketing Poster</h2>
                             <ul>
                               <li>Leverage the strength of our athletic roster to connect with and inspire our active consumers</li>
                               <li>Hydration-focused POS and posters are available by request through Marketing</li>
@@ -318,9 +320,9 @@
                       </div><!-- *ngSwitchCase hydrationmarketingposter -->
 
                       <div *ngSwitchCase="'innovationwindow'">
+                          <h3>Innovation Window</h3>
                           <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/ENG Bev Cling.png" class="slide-image"></div>
                           <div class="slider-section-copy">
-                            <h2>Innovation Window</h2>
                             <ul>
                               <li>The role of innovation is to gain incremental sales - use the Innovation Window cling to highlight new SKUs, capture impulse purchases, and drive trial</li>
                               <li>Innovation Window clings can be ordered through the MSO Portal</li>
@@ -329,9 +331,9 @@
                       </div><!-- *ngSwitchCase innovationwindow -->
 
                       <div *ngSwitchCase="'staffsuggestion'">
+                          <h3>Staff Suggestion</h3>
                           <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
                           <div class="slider-section-copy">
-                            <h2>Staff Suggestion</h2>
                             <ul>
                               <li>38% of consumers base their orders on their server's suggestions</li>
                               <li>Develop programming and materials for staff to help ensure all consumers add a beverage and snack to their meals</li>
