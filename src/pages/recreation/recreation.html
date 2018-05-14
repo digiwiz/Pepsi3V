@@ -115,7 +115,7 @@
 
           <ion-row>
             <div class="insights shadow"><!-- key facts -->
-              <h3>KEY FACTS</h3>
+              <h2>KEY FACTS</h2>
               <div [ngSwitch]="type">
                   <ion-list *ngSwitchCase="'variety'">
 
@@ -193,7 +193,7 @@
                       <div *ngSwitchCase="'beveragevendor'">
                         <h3>Beverage Vendor</h3>
                         <div class="slider-section-img">
-                          <img [class.fade-in]="view === 'beveragevendor'" onload="this.style.opacity='1';" src="assets/img/Slides/G Bolt.png" class="slide-image">
+                          <img src="assets/img/Slides/G Bolt.png" class="slide-image">
                         </div>
                         <div class="slider-section-copy">
                             <ul>
@@ -209,7 +209,7 @@
                         <ion-slides pager="true">
                           <ion-slide>
                             <div class="slider-section-img">
-                              <img src="assets/img/Slides/Frito Snack Rack - 1ft A.png" class="slide-image">
+                              <img src="assets/img/Slides/Recreation- Variety- Snack Rack.png" class="slide-image">
                             </div>
                             <div class="slider-section-copy">
                                 <ul>
@@ -250,7 +250,8 @@
 <!-- Visibility -->
                       <div *ngSwitchCase="'brandedbanner'">
                             <h3>Branded Banner</h3>
-                            <div class="slider-section-img"><img  [class.fade-in]="view === 'brandedbanner'" onload="this.style.opacity='1';" src="assets/img/Slides/G Logo.png" class="slide-image"></div>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/G Logo.png" class="slide-image"></div>
                             <div class="slider-section-copy">
                               <ul>
                                 <li>Gatorade and Muscle MLK are brands with high consumer recognition that resonate with athletes</li>
@@ -310,7 +311,8 @@
 <!-- Value -->
                       <div *ngSwitchCase="'hydrationmarketingposter'">
                           <h3>Hydration Marketing Poster</h3>
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'hydrationmarketingposter'" onload="this.style.opacity='1';" src="assets/img/Slides/Hydration POS EN.jpg" class="slide-image"></div>
+                          <div class="slider-section-img">
+                            <img src="assets/img/Slides/Hydration POS EN.jpg" class="slide-image"></div>
                           <div class="slider-section-copy">
                             <ul>
                               <li>Leverage the strength of our athletic roster to connect with and inspire our active consumers</li>

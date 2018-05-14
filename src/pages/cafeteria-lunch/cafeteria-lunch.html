@@ -248,7 +248,7 @@
                           <ion-slides pager="true">
                             <ion-slide>
                               <div class="slider-section-img">
-                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanised_Tub.png" class="slide-image">
+                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanized_Tub.png" class="slide-image">
                               </div>
                               <div class="slider-section-copy">
                                 <ul>
@@ -259,7 +259,7 @@
                             </ion-slide>
                             <ion-slide>
                               <div class="slider-section-img">
-                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanised_Tub_Sabras.png" class="slide-image">
+                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanized_Tub_Sabras.png" class="slide-image">
                               </div>
                               <div class="slider-section-copy">
                                 <ul>
@@ -312,7 +312,7 @@
                         <ion-slides pager="true">
                           <ion-slide>
                             <div class="slider-section-img">
-                              <img src="assets/img/Slides/IMG_0467.png" class="slide-image shadow">
+                              <img src="assets/img/Slides/IMG_0467.png" class="slide-image">
                             </div>
                             <div class="slider-section-copy">
                               <ul>
@@ -338,7 +338,7 @@
 
                       <div *ngSwitchCase="'menuboards'">
                         <h3>Menu Boards</h3>
-                        <div [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/PepsiCo 7Up Lemon Lemon Original 355 mL W_Glass EN.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Pepsi_02.png" class="slide-image"></ion-slide>
@@ -362,7 +362,7 @@
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN (2).png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D EN.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed ENG.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappucino 281 mL ENG.png" class="slide-image"></ion-slide>
@@ -381,7 +381,9 @@
 <!-- Value -->
                       <div *ngSwitchCase="'innovationwindow'">
                         <h3>Innovation Window</h3>
-                        <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/ENG Bev Cling.png" class="slide-image"></div>
+                        <div class="slider-section-img">
+                          <img src="assets/img/Slides/ENG Bev Cling.png" class="slide-image">
+                        </div>
                         <div class="slider-section-copy">
                           <ul>
                             <li>The role of innovation is to gain incremental sales - use the Innovation Window cling to highlight new SKUs, capture impulse purchases, and drive trial</li>
@@ -411,9 +413,9 @@
                         <h3>Frito Snack Rack Topper - News</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image">></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image">></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image">></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -426,7 +428,9 @@
 
                       <div *ngSwitchCase="'staffsuggestion'">
                         <h3>Staff Suggestion</h3>
-                        <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
+                        <div class="slider-section-img">
+                          <img src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image">
+                        </div>
                         <div class="slider-section-copy">
                           <ul>
                             <li>38% of consumers base their orders on their server's suggestions</li>

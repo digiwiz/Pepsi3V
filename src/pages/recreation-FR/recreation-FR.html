@@ -1,7 +1,6 @@
-
-<div class="recreation-restaurant-page">
+<ion-grid class="recreation-page"><!-- side menu -->
     <ion-row>
-        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white;" >
+        <div class="shadow" style="width:72px;  margin-right: 32px; height:768px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
             <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -11,13 +10,11 @@
 
         <div style="width:884px;" >
           <ion-row>
-            <div class="title-header">SECTEUR RÉCRÉATIF</div>
+            <ion-col col-6 class="title-header">SECTEUR RÉCRÉATIF</ion-col>
 
-            <div style="width:600px;">
-
+            <ion-col col-6 no-padding >
                 <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'hydrationmarketingposter'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
                       c0-2.4-0.5-4.2-1.5-5.4c-1-1.2-2.4-1.8-4-1.8c-1.7,0-3,0.5-3.8,1.5c-0.8,1-1.2,2.2-1.2,3.7c0,1.5,0.4,2.7,1.3,3.7
@@ -27,10 +24,8 @@
                     </svg>
                   VALEUR
                 </button>
-
                 <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'featurechalkboard'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
                     <path class="st0" d="M68.3,12.7C67,10.9,65.1,9.4,63,8.5c-1.1-2.1-2.8-4.3-3.7-5.2c-1.3-1.2-3-1.9-4.9-1.9c-4,0-7.3,3.3-7.3,7.3
                       c0,1.6-0.1,3,0.1,4.2c-0.8,1.1-1.4,2.4-1.8,3.8c-0.8-0.6-1.9-1-3-1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0.4-3,1
                       c-0.4-1.4-1-2.6-1.8-3.8c0.2-1.2,0.1-2.6,0.1-4.2c0-4-3.3-7.3-7.3-7.3c-1.9,0-3.6,0.7-4.9,1.9c-0.9,0.8-2.6,3.1-3.7,5.2
@@ -45,10 +40,8 @@
                   </svg>
                   VISIBILITÉ
                 </button>
-
                 <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'beveragevendor'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
                   <path class="st0" d="M-215.9,383.1c0-2.1-7.9-2.1-8.3-2.1c-0.4,0-8.3,0.1-8.3,2.1c0,0.4,0.3,0.7,0.8,1l1.6,23.7
                     c0,0.8,2.6,1.5,5.9,1.5c3.3,0,5.9-0.7,5.9-1.5l1.7-23.7C-216.1,383.8-215.9,383.5-215.9,383.1z M-224.2,381.9c4.5,0,7.1,0.8,7.3,1.2
                     c-0.3,0.5-2.9,1.2-7.3,1.2c-4.5,0-7.1-0.8-7.3-1.2C-231.3,382.7-228.7,381.9-224.2,381.9z"/>
@@ -64,13 +57,7 @@
                   </svg>
                   VARIÉTÉ
                 </button>
-
-
-
-
-
-            </div>
-
+            </ion-col>
           </ion-row>
 
           <ion-row>
@@ -96,6 +83,8 @@
                   </div>
                   <div class="title-box">INTÉRIEUR</div>
                 </div>
+
+
 
             <div [ngSwitch]="type">
               <div *ngSwitchCase="'value'">
@@ -131,20 +120,22 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li>Gatorade et Muscle MLK sont deux marques qui possèdent une part de marché de 70 % dans leur catégorie respective.</li>
+                          <li>Deux différents groupes de consommateurs visitent les comptes récréatifs : les athlètes et les amateurs.</li>
+                          <li>Assurez-vous d'offrir la variété adéquate de produits pour répondre aux besoins de ces 2 groupes distincts.</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'visibility'">
                       <ol>
-                          <li>Gatorade et Muscle MLK sont des marques obtenant des résultats de notoriété élevés auprès des consommateurs et permettent d'accroître les ventes.</li>
+                          <li>Utilisez les outils de marketing ciblés pour rejoindre les 2 différents groupes de consommateurs : athlètes et amateurs.</li>
+                          <li>Les marques Gatorade et Muscle MLK ont un lien fort avec les athlètes, alors que le reste de notre gamme rejoint les amateurs.</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
-                          <li>Une valeur avantageuse est un facteur qui permet d'accroître l'achalandage et la fréquence d'achat.</li>
-                          <li>Les combos, les innovations et les campagnes de marketing peuvent renforcer l'énoncé de valeur que vous proposez.</li>
+                          <li>Les combos permettent aux consommateurs d'ajouter facilement des collations et des boissons à leur commande, ce qui augmente les ventes.</li>
+                          <li>Tirez profit de la force de Gatorade et Muscle MLK pour créer des campagnes avantageuses pour les athlètes.</li>
                       </ol>
                   </ion-list>
 
@@ -155,138 +146,204 @@
             <div class="shadow slider-section" style="width: 498px; margin-left: 16px;"><!-- image slider section -->
                   <div [ngSwitch]="view">
 
-<!-- Value -->
-                      <div *ngSwitchCase="'hydrationmarketingposter'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'hydrationmarketingposter'" onload="this.style.opacity='1';" src="assets/img/Slides/Hydration POS EN.jpg" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>Les affiches de marketing misant sur les boissons hydratantes :</h2>
-                            <ul>
-                              <li>Du matériel de promotion et des affiches misant sur les boissons hydratantes sont accessibles en soumettant une demande à cet effet à l'équipe du marketing.</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase hydrationmarketingposter -->
-                      <div class="innovationwindow" *ngSwitchCase="'innovationwindow'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/Innovation Window Cling FR.png" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>L'électrostatique pour fenêtre présentant les innovations :</h2>
-                            <ul>
-                              <li>L'électrostatique pour fenêtre présentant les innovations peut servir à mettre l'accent sur les trois cases de présentation réservées aux innovations dans nos réfrigérateurs afin de favoriser l'essai.</li>
-                              <li>Les életrostatiques pour fenêtre présentant les innovations peuvent être commandés par le biais du portail MSO.</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase innovationwindow -->
-                      <div class="staffsuggestion" *ngSwitchCase="'staffsuggestion'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>Suggestions des membres du personnel :</h2>
-                            <ul>
-                              <li>Les membres du personnel sont en position d'influence lorsque les consommateurs soumettent leur commande et leurs suggestions sont grandement appréciées.</li>
-                              <li>Utilisez les soldes distribués liés aux campagnes refusées pour mettre en place de nouvelles campagnes et du nouveau matériel permettant aux membres du personnel de suggérer des produits au point de vente.</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase staffsuggestion -->
 
 
 <!-- Variety -->
+
+
                       <div *ngSwitchCase="'beveragecooler'">
-                        <div [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - One-Door G.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image"></ion-slide>
-                          </ion-slides>
+                        <h3>Le réfrigérateur à boissons :</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
+                                  <li>Nos planogrammes pour le segment récréatif visent à rejoindre les athlètes comme des les amateurs.</li>
+                                  <li>Utilisez les réfrigérateurs adéquats pour exécuter les planogrammes spécifiques au segment, et accroître les ventes et les achats récurrents.</li>
+                                  <li>Les planogrammes complets sont accessibles dans Advantage.</li>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
+                                  <li>PepsiCo présente une gamme de saveurs avantageuse pour favoriser la croissance.</li>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler_2.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                                <ul>
+                                  <li>Les eaux, thés, jus et boissons isotoniques connaîtront une croissance combinée de 5 % au cours des 5 prochaines années.</li>
+                                </ul>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
+                      </div><!-- *ngSwitchCase beveragecooler -->
+
+                      <div *ngSwitchCase="'beveragevendor'">
+                        <h3>Distributrices de boissons :</h3>
+                        <div class="slider-section-img">
+                          <img src="assets/img/Slides/G Bolt.png" class="slide-image">
                         </div>
                         <div class="slider-section-copy">
-                            <h2>Le réfrigérateur à boissons :</h2>
                             <ul>
-                              <li>L'exécution complète des planogrammes permet d'assurer la disponibilité d'une variété adéquate de produits, ainsi que d'accroître les ventes et les achats récurrents.</li>
-                              <li>Les planogrammes complets sont accessibles dans l'outil Advantage.</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase beveragecooler -->
-                      <div *ngSwitchCase="'beveragevendor'">
-                      <div class="slider-section-img"><img [class.fade-in]="view === 'beveragevendor'" onload="this.style.opacity='1';" src="assets/img/Slides/G Bolt.png" class="slide-image"></div>
-                        <div class="slider-section-copy">
-                            <h2>Distributrices de boissons :</h2>
-                            <ul>
-                              <li>L'exécution complète des planogrammes permet d'assurer la disponibilité d'une variété adéquate de produits, ainsi que d'accroître les ventes et les achats récurrents.</li>
-                              <li>Tirer profit des enveloppes aux couleurs de la marque selon les besoins dans chaque site.</li>
-                              <li>Les planogrammes pour les machines distributrices sont accessibles dans l'outil Advantage.</li>
+                              <li>Mettre l'accent sur le consommateur principal et adapter la variété à ses besoins : hydratation et nutrition pour les athlètes et plus grande variété pour les amateurs.</li>
+                              <li>Tirer profit des bandes de marques selon les besoins du commerce.</li>
+                              <li>Planogrammes des distributrices accessibles dans Advantage.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase beveragevendor -->
+
                       <div *ngSwitchCase="'countertopsnackrack'">
-                        <div [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Frito Countertop Rack - 2 shelf A.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Frito Countertop Rack - 3 shelf A.jpg" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                          <div class="slider-section-copy">
-                            <h2>Présentoir métallique de comptoir réservé aux collations :</h2>
-                            <ul>
-                              <li>Les présentoirs métalliques de comptoir pour collations permettent de saisir les occasions d'achats spontanés de collations avant que les consommateurs passent à la caisse.</li>
-                              <li>Les présentoirs métalliques de comptoir pour collations peuvent être commandés par le biais de l'outil MSO.</li>
-                            </ul>
-                          </div>
+                        <h3>Présentoir métallique de comptoir réservé aux collations :</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Recreation- Variety- Snack Rack.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                                <ul>
+                                  <li>Utilisez les présentoirs de comptoir pour collations afin de réaliser des ventes spontanées de collations à la concession alors que les consommateurs soumettent leurs commandes.</li>
+                                  <li>Les présentoirs de comptoir pour collations peuvent être commandés dans le portail MSO.</li>
+                                </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Frito_Snack_Rack.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                                <ul>
+                                  <li>Les grandes portions obtiennent une croissance 5 fois plus rapide vs la catégorie.</li>
+                                  <li>Ce format génère un meilleur profit pour les détaillants.</li>
+                                  <li>Utiliser le présentoir métallique de 1 pi pour exécuter ce format près du régrigérateur à boissons s'il n'y a aucune distributrice.</li>
+                                </ul>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
                       </div><!-- *ngSwitchCase countertopsnackrack -->
+
                       <div *ngSwitchCase="'fountain'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/Slides/Fountain - SV175.jpg" class="slide-image"></div>
+                          <h3>Fontaine :</h3>
+                          <div class="slider-section-img">
+                            <img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/Slides/RC IN1 8 Valve Planogram-01.png" class="slide-image">
+                          </div>
                           <div class="slider-section-copy">
-                            <h2>Fontaine :</h2>
+
                             <ul>
-                              <li>Utiliser les principales saveurs ainsi que les préférences régionales pour offrir aux consommateurs une variété d'options de boissons en fontaine adéquate.</li>
+                              <li>Développer la gamme principale avec les saveurs de boissons gazeuses.</li>
+                              <li>Augmenter l'espace pour les saveurs dans les fontaines à 8 robinets pour les nouveaux points de vente et changer l'équipement actuel de 6 robinets.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase fountain -->
 
 <!-- Visibility -->
                       <div *ngSwitchCase="'brandedbanner'">
-                            <div class="slider-section-img"><img  [class.fade-in]="view === 'brandedbanner'" onload="this.style.opacity='1';" src="assets/img/Slides/G Logo.png" class="slide-image"></div>
+                            <h3>La bannière de marque :</h3>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/G Logo.png" class="slide-image">
+                            </div>
                             <div class="slider-section-copy">
-                              <h2>La bannière de marque :</h2>
                               <ul>
-                                <li>Tirer profit de la grande reconnaissance de la marque Gatorade auprès des consommateurs pour accroître les ventes de boissons hydratantes.</li>
-                                <li>Des bannières de marque et du matériel de promotion de grande taille peuvent être créés en utilisant les budgets locaux ou les soldes distribués liés aux campagnes refusées.</li>
+                                <li>Gatorade et  Muscle MLK sont des marques ayant une grande notoriété auprès des consommateurs et qui rejoignent les athlètes.</li>
+                                <li>Des bannières de marque et du matériel de promotion de grande taille peuvent être créés avec les budgets locaux ou les montants de marketing alloués.</li>
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase brandedbanner -->
+
                       <div *ngSwitchCase="'featurechalkboard'">
-                            <div class="slider-section-img"><img  [class.fade-in]="view === 'featurechalkboard'" onload="this.style.opacity='1';" src="assets/img/Slides/Menu Feature Chalk Board - Pepsi.jpg" class="slide-image"></div>
+                            <h3>Tableau des produits en vedette :</h3>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Menu Feature Chalk Board - Pepsi.jpg" class="slide-image">
+                            </div>
                             <div class="slider-section-copy">
-                              <h2>Tableau des produits en vedette :</h2>
                               <ul>
-                                <li>Les tableaux des produits en vedette peuvent influencer les décisions pour les repas en suggérant des paires et en mettant en vedette les combos.</li>
-                                <li>Les tableaux peuvent être commandés par le biais du portail MSO.</li>
+                                <li>Les tableaux noirs pour les promotions répondent aux 4 principaux facteurs influençant les commandes à emporter : présence sur le menu, inclusion en combo, promotion spéciale et articles en vedette.</li>
+                                <li>Les tableaux noirs peuvent être commandés dans le portail MSO.</li>
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase featurechalkboard -->
+
                       <div *ngSwitchCase="'menuboards'">
-                            <div class="slider-section-img"><img  [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" src="assets/img/Slides/Menu Board - sports example - EN.jpg" class="slide-image"></div>
-                            <div class="slider-section-copy">
-                              <h2>Panneaux de menu :</h2>
-                              <ul>
-                                <li>La présence sur le panneau du menu joue un rôle essentiel pour accroître les ventes et les achats supplémentaires.</li>
-                                <li>Tirer profit des éléments numériques mis à votre disposition dans l'outil Advantage et dans la galerie d'images de PepsiCo pour les images du panneau de menu.</li>
-                              </ul>
-                            </div>
-                        </div><!-- *ngSwitchCase menuboards -->
-                      <div *ngSwitchCase="'perfectparings'" >
-                        <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+                        <h3>Panneaux de menu :</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairings - Pepsi and Lays FR.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairings - AF and Lays FR.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCo 7Up Lemon Lemon Original 355 mL W_Glass EN.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Pepsi_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass BriskIceTea_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass MountainDew_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Dr_Pepper_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCo Trop TPP Original No Pulp 355mL Strt W_Glass Straw.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
-                          <h2>Les paires parfaites :</h2>
+                              <ul>
+                                <li>64 % des consommateurs sont plus enclins à acheter un article s'il se trouve sur le panneau de menu (facteur principal favorisant l'achat).</li>
+                                <li>Tirer profit du matériel numérique dans Advantage et des +100 nouvelles images de repas et boissons dans la galerie de PepsiCo pour les panneaux de menu.</li>
+                              </ul>
+                            </div>
+                        </div><!-- *ngSwitchCase menuboards -->
+
+                      <div *ngSwitchCase="'perfectparings'" >
+                        <h3>Les paires parfaites :</h3>
+                        <div class="slider-section-img">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
+                        <div class="slider-section-copy">
                           <ul>
-                            <li>La présence de matériel de promotion sur les paires suggérées d'aliments et de boissons dans les lieux à haute visibilité permet d'orienter les choix du consommateur lorsqu'il se prépare à commander son repas.</li>
-                            <li>Les affiches en chevalet et les encarts (pour socles en acrylique) sur les paires parfaites peuvent être commandés par le biais de l'outil MSO.</li>
+                            <li>Comme les amateurs visitent habituellement plus les concessions que les athlètes, placez le matériel des paires parfaites pour suggérer les produits qui complètent leur repas.</li>
+                            <li>Les affiches en chevalet et les encarts (pour supports en acrylique) des paires parfaites peuvent être commandés dans MSO.</li>
                           </ul>
                         </div>
                       </div> <!-- *ngSwitchCase="'perfectparings -->
+
+<!-- Value -->
+                      <div *ngSwitchCase="'hydrationmarketingposter'">
+                          <h3>Les affiches de marketing misant sur les boissons hydratantes :</h3>
+                          <div class="slider-section-img">
+                            <img src="assets/img/Slides/Hydration POS EN.jpg" class="slide-image"></div>
+                          <div class="slider-section-copy">
+                            <ul>
+                              <li>Tirez profit de la force de notre alignement d'athlètes pour rejoindre et inspirer nos consommateurs actifs.</li>
+                              <li>Le matériel de promotion et les affiches axés sur l'hydratation sont accessibles sur demande auprès du Marketing.</li>
+                            </ul>
+                          </div>
+                      </div><!-- *ngSwitchCase hydrationmarketingposter -->
+
+                      <div *ngSwitchCase="'innovationwindow'">
+                          <h3>L'électrostatique pour fenêtre présentant les innovations :</h3>
+                          <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/ENG Bev Cling.png" class="slide-image"></div>
+                          <div class="slider-section-copy">
+                            <ul>
+                              <li>Le rôle des innovations est de générer des ventes supplémentaires. Utilisez l'électrostatique pour fenêtre pour présenter les innovations, générer des ventes spontanées et favoriser l'essai.</li>
+                              <li>Les électrostatiques pour fenêtre présentant les innovations peuvent être commandés dans le portail MSO.</li>
+                            </ul>
+                          </div>
+                      </div><!-- *ngSwitchCase innovationwindow -->
+
+                      <div *ngSwitchCase="'staffsuggestion'">
+                          <h3>Suggestions des membres du personnel :</h3>
+                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
+                          <div class="slider-section-copy">
+                            <ul>
+                              <li>38 % des consommateurs choisissent en fonction des suggestions du serveur.</li>
+                              <li>Développez des campagnes et du matériel à l'intention des membres du personnel pour encourager tous les consommateurs à ajouter les boissons et les collations à leur repas.</li>
+                            </ul>
+                          </div>
+                      </div><!-- *ngSwitchCase staffsuggestion -->
 
                   </div> <!-- [ngSwitch]="view" -->
             </div>
@@ -294,4 +351,4 @@
         </div>
 
     </ion-row>
-</div>
+</ion-grid>

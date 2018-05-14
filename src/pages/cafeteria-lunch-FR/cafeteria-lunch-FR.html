@@ -1,6 +1,6 @@
-<div class="cafeteria-lunch-page-FR"><!-- side menu -->
+<ion-grid class="cafeteria-lunch-page-FR"><!-- side menu -->
     <ion-row>
-        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white;" >
+        <div class="shadow" style="width:72px; height:768px; margin-right: 32px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
             <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -10,13 +10,11 @@
 
         <div style="width:884px;" >
           <ion-row>
-            <div class="title-header">CAFÉTÉRIAS</div>
+            <ion-col col-6 class="title-header">CAFÉTÉRIAS</ion-col>
 
-            <div style="width:600px;">
-
+            <ion-col col-6 no-padding >
                 <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'marketingprogram'; key='lunch'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
                       c0-2.4-0.5-4.2-1.5-5.4c-1-1.2-2.4-1.8-4-1.8c-1.7,0-3,0.5-3.8,1.5c-0.8,1-1.2,2.2-1.2,3.7c0,1.5,0.4,2.7,1.3,3.7
@@ -26,10 +24,8 @@
                     </svg>
                   VALEUR
                 </button>
-
                 <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'perfectparings'; key='lunch'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
                     <path class="st0" d="M68.3,12.7C67,10.9,65.1,9.4,63,8.5c-1.1-2.1-2.8-4.3-3.7-5.2c-1.3-1.2-3-1.9-4.9-1.9c-4,0-7.3,3.3-7.3,7.3
                       c0,1.6-0.1,3,0.1,4.2c-0.8,1.1-1.4,2.4-1.8,3.8c-0.8-0.6-1.9-1-3-1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0.4-3,1
                       c-0.4-1.4-1-2.6-1.8-3.8c0.2-1.2,0.1-2.6,0.1-4.2c0-4-3.3-7.3-7.3-7.3c-1.9,0-3.6,0.7-4.9,1.9c-0.9,0.8-2.6,3.1-3.7,5.2
@@ -44,10 +40,8 @@
                   </svg>
                   VISIBILITÉ
                 </button>
-
                 <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'beveragecooler'; key='lunch'" >
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
                   <path class="st0" d="M-215.9,383.1c0-2.1-7.9-2.1-8.3-2.1c-0.4,0-8.3,0.1-8.3,2.1c0,0.4,0.3,0.7,0.8,1l1.6,23.7
                     c0,0.8,2.6,1.5,5.9,1.5c3.3,0,5.9-0.7,5.9-1.5l1.7-23.7C-216.1,383.8-215.9,383.5-215.9,383.1z M-224.2,381.9c4.5,0,7.1,0.8,7.3,1.2
                     c-0.3,0.5-2.9,1.2-7.3,1.2c-4.5,0-7.1-0.8-7.3-1.2C-231.3,382.7-228.7,381.9-224.2,381.9z"/>
@@ -63,12 +57,8 @@
                   </svg>
                   VARIÉTÉ
                 </button>
-
-            </div>
-
+            </ion-col>
           </ion-row>
-
-
 
           <ion-row>
                 <div  [class.environment-view-cafeteria-lunch-value]="type === 'value'" [class.environment-view-cafeteria-lunch-visibility]="type === 'visibility'" [class.environment-view-cafeteria-lunch-variety]="type === 'variety'" class="shadow easing">
@@ -105,7 +95,7 @@
                       <div *ngIf="view === 'perfectparings-station'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Visibility_perfectparings.png" /></div>
                       <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_staffsuggestion.png" /></div>
                       <div *ngIf="view === 'staffsuggestion-station'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion-station'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_staffsuggestion.png" /></div>
-                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_innovationshowcase.png" /></div>
+                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
 
                     </div>
                   </div>
@@ -146,7 +136,6 @@
 
           </ion-row>
 
-
           <ion-row>
             <div class="insights shadow"><!-- key facts -->
               <h2>FAITS CLÉS :</h2>
@@ -154,27 +143,27 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li *ngIf="key === 'lunch'">Les 10 produits les plus populaires représentent 70 % des ventes de boissons en bouteilles pour emporter*</li>
-                          <li *ngIf="key === 'lunch'">PepsiCo dispose d'une solide gamme de produits composée de marques de boissons et d'aliments de premier ordre</li>
-                          <li *ngIf="key === 'cash'">Plus de la moitié des ventes de boissons et de collations salées sont attribuables aux achats spontanés.</li>
+                          <li *ngIf="key === 'lunch'">Poursuivre les zones de croissance… saveurs de boissons gazeuses en hausse de +1 %, boissons hydratantes en croissance combinée de 5 % au cours des 5 prochaines années.</li>
+                          <li *ngIf="key === 'lunch'">Accroître la fréquence d'achat et générer la croissance des collations salées avec les meilleurs marques au Canada.</li>
+                          <li *ngIf="key === 'cash'">Près de 40 % des achats de collations salées en portions individuelles sont des achats spontanés. Offrir une variété adéquate de produits permet de maximiser les ventes spontanées.</li>
                       </ol>
-                      <p *ngIf="key === 'lunch'">*(total de l'année 2015 – 591 mL et 547 mL)</p>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'visibility'">
                       <ol>
-                          <li *ngIf="key === 'lunch'">Le menu est le facteur unique principal qui permet d'accroître la fréquence des visites (52 %). Les photos appétissantes sont l'élément clé.</li>
-                          <li *ngIf="key === 'lunch'">Tirer profit de nos marques principales pour créer des paires parfaites.</li>
-                          <li *ngIf="key === 'cash'">Assurer une grande visibilité au point de vente permet d'accroître les ventes spontanées.</li>
+                          <li *ngIf="key === 'lunch'">Le menu est ce qui influence le plus les ventes sur les lieux - 64 % des consommateurs sont plus enclins à acheter un article s'il est sur les panneaux de menu.</li>
+                          <li *ngIf="key === 'lunch'">L'inclusion dans des combos est également un facteur de grande influence - tirez profit des paires parfaites.</li>
+                          <li *ngIf="key === 'cash'">Miser sur la spontanéité du consommateur en exécutant les supports de présentoir pour bouteilles et produits Frito près de la caisse afin de suggérer des ajouts et de générer des ventes.</li>
                       </ol>
                   </ion-list>
 
-
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
-                          <li>Une valeur avantageuse est un facteur qui permet d'accroître l'achalandage et la fréquence d'achat.</li>
-                          <li *ngIf="key === 'lunch'">Les combos, les innovations et les campagnes de marketing peuvent renforcer l'énoncé de valeur que vous proposez.</li>
-                          <li *ngIf="key === 'cash'">Les innovations offrent une valeur avantageuses pour les consommateurs et les suggestions des membres du personnel jouent un rôle important pour conclure la vente.</li>
+                          <li *ngIf="key === 'lunch'">Le dîner est le moment le plus achalandé dans les services alimentaires.</li>
+                          <li *ngIf="key === 'lunch'">Utilisez les combos, les innovations et les campagnes de marketing pour tirer profit de cette partie de la journée occupée et maximiser la valeur des ventes.</li>
+                          <li *ngIf="key === 'cash'">Miser sur la spontanéité du consommateur. L'exécution près de la caisse peut générer les ventes de combo et d'innovations.</li>
+
+
                       </ol>
                   </ion-list>
 
@@ -182,217 +171,300 @@
 
             </div><!-- key insights -->
 
-            <div class="shadow slider-section"><!-- image slider section -->
+            <div class="shadow slider-section" style="width: 498px; margin-left: 16px;"><!-- image slider section -->
                   <div [ngSwitch]="view">
 <!-- Variety -->
-                      <div class="beveragecooler" *ngSwitchCase="'beveragecooler'">
-                        <div class="slider-section-img" [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';">
+                      <div *ngSwitchCase="'beveragecooler'">
+                        <h3>Réfrigérateur de boissons :</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
+                                <li>Nos planogrammes spécifiques à ce segment permettent d'offrir les produits adéquats pour répondre aux besoins des consommateurs.</li>
+                                <li>Les planogrammes exécutés à 100 % permettent de générer des ventes et d'éviter les ruptures de stock.</li>
+                                <li>Les planogrammes complets sont accessibles dans Advantage.</li>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
+                                <li>PepsiCo offre une gamme de saveurs avantageuse pour favoriser la croissance.</li>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler_2.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                                <ul>
+                                  <li>Les eaux, thés, jus et boissons isotoniques connaîtront une croissance combinée de 5 % au cours des 5 prochaines années.</li>
+                                  <li>Le thé devrait connaître une croissance 3 fois plus grande par rapport aux boissons rafraîchissantes. - Éliminer les écarts de distribution liés à Pure Leaf.</li>
+                                </ul>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
+                      </div><!-- *ngSwitchCase beveragecooler -->
+
+                      <div *ngSwitchCase="'fritosnackrack'">
+                        <h3>Présentoir métallique de collations Frito :</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Frito Snack Rack - 1ft A.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                                <ul>
+                                  <li>Utilisez les bons présentoirs pour exécuter les planogrammes régionaux avec les collations répondant aux besoins du consommateur pour générer des ventes et éviter les ruptures de stock.</li>
+                                  <li>Les présentoirs métalliques peuvent être commandés dans MSO et les planogrammes sont accessibles dans Advantage.</li>
+                                </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/Cafeteria_Lunch_Frito_Snack_Rack.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                                <ul>
+                                  <li>Les grandes portions obtiennent une croissance 5 fois plus rapide vs la catégorie. TCAC 3 ans +113 %</li>
+                                  <li>Ce format génère un meilleur profit pour les détaillants.</li>
+                                  <li>Utiliser le présentoir métallique de 1 pi pour exécuter ce format près du régrigérateur à boissons s'il n'y a aucune distributrice.</li>
+                                </ul>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
+                      </div><!-- *ngSwitchCase fritosnackrack -->
+
+                      <div *ngSwitchCase="'galvanizedtub'">
+                        <h3>Les bacs en acier galvanisé :</h3>
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Cooler - Countertop Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - One-Door Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Cooler - PC8 PL.jpg" class="slide-image"></ion-slide>
+                            <ion-slide>
+                              <div class="slider-section-img">
+                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanized_Tub.png" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <ul>
+                                  <li>Gardez les boissons froides à portée de main dans les zones achalandées pour générer des ventes spontanées additionnelles.</li>
+                                  <li>Des bacs en acier galvanisé peuvent être commandés dans le portail MSO.</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+                            <ion-slide>
+                              <div class="slider-section-img">
+                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanized_Tub_Sabras.png" class="slide-image">
+                              </div>
+                              <div class="slider-section-copy">
+                                <ul>
+                                  <li>La catégorie des trempettes est en croissance de +12 %.</li>
+                                  <li>Développer les collations santé avec le guacamole et le houmous Sabra.</li>
+                                </ul>
+                              </div>
+                            </ion-slide>
+                          </ion-slides>
+
+                      </div><!-- *ngSwitchCase galvanizedtub -->
+
+                      <div *ngSwitchCase="'countertopsnackrack'">
+                        <h3>Présentoir métallique de comptoir pour les collations :</h3>
+                        <div class="slider-section-img">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/Slides/30011450_Lay's_Classic_66g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013134_Sun Chips_Harvest Cheddar_40g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013366_30013367_Cheetos_Crunchy_57g_DOM_IMP.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30013448_Miss Vickie's_Original_40g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/30048909_Oven Baked_Lay's_Original_66g.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/45g_Dor_Nacho.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
-                            <h2>Réfrigérateur de boissons :</h2>
                             <ul>
-                              <li>L'exécution complète des planogrammes permet d'assurer la disponibilité d'une variété adéquate de produits, ainsi que d'accroître les ventes et les achats récurrents.</li>
-                              <li>Les planogrammes complets sont accessibles dans l'outil Advantage.</li>
+                              <li>Miser sur la spontanéité en utilisant les présentoirs de comptoir pour collations pour générer des ventes lorsque les consommateurs attendent à la caisse.</li>
+                              <li>Les présentoirs de comptoir pour collations peuvent être commandés sur le portail MSO.</li>
                             </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase beveragecooler -->
-                      <div class="fritosnackrack" *ngSwitchCase="'fritosnackrack'">
-                        <div [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 1ft A.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 2ft A.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Frito Snack Rack - 3ft A.jpg" class="slide-image"></ion-slide>
-                          </ion-slides>
                         </div>
-                        <div style="float: left;width: 288px; height: 234px; text-align: left;">
-                          <h2>Présentoir métallique de collations Frito :</h2>
-                          <ul>
-                            <li>L'exécution complète des planogrammes permet d'assurer la disponibilité d'une variété adéquate de produits, ainsi que d'accroître les ventes et les achats récurrents.</li>
-                            <li>Les présentoirs de collations peuvent être commandés par le biais de l'outil MSO.</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase fritosnackrack -->
-                      <div class="galvanizedtub" *ngSwitchCase="'galvanizedtub'">
-                        <div [class.fade-in]="view === 'galvanizedtub'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Montellier Logo FR.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                          <div class="slider-section-copy">
-                            <h2>Les bacs en acier galvanisé :</h2>
-                            <ul>
-                              <li>Le bacs en acier galvanisé sont parfaits pour la présentation des articles réfrigérés sur le comptoir sans avoir besoin d'une source de courant.</li>
-                              <li>Les bacs en acier galvanisé peuvnet être commandés par le biais du portail MSO.</li>
-                            </ul>
-                          </div>
-                      </div><!-- *ngSwitchCase galvanizedtub -->
-                      <div class="countertopsnackrack" *ngSwitchCase="'countertopsnackrack'">
-                        <div [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Frito Countertop Rack - 2 shelf A.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Frito Countertop Rack - 3 shelf A.jpg" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                          <div style="float: left;width: 288px; height: 234px; text-align: left;">
-                            <h2>Présentoir métallique de comptoir pour les collations :</h2>
-                            <ul>
-                              <li>Les présentoirs métalliques de comptoir permettent de réaliser des ventes spontanées de collations avant que le consommateur ne passe à la caisse.</li>
-                              <li>Les présentoirs métalliques de comptoir pour les collations peuvent être commandés par le biais du portail MSO.</li>
-                            </ul>
-                          </div>
                       </div><!-- *ngSwitchCase countertopsnackrack -->
 
 <!-- Visibility -->
-                      <div class="perfectparings" *ngSwitchCase="'perfectparings'" >
-                        <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairing - Drop in Inserts - Acrylic Large.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) A.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) B.jpg" class="slide-image shadow"></ion-slide>
-                          </ion-slides>
+                      <div *ngSwitchCase="'perfectparings'" >
+                      <h3>Les paires parfaites :</h3>
+                        <div class="slider-section-img">
+                            <img src="assets/img/Slides/17633 LG IN1 PEPSICO 3V IMAGE-01.jpg" class="slide-image shadow">
                         </div>
-                        <div style="float: left;width: 288px; height: 234px; text-align: left;">
-                          <h2>Les paires parfaites :</h2>
+                        <div class="slider-section-copy">
                           <ul>
-                            <li>La présence de matériel de promotion sur les paires suggérées d'aliments et de boissons dans les lieux à haute visibilité permet d'orienter les choix du consommateur lorsqu'il se prépare à commander son repas.</li>
-                            <li>Les affiches en chevalet et les encarts (pour socles en acrylique) sur les paires parfaites peuvent être commandés par le biais de l'outil MSO.</li>
+                            <li>Tirer profit de la variété de la gamme pour offrir la boisson adéquate avec le bon repas sur votre menu afin d'étendre la portée.</li>
+                            <li>Tirer profit des +100 nouvelles images de boissons et repas dans la galerie d'images de PepsiCo.</li>
+                            <li>Les supports en acrylique peuvent être commandés dans le portail MSO.</li>
                           </ul>
                         </div>
                       </div> <!-- *ngSwitchCase="'perfectparings -->
-                      <div class="perfectparings" *ngSwitchCase="'perfectparings-station'" >
-                        <div [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+
+                      <div *ngSwitchCase="'perfectparings-station'" >
+                        <h3>Les paires parfaites :</h3>
+                        <ion-slides pager="true">
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/IMG_0467.png" class="slide-image">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
+                                <li>Garder les boissons à portée de main dans les zones achalandées pour générer des ventes spontanées additionnelles.</li>
+                                <li>Les supports de comptoir pour bouteilles sont fournis par l'équipe des ventes en fonction des stocks ou sur commande spéciale.</li>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                          <ion-slide>
+                            <div class="slider-section-img">
+                              <img src="assets/img/Slides/17633 LG IN1 PEPSICO 3V IMAGE-01.jpg" class="slide-image shadow">
+                            </div>
+                            <div class="slider-section-copy">
+                              <ul>
+                                <li>Suggérer des boissons et collations avec les plats principaux crée un complément attirant pour le repas du consommateur et accroît les ventes.</li>
+                                <li>Tirer profit des +100 nouvelles images de notre galerie.</li>
+                                <li>Les supports en acrylique peuvent être commandés auprès de nos fournisseurs privilégiés.</li>
+                              </ul>
+                            </div>
+                          </ion-slide>
+                        </ion-slides>
+                      </div> <!-- *ngSwitchCase="'perfectparings-station -->
+
+                      <div *ngSwitchCase="'menuboards'">
+                        <h3>Les panneaux de menu :</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairing - Drop in Inserts - Acrylic Large.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) A.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairing (Easelback or Drop in) B.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCo 7Up Lemon Lemon Original 355 mL W_Glass FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Pepsi_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass BriskIceTea_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass MountainDew_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Dr_Pepper_02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCo Trop TPP Original No Pulp 355mL Strt W_Glass Straw.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
-                        <div style="float: left;width: 288px; height: 234px; text-align: left;">
-                          <h2>Les paires parfaites :</h2>
-                          <ul>
-                            <li>La présence de matériel de promotion sur les paires suggérées d'aliments et de boissons dans les lieux à haute visibilité permet d'orienter les choix du consommateur lorsqu'il se prépare à commander son repas.</li>
-                            <li>Les affiches en chevalet et les encarts (pour socles en acrylique) sur les paires parfaites peuvent être commandés par le biais de l'outil MSO.</li>
-                          </ul>
-                        </div>
-                      </div> <!-- *ngSwitchCase="'perfectparings-station -->
-                      <div class="menuboards" *ngSwitchCase="'menuboards'">
-                            <div style="position:relative; float: left; width: 200px; height: 234px;"><img  [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" src="assets/img/Slides/Menu Board - Pepsi example.jpg" class="slide-image"></div>
-                            <div style="float: left;width: 288px; height: 234px; text-align: left;">
-                              <h2>Les panneaux de menu :</h2>
+                        <div class="slider-section-copy">
                               <ul>
-                                <li>La présence sur le panneau du menu joue un rôle essentiel pour accroître les ventes et les achats supplémentaires.</li>
-                                <li>Tirer profit des éléments numériques mis à votre disposition dans l'outil Advantage et dans la galerie d'images de PepsiCo pour les images du panneau de menu.</li>
+                                <li>Suggérer des boissons et collations avec les plats principaux crée un complément attirant pour le repas du consommateur et accroît les ventes.</li>
+                                <li>Tirer profit des +100 nouvelles images de notre galerie. Les supports en acrylique peuvent être commandés auprès de nos fournisseurs privilégiés.</li>
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase menuboards -->
-                      <div class="galvanizedtubcling" *ngSwitchCase="'galvanizedtubcling'">
-                        <div [class.fade-in]="view === 'galvanizedtubcling'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+
+                      <div *ngSwitchCase="'galvanizedtubcling'">
+                        <h3>Électrostatiques pour bacs en acier galvanisé :</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Montellier Logo FR.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Tropicana Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Naked Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Logo.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Logo.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf Logo.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed FRE.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed FRE.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappuccino 281 mL FRE.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/CAN_GrabnGo_Guacamole.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/CAN_HummusToGo_RedPepper.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
-                            <h2>Électrostatiques pour bacs en acier galvanisé :</h2>
                             <ul>
-                              <li>Il est important de placer les électrostatiques adéquats sur les bacs en acier galvanisé pour attirer l'attention des consommateurs.</li>
-                              <li>Une variété d'électrostatiques de marque sera fournie avec les bacs en acier galvanisé par le biais de l'outil MSO.</li>
+                              <li>Placez l'électrostatique de la marque appropriée sur le bac en acier galvanisé pour attirer l'attention du consommateur et promouvoir les produits pour le dîner.</li>
+                              <li>Une variété d'électrostatiques de marque sont fournis avec les bacs lorsqu'ils sont commandés dans le portail MSO.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase galvanizedtubcling -->
 
-
 <!-- Value -->
-                      <div class="innovationwindow" *ngSwitchCase="'innovationwindow'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/ENG Bev Cling.png" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>L'électrostatique pour fenêtre présentant les innovations :</h2>
-                            <ul>
-                              <li>L'électrostatique pour fenêtre présentant les innovations peut servir à mettre l'accent sur les trois cases de présentation réservées aux innovations dans nos réfrigérateurs afin de favoriser l'essai.</li>
-                              <li>Les électrostatiques pour fenêtre présentant les innovations peuvent être commandés par le biais du portail MSO.</li>
-                            </ul>
-                          </div>
+                      <div *ngSwitchCase="'innovationwindow'">
+                        <h3>L'électrostatique pour fenêtre présentant les innovations :</h3>
+                        <div class="slider-section-img">
+                          <img src="assets/img/Slides/ENG Bev Cling.png" class="slide-image">
+                        </div>
+                        <div class="slider-section-copy">
+                          <ul>
+                            <li>Le rôle des innovations est de générer des ventes supplémentaires. Utilisez l'électrostatique pour fenêtre pour présenter les innovations, générer des ventes spontanées et favoriser l'essai.</li>
+                            <li>Les électrostatiques pour fenêtre présentant les innovations peuvent être commandés dans le portail MSO.</li>
+                          </ul>
+                        </div>
                       </div><!-- *ngSwitchCase innovationwindow -->
-                      <div class="marketingprogram" *ngSwitchCase="'marketingprogram'">
-                        <div [class.fade-in]="view === 'marketingprogram'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+
+                      <div *ngSwitchCase="'marketingprogram'">
+                        <h3>Les campagnes de marketing :</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Marketing Window - Sports A FR.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Marketing Window - Sports B FR.jpg" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Marketing Window - Sports C FR.jpg" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
-                          <div class="slider-section-copy">
-                            <h2>Les campagnes de marketing :</h2>
-                            <ul>
-                              <li>Plusieurs milieux de travail, collèges et universités participent à des initiatives de marketing saisonnières ou annuelles qui permettent d'accroître l'achalandage et la fréquence d'achat.</li>
-                              <li>Le matériel de promotion des campagnes de marketing peut être commandé par le biais de l'outil MSO.</li>
-                            </ul>
-                          </div>
+                        <div class="slider-section-copy">
+                          <ul>
+                            <li>Plusieurs commerces en milieu de travail, ainsi que dans les collèges et les universités participent à des campagnes de marketing saisonnières ou annuelles qui créent un engouement et génèrent des ventes de collations et de boissons.</li>
+                            <li>Créer des outils attrayants avec le budget marketing du client.</li>
+                          </ul>
+                        </div>
                       </div><!-- *ngSwitchCase innovationwindow -->
-                      <div class="snackracktopper" *ngSwitchCase="'snackracktopper'">
-                        <div [class.fade-in]="view === 'snackracktopper'" onload="this.style.opacity='1';" style="position:relative; float: left; width: 200px; height: 234px;">
+
+                      <div *ngSwitchCase="'snackracktopper'">
+                        <h3>Surmontoir pour présentoir métallique de  collations Frito - Texte sur les nouveautés :</h3>
+                        <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairings - Pepsi and Lays FR.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Perfect Pairings - AF and Lays FR.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
-                          <h2>Surmontoir pour présentoir métallique de  collations Frito - Texte sur les nouveautés :</h2>
                           <ul>
-                            <li>Mettre l'accent sur les nouveaux produits ou les nouvelles campagnes de marketing au moyen de surmontoirs de présentoirs d'expédition métalliques pour collations peut contribuer à favoriser l'essai auprès des consommateurs.</li>
-                            <li>Les surmontoirs de présentoirs d'expédition métalliques pour collations peuvent être commandés par le biais du portail MSO.</li>
+                            <li>Utilisez les surmontoirs pour présentoir métallique de collations afin de promouvoir les accompagnements ou les campagnes de marketing offrant une valeur ajoutée et d'accroître les ventes XXX.</li>
+                            <li>Les surmontoirs pour présentoir métallique de collations peuvent être commandés dans le portail MSO.</li>
                           </ul>
                         </div>
                       </div><!-- *ngSwitchCase snackracktopper -->
-                      <div class="staffsuggestion" *ngSwitchCase="'staffsuggestion'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>Suggestions des membres du personnel :</h2>
-                            <ul>
-                              <li>Les membres du personnel sont en position d'influence lorsque les consommateurs soumettent leur commande et leurs suggestions sont grandement appréciées.</li>
-                              <li>Utilisez les soldes distribués liés aux campagnes refusées pour mettre en place de nouvelles campagnes et du nouveau matériel permettant aux membres du personnel de suggérer des produits au point de vente.</li>
-                            </ul>
-                          </div>
+
+                      <div *ngSwitchCase="'staffsuggestion'">
+                        <h3>Suggestions des membres du personnel :</h3>
+                        <div class="slider-section-img">
+                          <img src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image">
+                        </div>
+                        <div class="slider-section-copy">
+                          <ul>
+                            <li>38 % des consommateurs choisissent en fonction des suggestions du serveur.</li>
+                            <li>Développez des campagnes et du matériel à l'intention des membres du personnel pour encourager tous les consommateurs à ajouter les boissons et les collations à leur repas.</li>
+                          </ul>
+                        </div>
                       </div><!-- *ngSwitchCase staffsuggestion -->
-                      <div class="staffsuggestion" *ngSwitchCase="'staffsuggestion-station'">
+
+                      <div *ngSwitchCase="'staffsuggestion-station'">
+                        <h3>Suggestions des membres du personnel :</h3>
                           <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion-station'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
                           <div class="slider-section-copy">
-                            <h2>Suggestions des membres du personnel :</h2>
                             <ul>
                               <li>Les membres du personnel sont en position d'influence lorsque les consommateurs soumettent leur commande et leurs suggestions sont grandement appréciées.</li>
                               <li>Utilisez les soldes distribués liés aux campagnes refusées pour mettre en place de nouvelles campagnes et du nouveau matériel permettant aux membres du personnel de suggérer des produits au point de vente.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase staffsuggestion-station -->
-                      <div class="innovationshowcase" *ngSwitchCase="'innovationshowcase'">
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/Innovation Showcase - MSV Harvest Cheddar and Herbs FR.png" class="slide-image"></div>
-                          <div class="slider-section-copy">
-                            <h2>Matériel de présentation des innovations :</h2>
-                            <ul>
-                              <li>Des étalages accrocheurs peuvent susciter un engouement à propos du lancement de nouveaux produits qui favorisent la hausse de l'achalandage et de la fréquence d'achat.</li>
-                              <li>Les présentoirs de type « Weekender » et les présentoirs métalliques peuvent être commandés par le biais du portail MSO.</li>
-                            </ul>
-                          </div>
+
+                      <div *ngSwitchCase="'innovationshowcase'">
+                        <h3>Matériel de présentation des innovations :</h3>
+                        <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/FS18018_P3_MSV_Sweet_Southern_BBQ_Render_ENG_P1.png" class="slide-image"></div>
+                        <div class="slider-section-copy">
+                          <ul>
+                            <li>Favoriser l'essai : la clé pour générer plus de ventes avec les innovations.</li>
+                            <li>Des présentoirs dans les zones achalandées près de la caisse  favorisent les nouveautés et l'essai pour le consommateur sur place et de repas à emporter.</li>
+                            <li>Les présentoirs « Weekenders » et métalliques se commandent dans MSO.</li>
+                          </ul>
+                        </div>
                       </div><!-- *ngSwitchCase innovationwindow -->
+
                   </div> <!-- [ngSwitch]="view" -->
             </div>
           </ion-row>
         </div>
 
     </ion-row>
-</div>
+</ion-grid>
