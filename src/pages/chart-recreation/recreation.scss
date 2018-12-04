@@ -1,0 +1,102 @@
+.recreation-page {
+
+.btn-bullseye {position: absolute; z-index: 2;}
+
+.btgcling {left: 395px; top: 320px;}
+.hydrationmarketingposter {left: 330px; top: 280px;}
+.innovationwindow {left: 610px; top: 275px;}
+.staffsuggestion {left: 540px; top: 310px;}
+
+.beveragecooler {left: 690px; top: 280px;}
+.beveragevendor {left: 275px; top: 270px;}
+.countertopsnackrack {left: 745px; top: 345px;}
+.fountain {left: 440px; top: 330px;}
+
+.brandedbanner {left: 550px; top: 370px;}
+.featurechalkboard {left: 400px; top: 210px;}
+.menuboards {left: 597px; top: 147px;}
+.perfectparings {left: 445px; top: 325px;}
+
+
+
+.slider-section-copy ul,
+.slider-section-copy p {
+    line-height: 1.1em;
+    font-size: .9em;
+}
+
+
+
+background-color: $pepsico-lightblueoffwhite;
+
+/* Environment views section */
+
+.environment-view-recreation-int-value {width:900px;}
+.environment-view-recreation-ext-value {width: 0px; margin-left:0;}
+.environment-view-recreation-int-visibility {width:900px;}
+.environment-view-recreation-ext-visibility {width: 0px; margin-left:0;}
+.environment-view-recreation-int-variety {width:900px;}
+.environment-view-recreation-ext-variety {width: 0px; margin-left:0;}
+
+.imgHolder-recreation-int-value,
+.imgHolder-recreation-int-visibility,
+.imgHolder-recreation-int-variety,
+.imgHolder-recreation-ext-value,
+.imgHolder-recreation-ext-visibility,
+.imgHolder-recreation-ext-variety {
+    overflow:hidden;
+    height:354px;
+    position:relative;
+    }
+
+.imgHolder-recreation-int-value, .imgHolder-recreation-int-variety {width:900px;}
+.imgHolder-recreation-ext-value, .imgHolder-recreation-ext-visibility, .imgHolder-recreation-ext-variety {width:0px;}
+
+.imgHolder-recreation-int-visibility {width:785px;}
+
+
+.recreation-int-value,
+.recreation-ext-value,
+.recreation-int-visibility,
+.recreation-ext-visibility,
+.recreation-int-variety,
+.recreation-ext-variety {
+    height:354px;
+    display:block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    }
+
+.recreation-int-value img,
+.recreation-ext-value img,
+.recreation-int-visibility img,
+.recreation-ext-visibility img,
+.recreation-int-variety img,
+.recreation-ext-variety img {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    }
+
+
+.staffsuggestion .slider-section-copy ul {
+    margin-top: 20px;
+
+  }
+
+
+/* Value */
+.innovationwindow ul {line-height: 1.3em;font-size: .9em; padding-top:50px;}
+
+
+/* Variety */
+
+
+/* Visibility */
+
+}
+
+

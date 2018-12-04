@@ -22,6 +22,13 @@ import { CafeteriaBreakfastFRPage } from '../pages/cafeteria-breakfast-FR/cafete
 import { CafeteriaLunchFRPage } from '../pages/cafeteria-lunch-FR/cafeteria-lunch-FR';
 import { CalculatorFRPage } from '../pages/calculator-FR/calculator-FR';
 
+import { CHARTOverviewPage } from '../pages/chart-overview/overview';
+import { CHARTQsrRestaurantPage } from '../pages/chart-qsr-restaurant/qsr-restaurant';
+import { CHARTRecreationPage } from '../pages/chart-recreation/recreation';
+import { CHARTCasualPage } from '../pages/chart-casual/casual';
+import { CHARTCafeteriaBreakfastPage } from '../pages/chart-cafeteria-breakfast/cafeteria-breakfast';
+import { CHARTCafeteriaLunchPage } from '../pages/chart-cafeteria-lunch/cafeteria-lunch';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -59,7 +66,14 @@ export class MyApp {
       { title: 'Secteur des restaurants décontractés', component: CasualFRPage },
       { title: 'Restauration rapide', component: QsrRestaurantFRPage },
       { title: 'Secteur récréatif', component: RecreationFRPage },
-      { title: 'Calculator FR', component: CalculatorFRPage }
+      { title: 'Calculator FR', component: CalculatorFRPage },
+
+      { title: 'CHART Overview', component: CHARTOverviewPage },
+      { title: 'CHART Cafeteria Breakfast', component: CHARTCafeteriaBreakfastPage },
+      { title: 'CHART Cafeteria Lunch', component: CHARTCafeteriaLunchPage },
+      { title: 'CHART Casual', component: CHARTCasualPage },
+      { title: 'CHART QSR', component: CHARTQsrRestaurantPage },
+      { title: 'CHART Recreation', component: CHARTRecreationPage }
 
     ];
   }
