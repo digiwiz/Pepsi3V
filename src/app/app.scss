@@ -271,7 +271,10 @@ ion-list.list-md {
 .btn_visibility.active .st1 {fill:white;}
 
 
-button.segment-button {
+
+
+button.segment-button,
+button.segment-chart-button {
     float: right;
     height:32px;
     margin-top:32px;
@@ -291,10 +294,16 @@ button.segment-button svg {
   width:32px;
   padding-right:8px;
   }
-button.segment-button.active {
+button.segment-button.active,
+button.segment-chart-button.active {
     color: white;
     background-color: $pepsico-brightblue;
     }
+
+button.segment-chart-button {
+    width:32px;
+}
+
 
 .hotspot {
     background-color: white;
@@ -571,6 +580,6 @@ $menu-ios-box-shadow:            0 0 10px $menu-ios-box-shadow-color !default;
     border-top:0;
 }
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:200px;
+    height:500px;
 //    border:1px solid #542437;
 }
