@@ -93,12 +93,8 @@
               </div><!-- ngSwitchCase visibility -->
 
               <div *ngSwitchCase="'a'">
-                      <button [class.active]="view === 'beveragecooler'" class="btn-bullseye beveragecooler" title=""  (click)="view = 'beveragecooler'; key='lunch'">
-                        <object type="image/svg+xml" data="assets/svg/bullseye.svg"></object>
-                      </button>
-                      <button [class.active]="view === 'fritosnackrack'" class="btn-bullseye fritosnackrack" title="" (click)="view = 'fritosnackrack'; key='lunch'">
-                        <object type="image/svg+xml" data="assets/svg/bullseye.svg"></object>
-                      </button>
+                      <button [class.active]="view === 'beveragecooler'" class="btn-bullseye beveragecooler" title=""  (click)="view = 'beveragecooler'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'fritosnackrack'" class="btn-bullseye fritosnackrack" title="" (click)="view = 'fritosnackrack'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'galvanizedtub'" class="btn-bullseye galvanizedtub" title=""  (click)="view = 'galvanizedtub'; key='lunch';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'countertopsnackrack'" class="btn-bullseye countertopsnackrack" title=""  (click)="view = 'countertopsnackrack'; key='cash'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
 

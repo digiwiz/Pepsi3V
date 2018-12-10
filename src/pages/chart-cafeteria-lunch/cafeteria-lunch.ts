@@ -11,5 +11,4 @@ export class CHARTCafeteriaLunchPage {
   public view = "beveragecooler";
   public type = "variety";
   public key = "lunch";
-
 }
