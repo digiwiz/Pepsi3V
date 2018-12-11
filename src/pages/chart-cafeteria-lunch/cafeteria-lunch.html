@@ -1,4 +1,4 @@
-<ion-grid class="cafeteria-lunch-page"><!-- side menu -->
+<ion-grid class="chart-cafeteria-lunch-page"><!-- side menu -->
     <ion-row>
         <div class="shadow" style="width:72px; height:768px; margin-right: 32px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
@@ -32,10 +32,10 @@
           </ion-row>
 
           <ion-row>
-                <div  [class.environment-view-cafeteria-lunch-value]="type === 't'" [class.environment-view-cafeteria-lunch-visibility]="type === 'r'" [class.environment-view-cafeteria-lunch-variety]="type === 'a'" class="shadow easing">
-                  <div [class.imgHolder-cafeteria-lunch-value]="type === '  t'" [class.imgHolder-cafeteria-lunch-visibility]="type === 'r'" [class.imgHolder-cafeteria-lunch-variety]="type === 'a'" class="easing" >
-                    <div [class.cafeteria-lunch-value]="type === 't'" [class.cafeteria-lunch-visibility]="type === 'r'" [class.cafeteria-lunch-variety]="type === 'a'" class="easing" >
-                      <img src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch.png" />
+                <div  [class.environment-view-cafeteria-lunch-trade]="type === 't'" [class.environment-view-cafeteria-lunch-right]="type === 'r'" [class.environment-view-cafeteria-lunch-accelerate]="type === 'a'" class="shadow easing">
+                  <div [class.imgHolder-cafeteria-lunch-trade]="type === '  t'" [class.imgHolder-cafeteria-lunch-right]="type === 'r'" [class.imgHolder-cafeteria-lunch-accelerate]="type === 'a'" class="easing" >
+                    <div [class.cafeteria-lunch-trade]="type === 't'" [class.cafeteria-lunch-right]="type === 'r'" [class.cafeteria-lunch-accelerate]="type === 'a'" class="easing" >
+                      <img src="assets/img/CHART/Cafeteria_Lunch/CHART_Cafeteria_Lunch.jpg" />
 
                       <div *ngIf="view === 'beveragecooler'" style="z-index:1;"><img [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
                       <div *ngIf="view === 'fritosnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
@@ -56,23 +56,6 @@
                   </div>
                   <div class="title-box">CAFETERIA LUNCH</div>
                 </div>
-                <div  [class.environment-view-cafeteria-station-value]="type === 't'" [class.environment-view-cafeteria-station-visibility]="type === 'r'" [class.environment-view-cafeteria-station-variety]="type === 'a'" class="shadow easing">
-                  <div [class.imgHolder-cafeteria-station-value]="type === 't'" [class.imgHolder-cafeteria-station-visibility]="type === 'r'" [class.imgHolder-cafeteria-station-variety]="type === 'a'" class="easing" >
-                    <div [class.cafeteria-station-value]="type === 't'" [class.cafeteria-station-visibility]="type === 'r'" [class.cafeteria-station-variety]="type === 'a'" class="easing" >
-                      <img src="assets/img/Cafeteria_Lunch/Cafeteria_Station.png" />
-
-                      <div *ngIf="view === 'countertopsnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Variety_countertopsnackrack.png" /></div>
-                      <div *ngIf="view === 'perfectparings'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Visibility_perfectparings.png" /></div>
-                      <div *ngIf="view === 'perfectparings-station'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Visibility_perfectparings.png" /></div>
-                      <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_staffsuggestion.png" /></div>
-                      <div *ngIf="view === 'staffsuggestion-station'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion-station'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Station_Value_staffsuggestion.png" /></div>
-                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
-
-                    </div>
-                  </div>
-                  <div class="title-box">CASH AREA</div>
-                </div>
-
 
 
             <div [ngSwitch]="type">
@@ -138,6 +121,23 @@
 
                       </ol>
                   </ion-list>
+
+                 <ion-list *ngSwitchCase="'h'">
+                      <ol>
+                          <li *ngIf="key === 'lunch'">Menu is the single most important driver of on premise sales - 64% of consumers are more likely to make a purchase if it's on the menu boards</li>
+                          <li *ngIf="key === 'lunch'">Inclusion in combos is also very influential - leverage Perfect Pairings</li>
+                          <li *ngIf="key === 'cash'">Capitalize on consumer impulsivity by executing countertop bottle and Frito stand in the cash zone to suggest add-ons and maximize sales</li>
+                      </ol>
+                  </ion-list>
+
+                  <ion-list *ngSwitchCase="'c'">
+                      <ol>
+                          <li *ngIf="key === 'lunch'">Menu is the single most important driver of on premise sales - 64% of consumers are more likely to make a purchase if it's on the menu boards</li>
+                          <li *ngIf="key === 'lunch'">Inclusion in combos is also very influential - leverage Perfect Pairings</li>
+                          <li *ngIf="key === 'cash'">Capitalize on consumer impulsivity by executing countertop bottle and Frito stand in the cash zone to suggest add-ons and maximize sales</li>
+                      </ol>
+                  </ion-list>
+
 
               </div> <!--[ngSwitch]= type for key facts -->
 

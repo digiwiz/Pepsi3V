@@ -1,4 +1,4 @@
-.cafeteria-lunch-page {
+.chart-cafeteria-lunch-page {
 
 background-color: $pepsico-lightblueoffwhite;
 
@@ -17,62 +17,56 @@ background-color: $pepsico-lightblueoffwhite;
 .innovationshowcase {left: 765px; top: 260px;}
 .countertopsnackrack {left: 866px; top: 186px;}
 
+.environment-view-cafeteria-lunch-core,
+.environment-view-cafeteria-lunch-healthy,
+.environment-view-cafeteria-lunch-accelerate,
+.environment-view-cafeteria-lunch-right,
+.environment-view-cafeteria-lunch-trade {
+  width:882px;
+  }
 
+.imgHolder-cafeteria-lunch-core,
+.imgHolder-cafeteria-lunch-healthy,
+.imgHolder-cafeteria-lunch-accelerate,
+.imgHolder-cafeteria-lunch-right,
+.imgHolder-cafeteria-lunch-trade {
+  overflow:hidden;
+  height:354px;
+  position:relative;
+  }
 
-.environment-view-cafeteria-lunch-value {width:508px;}
-.environment-view-cafeteria-station-value {width: 360px; margin-left:16px;}
-.environment-view-cafeteria-lunch-visibility {width:508px;}
-.environment-view-cafeteria-station-visibility {width: 360px; margin-left:16px;}
-.environment-view-cafeteria-lunch-variety {width:508px;}
-.environment-view-cafeteria-station-variety {width: 360px; margin-left:16px;}
+.imgHolder-cafeteria-lunch-core,
+.imgHolder-cafeteria-lunch-healthy,
+.imgHolder-cafeteria-lunch-accelerate,
+.imgHolder-cafeteria-lunch-right,
+.imgHolder-cafeteria-lunch-trade {
+  width:900px;
+  }
 
+.cafeteria-lunch-core,
+.cafeteria-lunch-healthy,
+.cafeteria-lunch-accelerate,
+.cafeteria-lunch-right,
+.cafeteria-lunch-trade {
+  height:354px;
+  width:900px;
+  display:block;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+  }
 
-.imgHolder-cafeteria-lunch-value,
-.imgHolder-cafeteria-lunch-visibility,
-.imgHolder-cafeteria-lunch-variety,
-.imgHolder-cafeteria-station-value,
-.imgHolder-cafeteria-station-visibility,
-.imgHolder-cafeteria-station-variety {
-    overflow:hidden;
-    height:354px;
-    position:relative;
-    }
-
-.imgHolder-cafeteria-lunch-value, .imgHolder-cafeteria-lunch-visibility, .imgHolder-cafeteria-lunch-variety {width:508px;}
-.imgHolder-cafeteria-station-value, .imgHolder-cafeteria-station-visibility, .imgHolder-cafeteria-station-variety {width:360px;}
-
-.cafeteria-lunch-value,
-.cafeteria-station-value,
-.cafeteria-lunch-visibility,
-.cafeteria-station-visibility,
-.cafeteria-lunch-variety,
-.cafeteria-station-variety {
-    height:354px;
-    display:block;
-    position:relative;
-    z-index:1;
-    overflow:hidden;
-    }
-
-
-.cafeteria-lunch-value {left: -100px; width:777px; height:400px;}
-.cafeteria-station-value {left: -50px; width:777px; height:400px;}
-.cafeteria-lunch-visibility, .cafeteria-lunch-variety {left: -200px; width:777px; height:400px;}
-.cafeteria-station-visibility, .cafeteria-station-variety {left: -200px; width:777px; height:400px;}
-
-
-.cafeteria-lunch-value img,
-.cafeteria-station-value img,
-.cafeteria-lunch-visibility img,
-.cafeteria-station-visibility img,
-.cafeteria-lunch-variety img,
-.cafeteria-station-variety img {
-    z-index:2;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    }
+.cafeteria-lunch-core img,
+.cafeteria-lunch-healthy img,
+.cafeteria-lunch-accelerate img,
+.cafeteria-lunch-right img,
+.cafeteria-lunch-trade img {
+  z-index:2;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  }
 
 }
 
