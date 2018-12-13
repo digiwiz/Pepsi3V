@@ -29,8 +29,9 @@
                       <div *ngIf="view === 'core-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'core-beverage'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
                       <div *ngIf="view === 'core-food'" style="z-index:1;"><img [class.fade-in]="view === 'core-food'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
 
-                      <div *ngIf="view === 'healthy-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'core-beverage'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
-                      <div *ngIf="view === 'healthy-food'" style="z-index:1;"><img [class.fade-in]="view === 'core-food'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
+                      <div *ngIf="view === 'healthy-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-beverage'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
+                      <div *ngIf="view === 'healthy-beverage-2'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-beverage-2'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
+                      <div *ngIf="view === 'healthy-food'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-food'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
 
 
                       <div *ngIf="view === 'snackracktopper'" style="z-index:1;"><img [class.fade-in]="view === 'snackracktopper'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Value_snackracktopper.png" /></div>
@@ -77,7 +78,7 @@
               <div *ngSwitchCase="'h'">
                       <button [class.active]="view === 'healthy-beverage'" class="btn-bullseye healthy-beverage" title=""  (click)="view = 'healthy-beverage'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'healthy-food'" class="btn-bullseye healthy-food" title="" (click)="view = 'healthy-food'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'healthy-beverage-galvanizedtub'" class="btn-bullseye healthy-beverage-galvanizedtub" title=""  (click)="view = 'healthy-beverage-galvanizedtub'; key='lunch';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'healthy-beverage-2'" class="btn-bullseye healthy-beverage-2" title=""  (click)="view = 'healthy-beverage-2'; key='lunch';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase h -->
 
               <div *ngSwitchCase="'c'">
@@ -133,8 +134,8 @@
                         <h3>Beverage</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/CHART/Slides/Core_CSD_group.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/CHART/Slides/Core_Pepsi_Cooler.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/C/CSD_Group_Shot.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/C/Pepsi Cooler CD12-HC.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -149,12 +150,7 @@
                         <h3>Food</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/30011450_Lay's_Classic_66g.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/30013134_Sun Chips_Harvest Cheddar_40g.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/30013366_30013367_Cheetos_Crunchy_57g_DOM_IMP.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/30013448_Miss Vickie's_Original_40g.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/30048909_Oven Baked_Lay's_Original_66g.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/45g_Dor_Nacho.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/C/LSS Rack 2 ft Ontario.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -170,22 +166,35 @@
                         <h3>Beverage</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/CHART/Slides/Healthy_AQ_Floor.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/H/FS19003 Aquafina_BlueRack_3Qtr_Render.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                             <ul>
                                 <li>Place ambient floor racks either at entrance or within 5ft of cash and use counter units at cash for impulse purchases</li>
-                                <li>Leverage open air cooler or galvanized tubs for Trop, Naked and Kevita</li>
                             </ul>
                         </div>
                       </div><!-- *ngSwitchCase healthy-beverage -->
+
+                      <div *ngSwitchCase="'healthy-beverage-2'">
+                        <h3>Beverage</h3>
+                        <div class="slider-section-img">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/H/ NAKED BOTTLES GROUP FPO " class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
+                        <div class="slider-section-copy">
+                            <ul>
+                                <li>Leverage open air cooler or galvanized tubs for Trop, Naked and Kevita</li>
+                            </ul>
+                        </div>
+                      </div><!-- *ngSwitchCase healthy-beverage-2 -->
 
                       <div *ngSwitchCase="'healthy-food'">
                         <h3>Food</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/H/ww3524 - Hello Goodness NC Display Plano Change.jpg" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
