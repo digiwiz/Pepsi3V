@@ -26,12 +26,15 @@
                     <div [class.cafeteria-lunch-trade]="type === 't'" [class.cafeteria-lunch-right]="type === 'r'" [class.cafeteria-lunch-accelerate]="type === 'a'" [class.cafeteria-lunch-healthy]="type === 'h'" [class.cafeteria-lunch-core]="type === 'c'" class="easing" >
                       <img src="assets/img/CHART/Cafeteria_Lunch/CHART_Cafeteria_Lunch.jpg" />
 
-                      <div *ngIf="view === 'core-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'core-beverage'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
+                      <div *ngIf="view === 'core-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'core-beverage'" onload="this.style.opacity='1';" src="assets/img/CHART/Cafeteria_Lunch/C/CafeteriaLunch_1C_01.png" /></div>
                       <div *ngIf="view === 'core-food'" style="z-index:1;"><img [class.fade-in]="view === 'core-food'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
 
                       <div *ngIf="view === 'healthy-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-beverage'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
-                      <div *ngIf="view === 'healthy-beverage-2'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-beverage-2'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
+                      <div *ngIf="view === 'healthy-beverage-2'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-beverage-2'" onload="this.style.opacity='1';" src="assets/img/CHART/Cafeteria_Lunch/H/CafeteriaBreakfast_2H_03.png" /></div>
                       <div *ngIf="view === 'healthy-food'" style="z-index:1;"><img [class.fade-in]="view === 'healthy-food'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
+
+                      <div *ngIf="view === 'right-beverage'" style="z-index:1;"><img [class.fade-in]="view === 'core-food'" onload="this.style.opacity='1';" src="assets/img/CHART/Cafeteria_Lunch/R/CafeteriaLunch_4R_01.png" /></div>
+
 
 
                       <div *ngIf="view === 'snackracktopper'" style="z-index:1;"><img [class.fade-in]="view === 'snackracktopper'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Value_snackracktopper.png" /></div>
@@ -62,6 +65,9 @@
               </div><!-- ngSwitchCase t -->
 
               <div *ngSwitchCase="'r'">
+                      <button [class.active]="view === 'right-beverage'" class="btn-bullseye right-beverage" title=""  (click)="view = 'right-beverage'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+
+
                       <button [class.active]="view === 'galvanizedtubcling'" class="btn-bullseye galvanizedtubcling" title="" (click)="view = 'galvanizedtubcling'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'menuboards'" class="btn-bullseye menuboards" title="" (click)="view = 'menuboards'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'perfectparings'" class="btn-bullseye perfectparings" title="" (click)="view = 'perfectparings'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
@@ -180,7 +186,7 @@
                         <h3>Beverage</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/H/ NAKED BOTTLES GROUP FPO " class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/H/Nakedgroup.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
@@ -205,6 +211,25 @@
                             </ul>
                         </div>
                       </div><!-- *ngSwitchCase healthy-food -->
+
+
+
+<!-- Healthy -->
+                      <div *ngSwitchCase="'right-beverage'">
+                        <h3>Beverage</h3>
+                        <div class="slider-section-img">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/CHART/Cafeteria_Lunch/H/FS19003 Aquafina_BlueRack_3Qtr_Render.png" class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
+                        <div class="slider-section-copy">
+                            <ul>
+                                <li>Place ambient floor racks either at entrance or within 5ft of cash and use counter units at cash for impulse purchases</li>
+                            </ul>
+                        </div>
+                      </div><!-- *ngSwitchCase healthy-beverage -->
+
+
 
 
 
