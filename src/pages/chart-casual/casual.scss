@@ -1,91 +1,68 @@
-.casual-page {
+.chart-casual-page {
 
-.snackracktopper {left: 875px; top: 255px;}
-.innovationshowcase {left: 600px; top: 210px;}
-.innovationwindow {left: 742px; top: 167px;}
-.staffsuggestion {left: 275px; top: 215px;}
-.staffsuggestion-takeout {left: 835px; top: 210px;}
+  background-color: $pepsico-lightblueoffwhite;
 
+  .core-food {left: 370px; top: 230px;}
+  .core-beverage {left: 510px; top: 150px;}
 
-.featurechalkboard {left: 650px; top: 150px;}
-.perfectparings {left: 160px; top: 230px;}
-.perfectparings-takeout {left: 655px; top: 215px;}
-.menuboards {left: 890px; top: 120px;}
+  .healthy-food {left: 730px; top: 190px;}
+  .healthy-beverage {left: 270px; top: 140px;}
 
-.menu {left: 320px; top: 290px;}
-.menupresence {left: 320px; top: 290px;}
-.tabletent {left: 270px; top: 270px;}
-.fritosnackrack {left: 780px; top: 270px;}
-.beveragecooler {left: 750px; top: 180px;}
+  .accelerate-food {left: 270px; top: 210px;}
+  .accelerate-food-2 {left: 710px; top: 240px;}
+  .accelerate-beverage {left: 510px; top: 150px;}
 
+  .right-beverage {left: 780px; top: 310px;}
+  .right-food {left: 300px; top: 160px;}
 
-background-color: $pepsico-lightblueoffwhite;
-
-/* Environment views section */
+  .trade-food {left: 280px; top: 210px;}
+  .trade-beverage {left: 505px; top: 145px;}
 
 
-.environment-view-casual-dining-value {width:434px;}
-.environment-view-casual-takeout-value {width: 434px; margin-left:16px;}
-.environment-view-casual-dining-visibility {width:434px;}
-.environment-view-casual-takeout-visibility {width: 434px; margin-left:16px;}
-.environment-view-casual-dining-variety {width:434px;}
-.environment-view-casual-takeout-variety {width: 434px; margin-left:16px;}
+  .environment-view-casual-core,
+  .environment-view-casual-healthy,
+  .environment-view-casual-accelerate,
+  .environment-view-casual-trade,
+  .environment-view-casual-right {
+    width:882px;
+  }
 
-
-
-.imgHolder-casual-dining-value,
-.imgHolder-casual-dining-visibility,
-.imgHolder-casual-dining-variety,
-.imgHolder-casual-takeout-value,
-.imgHolder-casual-takeout-visibility,
-.imgHolder-casual-takeout-variety {
+  .imgHolder-casual-core,
+  .imgHolder-casual-healthy,
+  .imgHolder-casual-accelerate,
+  .imgHolder-casual-trade,
+  .imgHolder-casual-right {
     overflow:hidden;
     height:354px;
+    width:900px;
     position:relative;
-    }
+  }
 
-.imgHolder-casual-dining-value, .imgHolder-casual-dining-visibility, .imgHolder-casual-dining-variety {width:450px;}
-.imgHolder-casual-takeout-value, .imgHolder-casual-takeout-visibility, .imgHolder-casual-takeout-variety {width:450px;}
-
-.casual-dining-value,
-.casual-takeout-value,
-.casual-dining-visibility,
-.casual-takeout-visibility,
-.casual-dining-variety,
-.casual-takeout-variety {
-    width:777px;
-    height:400px;
+  .casual-core,
+  .casual-healthy,
+  .casual-accelerate,
+  .casual-trade,
+  .casual-right {
+    top: -100px;
+    height:600px;
+    width:900px;
     display:block;
     position:relative;
     z-index:1;
     overflow:hidden;
-    }
+  }
 
-.casual-dining-value,
-.casual-dining-visibility,
-.casual-dining-variety {
-    left:-90px;
-    }
-.casual-takeout-value,
-.casual-takeout-visibility,
-.casual-takeout-variety {
-    left:-150px;
-    }
-
-.casual-dining-value img,
-.casual-takeout-value img,
-.casual-dining-visibility img,
-.casual-takeout-visibility img,
-.casual-dining-variety img,
-.casual-takeout-variety img {
+  .casual-core img,
+  .casual-healthy img,
+  .casual-accelerate img,
+  .casual-trade img,
+  .casual-right img {
     z-index:2;
     position:absolute;
     top:0;
     left:0;
     width:100%;
-    }
-
-
+  }
 }
 
 

@@ -95,4 +95,9 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 
+  openSection(page) {
+    // navigate to the new page if it is not the current page
+    this.nav.setRoot(page.component);
+  }
+
 }

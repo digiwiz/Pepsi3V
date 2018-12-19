@@ -13,8 +13,7 @@ export class CHARTCasualPage {
     pager: true
   };
 
-  public beveragecooler = true;
-  public view = "menu";
-  public type = "variety";
+  public view = "core-food";
+  public type = "c";
 
 }

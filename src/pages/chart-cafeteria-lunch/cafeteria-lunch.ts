@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class CHARTCafeteriaLunchPage {
 
 
-  public view = "beveragecooler";
+  public view = "core-beverage";
   public type = "c";
-  public key = "lunch";
 }

@@ -15,30 +15,29 @@ background-color: $pepsico-lightblueoffwhite;
 .healthy-beverage {left: 240px; top: 260px;}
 .healthy-beverage-2 {left: 760px; top: 310px;}
 
+.accelerate-food {left: 610px; top: 310px;}
+.accelerate-beverage {left: 260px; top: 240px;}
+.accelerate-food-2 {left: 860px; top: 340px;}
+
 .right-beverage {left: 780px; top: 310px;}
+.right-food {left: 300px; top: 160px;}
 
-
-.galvanizedtub {left: 520px; top: 258px;}
-.galvanizedtubcling {left: 520px; top: 258px;}
-.menuboards {left: 300px; top: 160px;}
-.perfectparings {left: 235px; top: 230px;}
-.perfectparings-station {left: 645px; top: 215px;}
-.innovationshowcase {left: 765px; top: 260px;}
-.countertopsnackrack {left: 866px; top: 186px;}
+.trade-beverage {left: 280px; top: 240px;}
+.trade-food {left: 670px; top: 310px;}
 
 .environment-view-cafeteria-lunch-core,
 .environment-view-cafeteria-lunch-healthy,
 .environment-view-cafeteria-lunch-accelerate,
-.environment-view-cafeteria-lunch-right,
-.environment-view-cafeteria-lunch-trade {
+.environment-view-cafeteria-lunch-trade,
+.environment-view-cafeteria-lunch-right {
   width:882px;
   }
 
 .imgHolder-cafeteria-lunch-core,
 .imgHolder-cafeteria-lunch-healthy,
 .imgHolder-cafeteria-lunch-accelerate,
-.imgHolder-cafeteria-lunch-right,
-.imgHolder-cafeteria-lunch-trade {
+.imgHolder-cafeteria-lunch-trade,
+.imgHolder-cafeteria-lunch-right {
   overflow:hidden;
   height:354px;
   position:relative;
@@ -47,17 +46,17 @@ background-color: $pepsico-lightblueoffwhite;
 .imgHolder-cafeteria-lunch-core,
 .imgHolder-cafeteria-lunch-healthy,
 .imgHolder-cafeteria-lunch-accelerate,
-.imgHolder-cafeteria-lunch-right,
-.imgHolder-cafeteria-lunch-trade {
+.imgHolder-cafeteria-lunch-trade,
+.imgHolder-cafeteria-lunch-right {
   width:900px;
   }
 
 .cafeteria-lunch-core,
 .cafeteria-lunch-healthy,
 .cafeteria-lunch-accelerate,
-.cafeteria-lunch-right,
-.cafeteria-lunch-trade {
-  top: ppx;
+.cafeteria-lunch-trade,
+.cafeteria-lunch-right {
+  top: 0px;
   height:600px;
   width:900px;
   display:block;
@@ -66,15 +65,13 @@ background-color: $pepsico-lightblueoffwhite;
   overflow:hidden;
   }
 
-
 .cafeteria-lunch-right {top: -140px;}
-
 
 .cafeteria-lunch-core img,
 .cafeteria-lunch-healthy img,
 .cafeteria-lunch-accelerate img,
-.cafeteria-lunch-right img,
-.cafeteria-lunch-trade img {
+.cafeteria-lunch-trade img,
+.cafeteria-lunch-right img {
   z-index:2;
   position:absolute;
   top:0;

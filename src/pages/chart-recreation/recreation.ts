@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class CHARTRecreationPage {
 
-  public view = "beveragevendor";
-  public type = "variety";
+  public view = "core-beverage";
+  public type = "c";
 
 }
