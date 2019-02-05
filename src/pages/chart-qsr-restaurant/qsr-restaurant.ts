@@ -11,7 +11,7 @@ export class CHARTQsrRestaurantPage {
     pager: true
   };
 
-  public view = "core-food";
+  public view = "core-beverage";
   public type = "c";
 
 }

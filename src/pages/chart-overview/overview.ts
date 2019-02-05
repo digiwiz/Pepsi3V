@@ -12,6 +12,6 @@ export class CHARTOverviewPage {
   };
 
   public view = "innovationwindow";
-  public type = "variety";
+  public type = "core";
 
 }

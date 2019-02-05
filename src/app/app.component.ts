@@ -28,6 +28,9 @@ import { CHARTRecreationPage } from '../pages/chart-recreation/recreation';
 import { CHARTCasualPage } from '../pages/chart-casual/casual';
 import { CHARTCafeteriaBreakfastPage } from '../pages/chart-cafeteria-breakfast/cafeteria-breakfast';
 import { CHARTCafeteriaLunchPage } from '../pages/chart-cafeteria-lunch/cafeteria-lunch';
+import { CHARTCertificationPage } from '../pages/chart-certification/chart-certification';
+
+
 
 @Component({
   templateUrl: 'app.html'
@@ -73,7 +76,8 @@ export class MyApp {
       { title: 'CHART Cafeteria Lunch', component: CHARTCafeteriaLunchPage },
       { title: 'CHART Casual', component: CHARTCasualPage },
       { title: 'CHART QSR', component: CHARTQsrRestaurantPage },
-      { title: 'CHART Recreation', component: CHARTRecreationPage }
+      { title: 'CHART Recreation', component: CHARTRecreationPage },
+      { title: 'CHART Certification', component: CHARTCertificationPage }
 
     ];
   }

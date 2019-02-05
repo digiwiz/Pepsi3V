@@ -1,5 +1,5 @@
 
-          <div style="position: absolute; z-index: 90; top: 712px; left:0px; padding:0;margin:0; " >
+          <div style="position: absolute; z-index: 90; top: 682px; left:0px; padding:0;margin:0; " >
             <div [ngSwitch]="language">
               <div *ngSwitchCase="'EN'">
                   <button class="menu-item" (click)="openPage( pages[0] )"><img class="pepsi-globe" src="assets/svg/Pepsi_globe.svg" width="32px" height="32px" /></button>
@@ -41,11 +41,12 @@
               <div class="content">
                 <button ion-item class="menu-item" (click)="openPage( pages[17] ); pagenumber = 17;" >Cafeteria</button>
                 <button ion-item class="menu-item-child" (click)="openPage( pages[17] ); pagenumber = 17;" style="margin-left:16px;" >Breakfast</button>
-                <button ion-item class="menu-item-child" (click)="openPage( pages[18] ); pagenumber = 18;" style="margin-left:16px;" >Lunch & Cash</button>
+                <button ion-item class="menu-item-child" (click)="openPage( pages[18] ); pagenumber = 18;" style="margin-left:16px;" >Lunch</button>
                 <button ion-item class="menu-item" (click)="openPage( pages[19] ); pagenumber = 19;" >Casual</button>
                 <button ion-item class="menu-item" (click)="openPage( pages[20] ); pagenumber = 20;" >QSR</button>
                 <button ion-item class="menu-item" (click)="openPage( pages[21] ); pagenumber = 21;" >Recreation</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[22] ); pagenumber = 22;" >Profit Calculator</button>
+               <button ion-item class="menu-item" (click)="openPage( pages[22] ); pagenumber = 22;" >Chart Certification</button>
+
               </div>
           </li>
         </ul>
@@ -90,7 +91,7 @@
 
   </div>
 
-  <div class="menu-logo" style="position: absolute; z-index: 90; top: 732px; left: 72px; " >
+  <div class="menu-logo" style="position: absolute; z-index: 90; top: 712px; left: 72px; " >
     <img class="pepsi-logo" src="assets/svg/PEPSICO.svg" width="145px" />
   </div>
 </ion-menu>

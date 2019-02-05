@@ -523,18 +523,22 @@ $menu-ios-box-shadow:            0 0 10px $menu-ios-box-shadow-color !default;
     display:none;
 }
 .accordion label {
-/*
+/*              */
     display:block;
     font-size:16px;
     line-height:16px;
-    background:#D95B43;
-    border:1px solid #542437;
-    color:#542437;
+    background: $pepsico-brightblue;
+    border:1px solid $pepsico-darkblue;
+    color:white;
     text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+
     font-weight:700;
+
+
+
     cursor:pointer;
     text-transform:uppercase;
-  */
+
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
 }
@@ -571,6 +575,7 @@ $menu-ios-box-shadow:            0 0 10px $menu-ios-box-shadow-color !default;
 }
 .vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
     border-bottom:0;
+
 }
 .vertical ul li label:hover {
 //    border:1px solid #542437; /* We don't want the border to disappear on hover */
@@ -580,6 +585,6 @@ $menu-ios-box-shadow:            0 0 10px $menu-ios-box-shadow-color !default;
     border-top:0;
 }
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:400px;
+    height:360px;
 //    border:1px solid #542437;
 }
