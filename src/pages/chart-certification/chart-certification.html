@@ -10,79 +10,208 @@
 
     <div style="width:884px;" >
     <ion-row>
-      <div class="title-header">CHART Certification</div>
+      <div class="title-header" >CHART Certification</div>
     </ion-row>
-    <ion-row>
-      <form [formGroup]="survey" (ngSubmit)="sendEmail('hello')">
+
+    <form [formGroup]="survey" (ngSubmit)="sendEmail()">
+
+    <ion-list no-lines>
       <ion-row>
         <ion-item>
-          <ion-label class="body" >Comments
-          </ion-label>
-          <br>
-          <ion-textarea formControlName="body"></ion-textarea>
+          <ion-label><h3>FSR Name:</h3></ion-label>
+          <ion-input formControlName="fsr"></ion-input>
         </ion-item>
       </ion-row>
-      <ol>
+      <ion-row>
+        <ion-item>
+          <ion-label><h3>Account Location:</h3></ion-label>
+          <ion-input placeholder="(banner & location name)" formControlName="location" ></ion-input>
+        </ion-item>
+      </ion-row>
+
+      <ion-row>
+        <ion-item>
+          <ion-label class="comments" >Comments</ion-label>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-textarea formControlName="body" no-lines (change) = "findScore()" ></ion-textarea>
+      </ion-row>
         <ion-row>
-            <ion-col col-2 >Choose a button</ion-col><ion-col col-10>CHART</ion-col>
+            <ion-col col-2 ><ion-label>Choose a button</ion-label></ion-col><ion-col col-10><ion-label><h4>CHART</h4></ion-label></ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-          <li>Do you have all <strong>core</strong> neverouts?</li>
+
+        <ion-row  radio-group formControlName="question1" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >1. Do you have all <strong>core</strong> neverouts?</ion-item>
+          </ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Have you activated the health portfolio?</li>
+
+        <ion-row  radio-group formControlName="question2" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()"></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >2. Have you activated the <strong>healthy</strong> portfolio?</ion-item>
+          </ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Is innovation being accelerated with incremental space or POS</li>
+
+         <ion-row  radio-group formControlName="question3" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()"></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >3. Is innovation being <strong>accelerated</strong> with incremental space or POS</ion-item>
+          </ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Have you offered additional products merchandising to meet the needs<br>of this specific customer to ensure we are offering what is right for the account</li>
+
+         <ion-row  radio-group formControlName="question4" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >4. Have you offered additional products/merchandising to meet the needs<br>of this specific customer to ensure we are offering what is <strong>right</strong> for the account?</ion-item>
+          </ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Have you activated against opportunities to trade up?</li>
+
+         <ion-row  radio-group formControlName="question5" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >5. Have you activated against opportunities to <strong>trade</strong> up?</ion-item>
+          </ion-col>
         </ion-row>
+
         <ion-row>
-            <ion-col col-2 ></ion-col><ion-col col-10>FUNDAMENTALS</ion-col>
+            <ion-col col-2 ></ion-col><ion-col col-10><ion-label><h4>FUNDAMENTALS</h4></ion-label></ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Where PEPSICO POS and merchandising toosl effectively used?</li>
+
+        <ion-row  radio-group formControlName="question6" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+          <ion-item inline text-uppercase >6. Were PEPSICO POS and merchandising tools effectively used?</ion-item>
+          </ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Where price points clearly visible on all PEPSICO products?</li>
+
+        <ion-row  radio-group formControlName="question7" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+          <ion-item inline text-uppercase >7. Were price points clearly visible on all PEPSICO products?</ion-item>
+          </ion-col>
         </ion-row>
-        <ion-row  radio-group>
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="YES"></ion-radio>
-            YES / NO
-          <ion-radio class="radio radio-inline radio-gray" mode="md" value="NO"></ion-radio>
-            <li>Where POS elements in good contidion and currents?</li>
+
+        <ion-row  radio-group formControlName="question8" >
+         <ion-col class="yes">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="YES" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>Yes</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>No</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+          <ion-item inline text-uppercase >8. Were POS elements in good condition and current?</ion-item>
+          </ion-col>
         </ion-row>
-      </ol>
+
         <ion-row>
-          <button ion-button full (click)="sendEmail('hello')">Send Email</button>
+          <ion-col col-2></ion-col>
+          <ion-col col-3>
+              <h3 class="score">Overall Score: </h3>
+          </ion-col>
+          <ion-col col-2>
+              <h2>{{totalScore | number:'1.0-0'}}%</h2>
+          </ion-col>
+          <ion-col col-5>
+            <ion-item inline text-uppercase ><button ion-button type="submit" [disabled]="!survey.valid" >Submit</button></ion-item>
+          </ion-col>
         </ion-row>
+
+      </ion-list>
     </form>
-  </ion-row>
+
   </div>
   </ion-row>
 </div>
