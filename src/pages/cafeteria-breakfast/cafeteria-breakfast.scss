@@ -2,17 +2,16 @@
 
 .btn-bullseye {position: absolute; z-index: 2;}
 
-.quakerseasonalflavours {left: 540px; top: 150px;}
-.premiumproducts {left: 700px; top: 160px;}
+.value01 {left: 630px; top: 300px;}
+.value02 {left: 740px; top: 330px;}
 
-.quakermuffinrack {left: 480px; top: 140px;}
-.iqorack {left: 830px; top: 200px;}
-.galvanizedtub {left: 640px; top: 180px;}
+.variety01 {left: 630px; top: 300px;}
+.variety02 {left: 740px; top: 330px;}
 
-.quakermuffinrackheader {left: 540px; top: 120px;}
-.quakerflavourcards {left: 540px; top: 220px;}
-.breakfastpos {left: 590px; top: 180px;}
-.galvanizedtubcling {left: 650px; top: 190px;}
+.visibility01 {left: 530px; top: 300px;}
+.visibility012 {left: 590px; top: 160px;}
+.visibility02 {left: 630px; top: 345px;}
+.visibility03 {left: 740px; top: 330px;}
 
 background-color: $pepsico-lightblueoffwhite;
 
@@ -45,14 +44,13 @@ background-color: $pepsico-lightblueoffwhite;
 .cafeteria-breakfast-ext-visibility,
 .cafeteria-breakfast-int-variety,
 .cafeteria-breakfast-ext-variety {
-    display:block;
-    position:relative;
-    z-index:1;
-    overflow:hidden;
-    width:1320px;
-    height:680px;
-    left:-410px;
-    top:-190px;
+  top: 0px;
+  height:600px;
+  width:900px;
+  display:block;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
     }
 
 .cafeteria-breakfast-int-value img,
@@ -69,19 +67,17 @@ background-color: $pepsico-lightblueoffwhite;
     }
 
 
-
-
 /* Variety */
-.quakermuffinrack ul {line-height: 1.2em; font-size: .9em; padding-top:30px;}
+.quakerrack ul {line-height: 1.2em; font-size: .9em; padding-top:30px;}
 .iqorack ul {line-height: 1.2em;font-size: .9em; padding-top:40px;}
-.galvanizedtub ul {line-height: 1.4em;font-size: .9em;}
+.variety02 ul {line-height: 1.4em;font-size: .9em;}
 
 /* Visibility */
-.quakermuffinrackheader ul {line-height: 1.6em;font-size: .9em; padding-top:10px;}
+.visibility01 ul {line-height: 1.6em;font-size: .9em; padding-top:10px;}
 .quakerflavourcards ul {line-height: 1.4em;font-size: .9em; padding-top:10px;}
 .slider-section-copy.breakfastpos ul {font-family: Roboto; line-height: 1.0em;font-size: .8em; padding-top:20px;}
 .slider-section-copy.breakfastpos h2 {font-family: Roboto; font-size: 1.0em;}
-.galvanizedtubcling ul {line-height: 1.2em;font-size: .9em; padding-top:20px;}
+.variety02cling ul {line-height: 1.2em;font-size: .9em; padding-top:20px;}
 
 /* Value */
 .quakerseasonalflavours ul {line-height: 1.2em;font-size: .9em; padding-top:40px;}

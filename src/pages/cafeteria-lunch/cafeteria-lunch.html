@@ -40,7 +40,7 @@
                   </svg>
                   VISIBILITY
                 </button>
-                <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'beveragecooler'; key='lunch'" >
+                <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'variety01'; key='lunch'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
                   <path class="st0" d="M-215.9,383.1c0-2.1-7.9-2.1-8.3-2.1c-0.4,0-8.3,0.1-8.3,2.1c0,0.4,0.3,0.7,0.8,1l1.6,23.7
                     c0,0.8,2.6,1.5,5.9,1.5c3.3,0,5.9-0.7,5.9-1.5l1.7-23.7C-216.1,383.8-215.9,383.5-215.9,383.1z M-224.2,381.9c4.5,0,7.1,0.8,7.3,1.2
@@ -66,7 +66,7 @@
                     <div [class.cafeteria-lunch-value]="type === 'value'" [class.cafeteria-lunch-visibility]="type === 'visibility'" [class.cafeteria-lunch-variety]="type === 'variety'" class="easing" >
                       <img src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch.png" />
 
-                      <div *ngIf="view === 'beveragecooler'" style="z-index:1;"><img [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_beveragecooler.png" /></div>
+                      <div *ngIf="view === 'variety01'" style="z-index:1;"><img [class.fade-in]="view === 'variety01'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_variety01.png" /></div>
                       <div *ngIf="view === 'fritosnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety fritosnackrack.png" /></div>
                       <div *ngIf="view === 'galvanizedtub'" style="z-index:1;"><img [class.fade-in]="view === 'galvanizedtub'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Lunch/Cafeteria_Lunch_Variety_galvanizedtub.png" /></div>
 
@@ -122,7 +122,7 @@
               </div><!-- ngSwitchCase visibility -->
 
               <div *ngSwitchCase="'variety'">
-                      <button [class.active]="view === 'beveragecooler'" class="btn-bullseye beveragecooler" title=""  (click)="view = 'beveragecooler'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'variety01'" class="btn-bullseye variety01" title=""  (click)="view = 'variety01'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'fritosnackrack'" class="btn-bullseye fritosnackrack" title="" (click)="view = 'fritosnackrack'; key='lunch'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'galvanizedtub'" class="btn-bullseye galvanizedtub" title=""  (click)="view = 'galvanizedtub'; key='lunch';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'countertopsnackrack'" class="btn-bullseye countertopsnackrack" title=""  (click)="view = 'countertopsnackrack'; key='cash'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
@@ -143,10 +143,10 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li *ngIf="key === 'lunch'">Pursue Pockets of Growth…Flavoured CSDs growing +1%</li>
-                          <li *ngIf="key === 'lunch'">Water, Isotonics, Tea & Juice Categories to grow a combined 5% over the next 5 years</li>
-                          <li *ngIf="key === 'lunch'">Salty Category is significant and growing 2% YTD</li>
-                          <li *ngIf="key === 'cash'">Nearly 40% of single-serve salty snack purchases are made on impulse - offer the right variety of products to maximize impulse purchases</li>
+                          <li *ngIf="key === 'lunch'">Hydration projected to grow +5% over the next 5 years.</li>
+                          <li *ngIf="key === 'lunch'">Drive Salty Incidence and growth with Canada's #1 Brands.</li>
+                          <li *ngIf="key === 'cash'">Hydration projected to grow +5% over the next 5 years.</li>
+                          <li *ngIf="key === 'cash'">Drive Salty Incidence and growth with Canada's #1 Brands.</li>
                       </ol>
                   </ion-list>
 
@@ -175,7 +175,7 @@
             <div class="shadow slider-section" style="width: 498px; margin-left: 16px;"><!-- image slider section -->
                   <div [ngSwitch]="view">
 <!-- Variety -->
-                      <div *ngSwitchCase="'beveragecooler'">
+                      <div *ngSwitchCase="'variety01'">
                         <h3>Beverage Cooler</h3>
                         <ion-slides pager="true">
                           <ion-slide>
@@ -212,7 +212,7 @@
                             </div>
                           </ion-slide>
                         </ion-slides>
-                      </div><!-- *ngSwitchCase beveragecooler -->
+                      </div><!-- *ngSwitchCase variety01 -->
 
                       <div *ngSwitchCase="'fritosnackrack'">
                         <h3>Frito Snack Rack</h3>
@@ -244,7 +244,7 @@
                       </div><!-- *ngSwitchCase fritosnackrack -->
 
                       <div *ngSwitchCase="'galvanizedtub'">
-                        <h3>Galvanized Tub</h3>
+                        <h3>Temporary Merchandising Solutions</h3>
                           <ion-slides pager="true">
                             <ion-slide>
                               <div class="slider-section-img">
@@ -253,18 +253,7 @@
                               <div class="slider-section-copy">
                                 <ul>
                                   <li>Keep chilled beverages at arms' reach in high traffic areas to drive incremental impulse sales</li>
-                                  <li>Galvanized Tubs can be ordered through the MSO Portal</li>
-                                </ul>
-                              </div>
-                            </ion-slide>
-                            <ion-slide>
-                              <div class="slider-section-img">
-                                <img src="assets/img/Slides/Cafeteria_Lunch_Galvanized_Tub_Sabras.png" class="slide-image">
-                              </div>
-                              <div class="slider-section-copy">
-                                <ul>
-                                  <li>Dip Category growing +12%</li>
-                                  <li>Expand into Healthy Snacking with Sabra Guacamole and Sabra Hummus</li>
+                                  <li>Galvanized Tubs and Cooler Barrels ordered through the MSO Portal or our Preferred Premium Suppliers</li>
                                 </ul>
                               </div>
                             </ion-slide>
