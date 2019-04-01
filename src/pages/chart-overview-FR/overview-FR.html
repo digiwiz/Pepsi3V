@@ -1,0 +1,100 @@
+<div class="chart-overview-page-fr"><!-- side menu -->
+    <ion-row>
+        <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white; position:absolute; z-index:99;" >
+          <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+            </svg>
+          </button>
+        </div><!-- side menu -->
+
+      <div style="width: 1024px; height:768px; position: relative; background-image: url(assets/img/CHART/Overview/CHART_Overview_background.png);">
+          <div style="z-index:1; width: 1024px; height:350px;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/CHART/Overview/CHART_Overview_text.png" /></div>
+          <ion-row>
+            <div style="width:1024px;" style="  margin: 0 auto; padding-left:90px;">
+
+              <button ion-button round outline [class.active]="type === 'core'" class=" easing overview-button btn_core" title="" (click)="type = 'core'; view = 'fountain'">C</button>
+              <button ion-button round outline [class.active]="type === 'healthy'" class=" easing overview-button btn_core" title="" (click)="type = 'healthy'; view = 'fountain'">H</button>
+              <button ion-button round outline [class.active]="type === 'accelerate'" class=" easing overview-button btn_core" title="" (click)="type = 'accelerate'; view = 'fountain'">A</button>
+              <button ion-button round outline [class.active]="type === 'right'" class=" easing overview-button btn_core" title="" (click)="type = 'right'; view = 'fountain'">R</button>
+              <button ion-button round outline [class.active]="type === 'trade'" class=" easing overview-button btn_core" title="" (click)="type = 'trade'; view = 'fountain'">T</button>
+
+            </div>
+          </ion-row>
+
+            <div class="description"><!-- key facts -->
+
+              <div [ngSwitch]="type">
+                  <ion-list *ngSwitchCase="'core'">
+                      <h2>Conquérir l’espace pour la gamme principale :</h2>
+                      <ul>
+                          <li>Accroître le volume de nos produits qui obtiennent les meilleurs résultats de vente en assurant l'exécution des planogrammes<br>pour les produits « toujours en inventaire »</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:white;"></div>
+                      <div id="element2" class="circle" style="background:#519bec;"></div>
+                      <div id="element3" class="circle" style="background:#519bec;"></div>
+                      <div id="element4" class="circle" style="background:#519bec;"></div>
+                      <div id="element5" class="circle" style="background:#519bec;"></div>
+                  </ion-list>
+
+                  <ion-list *ngSwitchCase="'healthy'">
+                      <h2>Hausser les ventes des produits représentant des choix sensés :</h2>
+                      <ul>
+                          <li>Accroître la visibilité des marques de produits « meilleurs pour vous » en obtenant de l'espace supplémentaire.</li>
+                          <li>&nbsp;</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:#519bec;"></div>
+                      <div id="element2" class="circle" style="background:white;"></div>
+                      <div id="element3" class="circle" style="background:#519bec;"></div>
+                      <div id="element4" class="circle" style="background:#519bec;"></div>
+                      <div id="element5" class="circle" style="background:#519bec;"></div>
+                  </ion-list>
+
+                  <ion-list *ngSwitchCase="'accelerate'">
+                      <h2>Accélérer les ventes d'innovations :</h2>
+                      <ul>
+                          <li>Accélérer les ventes de nos nouveaux produits lancés et des produits offerts pour une durée limitée.</li>
+                          <li>&nbsp;</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:#519bec;"></div>
+                      <div id="element2" class="circle" style="background:#519bec;"></div>
+                      <div id="element3" class="circle" style="background:white;"></div>
+                      <div id="element4" class="circle" style="background:#519bec;"></div>
+                      <div id="element5" class="circle" style="background:#519bec;"></div>
+                  </ion-list>
+
+                  <ion-list *ngSwitchCase="'right'">
+                      <h2>Recommander la solution adéquate pour votre commerce :</h2>
+                      <ul>
+                          <li>Assurez-vous de comprendre les besoins de votre client pour nous permettre d'offrir les bons produits en fonction de leur segment.</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:#519bec;"></div>
+                      <div id="element2" class="circle" style="background:#519bec;"></div>
+                      <div id="element3" class="circle" style="background:#519bec;"></div>
+                      <div id="element4" class="circle" style="background:white;"></div>
+                      <div id="element5" class="circle" style="background:#519bec;"></div>
+                  </ion-list>
+
+                  <ion-list *ngSwitchCase="'trade'">
+                      <h2>Trouver solution la plus avantageuse :</h2>
+                      <ul>
+                          <li>Augmenter les profits et la valeur ajoutée, et créer de nouvelles occasions.</li>
+                          <li>&nbsp;</li>
+                      </ul>
+                      <div id="element1" class="circle" style="background:#519bec;"></div>
+                      <div id="element2" class="circle" style="background:#519bec;"></div>
+                      <div id="element3" class="circle" style="background:#519bec;"></div>
+                      <div id="element4" class="circle" style="background:#519bec;"></div>
+                      <div id="element5" class="circle" style="background:white;"></div>
+                  </ion-list>
+
+
+              </div> <!--[ngSwitch]= type for key facts -->
+
+            </div><!-- key insights -->
+
+      </div>
+
+
+    </ion-row>
+</div>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class CafeteriaBreakfastFRPage {
 
-  public view = "quakermuffinrack";
+  public view = "variety01";
   public type = "variety";
 
 }

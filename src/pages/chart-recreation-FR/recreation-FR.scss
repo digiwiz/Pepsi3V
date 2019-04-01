@@ -1,0 +1,72 @@
+.chart-recreation-page-FR {
+
+  background-color: $pepsico-lightblueoffwhite;
+
+  .core-beverage-2 {left: 380px; top: 340px;}
+  .core-beverage {left: 510px; top: 170px;}
+
+  .healthy-beverage {left: 620px; top: 200px;}
+
+  .accelerate-beverage {left: 240px; top: 210px;}
+
+  .right-beverage {left: 240px; top: 210px;}
+
+  .trade-food {left: 780px; top: 310px;}
+  .trade-beverage-2 {left: 640px; top: 200px;}
+  .trade-beverage {left: 390px; top: 280px;}
+
+
+  .environment-view-recreation-core,
+  .environment-view-recreation-healthy,
+  .environment-view-recreation-accelerate,
+  .environment-view-recreation-trade,
+  .environment-view-recreation-right {
+    width:882px;
+  }
+
+  .imgHolder-recreation-core,
+  .imgHolder-recreation-healthy,
+  .imgHolder-recreation-accelerate,
+  .imgHolder-recreation-trade,
+  .imgHolder-recreation-right {
+    overflow:hidden;
+    height:354px;
+    width:900px;
+    position:relative;
+  }
+
+  .recreation-core,
+  .recreation-healthy,
+  .recreation-accelerate,
+  .recreation-trade,
+  .recreation-right {
+    top: -100px;
+    height:600px;
+    width:900px;
+    display:block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+  }
+
+  .recreation-core {top: -20px;}
+
+  .recreation-core img,
+  .recreation-healthy img,
+  .recreation-accelerate img,
+  .recreation-trade img,
+  .recreation-right img {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+  }
+
+  .insights p {font-size: 14px;}
+
+}
+
+
+
+

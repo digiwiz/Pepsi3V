@@ -13,7 +13,7 @@
             <ion-col col-6 class="title-header">QUICK SERVICE RESTAURANT</ion-col>
 
             <ion-col col-6 no-padding >
-                <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'innovationwindow'" >
+                <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'fountain2'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
@@ -65,17 +65,18 @@
                 <div  [class.environment-view-qsr-int-value]="type === 'value'" [class.environment-view-qsr-int-visibility]="type === 'visibility'" [class.environment-view-qsr-int-variety]="type === 'variety'" class="shadow easing">
                   <div [class.imgHolder-qsr-int-value]="type === 'value'" [class.imgHolder-qsr-int-visibility]="type === 'visibility'" [class.imgHolder-qsr-int-variety]="type === 'variety'" class="easing" >
                     <div [class.qsr-int-value]="type === 'value'" [class.qsr-int-visibility]="type === 'visibility'" [class.qsr-int-variety]="type === 'variety'" class="easing" >
-                      <img src="assets/img/QSR/QSR_Interior.png" />
-                      <div *ngIf="view === 'fritosnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_fritosnackrack.png" /></div>
-                      <div *ngIf="view === 'beveragecooler'" style="z-index:1;"><img [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Variety_beveragecooler.png" /></div>
-                      <div *ngIf="view === 'fountain'" style="z-index:1;"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Visibility_fountain.png" /></div>
+                      <img src="assets/img/QSR/QSRInterior.png" />
+                      <div *ngIf="view === 'fountain'" style="z-index:1;"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/QSR/variety01.png" /></div>
+                      <div *ngIf="view === 'beveragecooler'" style="z-index:1;"><img [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" src="assets/img/QSR/variety02.png" /></div>
+                      <div *ngIf="view === 'fritosnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/QSR/variety03.png" /></div>
 
-                      <div *ngIf="view === 'perfectparings'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Visibility_perfectparings.png" /></div>
-                      <div *ngIf="view === 'menuboards'" style="z-index:1;"><img [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Visibility_menuboards.png" /></div>
-                      <div *ngIf="view === 'tabletent'" style="z-index:1;"><img [class.fade-in]="view === 'tabletent'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Visibility_tabletent.png" /></div>
-                      <div *ngIf="view === 'snackracktopper'" style="z-index:1;"><img [class.fade-in]="view === 'snackracktoppert'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_snackracktopper.png" /></div>
-                      <div *ngIf="view === 'innovationwindow'" style="z-index:1;"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_innovationwindow.png" /></div>
+                      <div *ngIf="view === 'menuboards'" style="z-index:1;"><img [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" src="" /></div>
+                      <div *ngIf="view === 'tabletent'" style="z-index:1;"><img [class.fade-in]="view === 'tabletent'" onload="this.style.opacity='1';" src="" /></div>
                       <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
+
+                      <div *ngIf="view === 'fountain2'" style="z-index:1;"><img [class.fade-in]="view === 'fountain'" onload="this.style.opacity='1';" src="assets/img/QSR/value01.png" /></div>
+
+
 <!--                      <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/QSR/QSR_Value_staffsuggestion.png" /></div>      -->
 
 
@@ -108,7 +109,6 @@
               </div><!-- ngSwitchCase variety -->
 
               <div *ngSwitchCase="'visibility'">
-                      <button [class.active]="view === 'perfectparings'" class="btn-bullseye perfectparings" title="" (click)="view = 'perfectparings'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'menuboards'" class="btn-bullseye menuboards" title="" (click)="view = 'menuboards'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'tabletent'" class="btn-bullseye tabletent" title="" (click)="view = 'tabletent'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'sandwichboard'" class="btn-bullseye sandwichboard" title="" (click)="view = 'sandwichboard'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
@@ -117,8 +117,6 @@
 
               <div *ngSwitchCase="'value'">
                       <button [class.active]="view === 'fountain2'" class="btn-bullseye fountain" title="" (click)="view = 'fountain2';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'innovationwindow'" class="btn-bullseye innovationwindow" title="" (click)="view = 'innovationwindow';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'snackracktopper'" class="btn-bullseye snackracktopper" title="" (click)="view = 'snackracktopper';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'innovationshowcase'" class="btn-bullseye innovationshowcase" title="" (click)="view = 'innovationshowcase';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'marketingwindowcling'" class="btn-bullseye marketingwindowcling" title="" (click)="view = 'marketingwindowcling';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'staffsuggestion'" class="btn-bullseye staffsuggestion" title="" (click)="view = 'staffsuggestion';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
@@ -137,23 +135,22 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li>Flavoured CSD Category growing 1% YTD</li>
-                          <li>Water, Isotonics, Tea & Juice Categories to grow a combined 5% over the next 5 years</li>
-                          <li>Salty Category is significant and growing 2% YTD</li>
+                          <li>Hydration categories to grow a combined 5% over the next 5 years</li>
+                          <li>Drive Salty Incidence and growth with Canada's #1 Brands</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'visibility'">
                       <ol>
-                          <li>Menu is the single most important driver for on premise sales - 64% of consumers are more likely to make a purchase if it's on the menu boards</li>
-                          <li>Leverage portfolio to pair the right beverages with the right food on menus to maximize reach and grow sales</li>
+                          <li>Menu is the single most important driver for on-premise sales - 64% of consumers are more likely to make a purchase if it's on the menuboards</li>
+                          <li>Leverage portfolio to pair the right beverages with the right food to maximize reach and grow sales</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
-                          <li>"Offered as part of a combo" is the 2nd most important purchase driver.  Combine entrees with beverage & snacks to grow sales</li>
-                          <li>Value is particularly important for take-out occasions, as meals are consumed off-site; competing with snacks and beverages at home</li>
+                          <li>"Offered as part of a combo" is the 2nd highest incidence driver.  Combine entrees with beverage & snacks to grow sales</li>
+                          <li>Value is particulary important for take-out occasions, as meals are consumed off-site and competing with snacks and beverages at home</li>
                       </ol>
                   </ion-list>
 
@@ -176,7 +173,7 @@
                             </div>
                             <div class="slider-section-copy">
                               <ul>
-                                <li>Our QSR-specific POGs ensure the right mix of products that suit the location's consumers are available</li>
+                                <li>Our QSR-specific POGs ensure the right mix of products for those consumers and occasions</li>
                                 <li>Fully executed POGs will help drive sales while avoiding out-of-stocks</li>
                                 <li>Comprehensive POGs are available on Advantage</li>
                               </ul>
@@ -184,21 +181,11 @@
                           </ion-slide>
                           <ion-slide>
                             <div class="slider-section-img">
-                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler.png" class="slide-image">
+                              <img src="assets/img/QSR/variety02hotspot02.png" class="slide-image">
                             </div>
                             <div class="slider-section-copy">
                               <ul>
-                                <li>PepsiCo has an Advantaged Portfolio of CSD Flavours Portfolio to Drive Bottle Growth</li>
-                              </ul>
-                            </div>
-                          </ion-slide>
-                          <ion-slide>
-                            <div class="slider-section-img">
-                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler_2.png" class="slide-image">
-                            </div>
-                            <div class="slider-section-copy">
-                              <ul>
-                                <li>Water, Isotonics, Tea & Juice Categories to grow a combined 5% over the next 5 years.</li>
+                                <li>PepsiCo has an Advantaged Portfolio. Leverage multiple categories to drive growth (Water, Tea, Juice, and CSDs)</li>
                               </ul>
                             </div>
                           </ion-slide>
@@ -220,8 +207,7 @@
                             </ion-slide>
                             <ion-slide>
                                 <ul>
-                                  <li>Grow the core with Flavoured CSDs</li>
-                                  <li>Increase Space for flavours on Fountain 8 valve for new outlets and upgrade existing 6-valve equipment</li>
+                                  <li>Drive volume and customer penny profit by trading up fountain cup sizing and leveraging National Program Cups to drive Consumer excitement</li>
                                 </ul>
                             </ion-slide>
                           </ion-slides>
@@ -233,22 +219,22 @@
                         <ion-slides pager="true">
                           <ion-slide>
                             <div class="slider-section-img">
-                              <img src="assets/img/Slides/Frito Snack Rack - 1ft A.png" class="slide-image">
+                              <img src="assets/img/QSR/variety03hotspot01.png" class="slide-image">
                             </div>
                             <div class="slider-section-copy">
                                 <ul>
-                                  <li>Use the appropriate racking to execute our regional POGs, which offer the right set of snacks to the consumer to drive sales while avoiding out-of-stocks</li>
+                                  <li>Use the appropriate racking to execute regional POGs and Better For You products, which offer the right set of snacks to the consumer to drive sales</li>
                                   <li>Racks can be ordered through the MSO Portal and full POGs are available on Advantage</li>
                                 </ul>
                             </div>
                           </ion-slide>
                           <ion-slide>
                             <div class="slider-section-img">
-                              <img src="assets/img/Slides/QSR_Variety_Frito_Snack_Rack.png" class="slide-image">
+                              <img src="assets/img/QSR/QSR_Variety_Frito_Snack_Rack.png" class="slide-image">
                             </div>
                             <div class="slider-section-copy">
                                 <ul>
-                                  <li>PepsiCo has an advantaged Snacks Portfolio to Drive Growth</li>
+                                  <li>PepsiCo has an advantaged Snacks Portfolio to Drive Growth. Pending the outlet, leverage our Hello Goodness Platform/Brands to offer BFY solutions</li>
                                 </ul>
                             </div>
                           </ion-slide>
@@ -256,28 +242,10 @@
                       </div><!-- *ngSwitchCase fritosnackrack -->
 
 <!-- Visibility -->
-                      <div *ngSwitchCase="'perfectparings'" >
-                        <h3>Perfect Parings</h3>
-                        <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Suggesting beverage and snack pairings with main orders creates an enticing complement to the consumer's meal and can help grow sales</li>
-                            <li>There are +100 new beverage & food images available on PepsiCo Art Gallery to leverage for menus</li>
-                          </ul>
-                        </div>
-                      </div> <!-- *ngSwitchCase="'perfectparings -->
-
                       <div *ngSwitchCase="'menuboards'">
                         <h3>Menu Boards</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/PepsiCo 7Up Lemon Lemon Original 355 mL W_Glass EN.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass Pepsi_02.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass BriskIceTea_02.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Pepsico Logo Glass MountainDew_02.png" class="slide-image"></ion-slide>
@@ -296,11 +264,14 @@
                       <div *ngSwitchCase="'tabletent'">
                         <h3>Table Tent</h3>
                         <div class="slider-section-img">
-                            <img src="assets/img/Slides/Table Tents - Plastic 1.jpg" class="slide-image">
+                          <ion-slides pager="true">
+                            <ion-slide><img src="assets/img/QSR/visibility01hotspot01.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/QSR/visibility01hotspot02.png" class="slide-image"></ion-slide>
+                          </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Use table tents as an educational tool to raise awareness of innovation, which helps drive trial of new products</li>
+                            <li>Table tents  and other POS tools help raise awareness of innovation and programming ultimately driving beverage sales</li>
                             <li>Table tents (both plastic toppers and acrylic stands with inserts) can be ordered through PepsiCo's Preferred Vendors of PepsiCo Premium Tools</li>
                           </ul>
                         </div>
@@ -309,15 +280,15 @@
                       <div *ngSwitchCase="'sandwichboard'" >
                         <h3>Sandwich Board</h3>
                         <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/2017_NSM_WEB_STBN_2004.png" class="slide-image"></ion-slide>
+                          <ion-slides pager="false">
+
                             <ion-slide><img src="assets/img/Slides/Sandwich Board A - Pepsi.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Sandwich Board B - Pure Leaf.jpg" class="slide-image"></ion-slide>
+
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Outdoor A-frame Sandwich Boards catch the attention of passing consumers, influence their meal decisions, and ultimately drive consumers into the location</li>
+                            <li>A-frame Sandwich Boards catch the attention of passing consumers, influence their meal decisions, and ultimately drive consumers into the location</li>
                             <li>A-frame Sandwich Boards can be ordered through our preferred vendors of PepsiCo premiums</li>
                           </ul>
                         </div>
@@ -333,7 +304,7 @@
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Leverage the Pepsi brand as a continuation of the A-frame communication and as a visual cue for consumers to include a beverage with their meal</li>
+                            <li>Leverage the Pepsi branded tools to drive Pepsi Pride and as a visual cue for consumers to include a beverage with their meal</li>
                             <li>Push/Pull signs can be ordered through the MSO Portal</li>
                           </ul>
                         </div>
@@ -351,8 +322,7 @@
                         <div class="slider-section-copy">
 
                                 <ul>
-                                  <li>Drive volume and customer penny profit with trading up fountain cups to 21oz</li>
-                                  <li>Take part in promotional fountain cup programs to generate excitement and drive beverage sales and velocities</li>
+                                  <li>Drive volume and customer penny profit by trading up fountain cup sizing and leveraging National Program Cups to drive Consumer excitement</li>
                                 </ul>
 
                         </div>
@@ -361,46 +331,28 @@
                       <div *ngSwitchCase="'staffsuggestion'">
                           <h3>Staff Suggestion</h3>
                           <div class="slider-section-img">
-                            <img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image">
+                            <img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/QSR/value03hotspot01.png" class="slide-image">
                           </div>
                           <div class="slider-section-copy">
                             <ul>
                               <li>38% of consumers base their orders on their server's suggestions</li>
                               <li>Develop programming and materials for staff to help ensure all consumers add a beverage and snack to their meals</li>
+                              <li>Leverage 4 pack carriers as a carry out solution and to increase multi-product purchases</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase staffsuggestion -->
 
-                      <div *ngSwitchCase="'snackracktopper'">
-                        <h3>Frito Snack Rack Topper - News</h3>
-                        <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Use Rack Header Cards to highlight marketing promotions to drive sales</li>
-                            <li>Rack Headers can be ordered through the MSO portal</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase snackracktopper -->
-
                       <div *ngSwitchCase="'marketingwindowcling'">
                         <h3>Marketing Window Cling</h3>
                         <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Marketing Window - Sports A EN.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Marketing Window - Sports B EN.jpg" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Marketing Window - Sports C EN.jpg" class="slide-image"></ion-slide>
+                          <ion-slides pager="false">
+                            <ion-slide><img src="assets/img/QSR/valueext01hotspot01.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                              <div class="slider-section-copy">
                               <ul>
-                                <li>Well-executed window displays, showcasing promotions, draws passing consumers into the location and helps grow incremental sales</li>
-                                <li>Create eye-catching tools using Customer Marketing Dollars</li>
+                                <li>Well-executed window displays, showcasing promotions, draws passing consumers into the location and driving incremental sales</li>
+                                <li>Create eye-catching tools using Customer Declining Balances</li>
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase marketingwindowcling -->
@@ -408,7 +360,7 @@
                       <div *ngSwitchCase="'innovationshowcase'">
                             <h3>Innovation Showcase</h3>
                             <div class="slider-section-img">
-                              <img  [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/Slides/FS18018_P3_MSV_Sweet_Southern_BBQ_Render_ENG_P1.png" class="slide-image">
+                              <img  [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/QSR/valuetakeout01hotspot01.png" class="slide-image">
                             </div>
                             <div class="slider-section-copy">
                               <ul>
@@ -418,19 +370,6 @@
                               </ul>
                             </div>
                         </div><!-- *ngSwitchCase innovationshowcase -->
-
-                      <div *ngSwitchCase="'innovationwindow'">
-                        <h3>Innovation Window</h3>
-                        <div class="slider-section-img">
-                          <img  [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/ENG Bev Cling.png" class="slide-image">
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>The role of innovation is to gain incremental sales - use the Innovation Window cling to highlight new SKUs, capture impulse purchases, and drive trial</li>
-                            <li>Innovation Window clings can be ordered through the MSO Portal</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase innovationshowcase -->
 
                   </div> <!-- [ngSwitch]="view" -->
 

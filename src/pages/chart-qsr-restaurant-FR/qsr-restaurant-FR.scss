@@ -1,0 +1,73 @@
+.chart-qsr-restaurant-page-FR {
+
+  background-color: $pepsico-lightblueoffwhite;
+
+  .core-food {left: 890px; top: 230px;}
+  .core-beverage {left: 280px; top: 170px;}
+
+  .healthy-beverage {left: 510px; top: 200px;}
+  .healthy-food {left: 870px; top: 220px;}
+
+  .accelerate-food {left: 480px; top: 250px;}
+  .accelerate-beverage {left: 270px; top: 180px;}
+
+  .right-food {left: 780px; top: 230px;}
+  .right-beverage {left: 180px; top: 280px;}
+
+  .trade-food {left: 880px; top: 220px;}
+  .trade-beverage {left: 220px; top: 210px;}
+  .trade-beverage-2 {left: 355px; top: 175px;}
+
+
+  .environment-view-qsr-core,
+  .environment-view-qsr-healthy,
+  .environment-view-qsr-accelerate,
+  .environment-view-qsr-trade,
+  .environment-view-qsr-right {
+    width:882px;
+  }
+
+  .imgHolder-qsr-core,
+  .imgHolder-qsr-healthy,
+  .imgHolder-qsr-accelerate,
+  .imgHolder-qsr-trade,
+  .imgHolder-qsr-right {
+    overflow:hidden;
+    height:354px;
+    width:900px;
+    position:relative;
+  }
+
+  .qsr-core,
+  .qsr-healthy,
+  .qsr-accelerate,
+  .qsr-trade,
+  .qsr-right {
+    top: 0px;
+    height:600px;
+    width:900px;
+    display:block;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+  }
+
+  .qsr-core img,
+  .qsr-healthy img,
+  .qsr-accelerate img,
+  .qsr-trade img,
+  .qsr-right img {
+    z-index:2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+  }
+
+  .insights p {font-size: 14px;}
+
+}
+
+
+
+

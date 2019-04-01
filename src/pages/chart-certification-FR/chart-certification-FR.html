@@ -1,0 +1,222 @@
+<div class="chart-certification-page-FR" style="background-image: url(assets/img/CHART/Overview/CHART_Overview_background.png);">
+  <ion-row>
+    <div class="shadow" style="width: 72px; height:768px; margin-right: 32px; background: white;" >
+      <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
+        <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+        </svg>
+      </button>
+    </div><!-- side menu -->
+
+    <div style="width:884px;" >
+    <ion-row>
+      <div class="title-header" >Certification pour le cadre d’exécution</div>
+    </ion-row>
+
+    <form [formGroup]="survey" (ngSubmit)="sendEmail()">
+
+    <ion-list no-lines>
+      <ion-row>
+        <ion-item>
+          <ion-label><h3>nonm du représentant des ventes :</h3></ion-label>
+          <ion-input formControlName="fsr"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item>
+          <ion-label><h3>Commerce : (Bannière et nom du commerce)</h3></ion-label>
+          <ion-input placeholder="(banner & location name)" formControlName="location" ></ion-input>
+        </ion-item>
+      </ion-row>
+
+      <ion-row>
+        <ion-item>
+          <ion-label class="comments" >Commentaires :</ion-label>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-textarea formControlName="body" no-lines (change) = "findScore()" ></ion-textarea>
+      </ion-row>
+        <ion-row>
+            <ion-col col-2 ><ion-label>Sélectionnez un bouton : oui/non</ion-label></ion-col><ion-col col-10><ion-label><h4>CHART</h4></ion-label></ion-col>
+        </ion-row>
+
+        <ion-row  radio-group formControlName="question1" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >1. Avez-vous tous les produits « toujours en inventaire »?</ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row  radio-group formControlName="question2" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()"></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >2. Avez-vous assuré la distribution de la gamme de produits sains?</ion-item>
+          </ion-col>
+        </ion-row>
+
+         <ion-row  radio-group formControlName="question3" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()"></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >3. Les innovations sont-elles appuyées au moyen d’espace additionnel et de matériel de promotion?</ion-item>
+          </ion-col>
+        </ion-row>
+
+         <ion-row  radio-group formControlName="question4" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >4. Avons-nous offert suffisamment de produits ou d’outils de marchandisage additionnels pour répondre aux besoins particuliers de ce client et offrir les produits adéquats pour ce commerce?</ion-item>
+          </ion-col>
+        </ion-row>
+
+         <ion-row  radio-group formControlName="question5" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+            <ion-item inline text-uppercase >5. Avez-vous lancé les produits nécessaires pour convaincre le client d’opter pour la solution plus avantageuse?</ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-2 ></ion-col><ion-col col-10><ion-label><h4>Éléments fondamentaux</h4></ion-label></ion-col>
+        </ion-row>
+
+        <ion-row  radio-group formControlName="question6" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+          <ion-item inline text-uppercase >6. Le matériel de promotion et les outils de marchandisage de PepsiCo ont-ils été utilisés de façon efficace?</ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row  radio-group formControlName="question7" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+          <ion-item inline text-uppercase >7. Les prix étaient-ils clairement visibles sur les produits PepsiCo?</ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row  radio-group formControlName="question8" >
+         <ion-col class="oui">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="oui" item-left (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>oui</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col class="no">
+            <ion-item inline text-uppercase >
+              <ion-radio class="radio radio-inline radio-white" mode="md" value="NO" (ionSelect) = "findScore()" ></ion-radio>
+              <ion-label>non</ion-label>
+            </ion-item>
+         </ion-col>
+         <ion-col col-10>
+          <ion-item inline text-uppercase >8. Le matériel de promotion était-il en bon état et à jour?</ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-2></ion-col>
+          <ion-col col-3>
+              <h3 class="score">Résultat global</h3>
+          </ion-col>
+          <ion-col col-2>
+              <h2>{{totalScore | number:'1.0-0'}}%</h2>
+          </ion-col>
+          <ion-col col-5>
+            <ion-item inline text-uppercase ><button ion-button type="submit" [disabled]="!survey.valid" >Envoyer</button></ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-list>
+    </form>
+
+  </div>
+  </ion-row>
+</div>
+
+
+
+
+

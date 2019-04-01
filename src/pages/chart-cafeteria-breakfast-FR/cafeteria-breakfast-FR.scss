@@ -1,0 +1,81 @@
+.chart-cafeteria-breakfast-page-FR {
+
+background-color: $pepsico-lightblueoffwhite;
+
+.core-beverage-2 {left: 380px; top: 230px;}
+.core-beverage {left: 180px; top: 280px;}
+.core-food {left: 620px; top: 300px;}
+
+.healthy-food {left: 840px; top: 310px;}
+.healthy-beverage {left: 720px; top: 310px;}
+
+.accelerate-beverage {left: 200px; top: 290px;}
+.accelerate-food {left: 630px; top: 300px;}
+.accelerate-beverage-2 {left: 740px; top: 330px;}
+
+.right-food {left: 830px; top: 310px;}
+.right-beverage {left: 200px; top: 290px;}
+
+.trade-beverage {left: 200px; top: 290px;}
+.trade-beverage-2 {left: 370px; top: 240px;}
+.trade-food {left: 570px; top: 310px;}
+
+.environment-view-cafeteria-breakfast-core,
+.environment-view-cafeteria-breakfast-healthy,
+.environment-view-cafeteria-breakfast-accelerate,
+.environment-view-cafeteria-breakfast-trade,
+.environment-view-cafeteria-breakfast-right {
+  width:882px;
+  }
+
+.imgHolder-cafeteria-breakfast-core,
+.imgHolder-cafeteria-breakfast-healthy,
+.imgHolder-cafeteria-breakfast-accelerate,
+.imgHolder-cafeteria-breakfast-trade,
+.imgHolder-cafeteria-breakfast-right {
+  overflow:hidden;
+  height:354px;
+  position:relative;
+  }
+
+.imgHolder-cafeteria-breakfast-core,
+.imgHolder-cafeteria-breakfast-healthy,
+.imgHolder-cafeteria-breakfast-accelerate,
+.imgHolder-cafeteria-breakfast-trade,
+.imgHolder-cafeteria-breakfast-right {
+  width:900px;
+  }
+
+.cafeteria-breakfast-core,
+.cafeteria-breakfast-healthy,
+.cafeteria-breakfast-accelerate,
+.cafeteria-breakfast-trade,
+.cafeteria-breakfast-right {
+  top: 0px;
+  height:600px;
+  width:900px;
+  display:block;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+  }
+
+.cafeteria-breakfast-core img,
+.cafeteria-breakfast-healthy img,
+.cafeteria-breakfast-accelerate img,
+.cafeteria-breakfast-trade img,
+.cafeteria-breakfast-right img {
+  z-index:2;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  }
+
+.insights p {font-size: 14px;}
+
+}
+
+
+
+

@@ -2,22 +2,20 @@
 
 background-color: $pepsico-lightblueoffwhite;
 
-.snackracktopper {left:452px; top: 220px;}
-.innovationwindow {left: 250px; top: 260px;}
-.marketingprogram {left: 110px; top: 212px;}
-.staffsuggestion {left: 375px; top: 230px;}
-.staffsuggestion-station {left: 700px; top: 200px;}
-.fritosnackrack {left: 345px; top: 225px;}
 .variety01 {left: 195px; top: 200px;}
-.galvanizedtub {left: 520px; top: 258px;}
-.galvanizedtubcling {left: 520px; top: 258px;}
-.menuboards {left: 300px; top: 160px;}
-.perfectparings {left: 235px; top: 230px;}
-.perfectparings-station {left: 645px; top: 215px;}
-.innovationshowcase {left: 765px; top: 260px;}
-.countertopsnackrack {left: 866px; top: 186px;}
+.variety02 {left: 450px; top: 240px;}
+.variety03 {left: 550px; top: 315px;}
+.variety04 {left: 130px; top: 315px;}
 
+.visibility02 {left: 300px; top: 160px;}
+.visibility03 {left: 495px; top: 300px;}
 
+.visibilitycash01 {left: 866px; top: 186px;}
+
+.snackracktopper {left:452px; top: 220px;}
+.marketingprogram {left: 310px; top: 270px;}
+
+.varietycash01 {left: 866px; top: 186px;}
 
 .environment-view-cafeteria-lunch-value {width:508px;}
 .environment-view-cafeteria-station-value {width: 360px; margin-left:16px;}
@@ -25,7 +23,6 @@ background-color: $pepsico-lightblueoffwhite;
 .environment-view-cafeteria-station-visibility {width: 360px; margin-left:16px;}
 .environment-view-cafeteria-lunch-variety {width:508px;}
 .environment-view-cafeteria-station-variety {width: 360px; margin-left:16px;}
-
 
 .imgHolder-cafeteria-lunch-value,
 .imgHolder-cafeteria-lunch-visibility,
@@ -54,12 +51,12 @@ background-color: $pepsico-lightblueoffwhite;
     overflow:hidden;
     }
 
-
+.cafeteria-lunch-variety {left: -100px; width:777px; height:400px;}
+.cafeteria-station-variety {left: -150px; width:777px; height:400px;}
 .cafeteria-lunch-value {left: -100px; width:777px; height:400px;}
 .cafeteria-station-value {left: -50px; width:777px; height:400px;}
-.cafeteria-lunch-visibility, .cafeteria-lunch-variety {left: -200px; width:777px; height:400px;}
-.cafeteria-station-visibility, .cafeteria-station-variety {left: -200px; width:777px; height:400px;}
-
+.cafeteria-lunch-visibility {left: -200px; width:777px; height:400px;}
+.cafeteria-station-visibility {left: -200px; width:777px; height:400px;}
 
 .cafeteria-lunch-value img,
 .cafeteria-station-value img,

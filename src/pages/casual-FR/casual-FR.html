@@ -1,4 +1,4 @@
-<ion-grid class="casual-page"><!-- side menu -->
+<ion-grid class="casual-page-FR"><!-- side menu -->
     <ion-row>
         <div class="shadow" style="width:72px; height:768px; margin-right: 32px; background: white;" >
           <button menuToggle class="menutoggle" style="margin-left:14px; margin-top:24px; background:none;">
@@ -24,7 +24,7 @@
                     </svg>
                   VALEUR
                 </button>
-                <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'perfectparings'" >
+                <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'tabletent'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
                     <path class="st0" d="M68.3,12.7C67,10.9,65.1,9.4,63,8.5c-1.1-2.1-2.8-4.3-3.7-5.2c-1.3-1.2-3-1.9-4.9-1.9c-4,0-7.3,3.3-7.3,7.3
                       c0,1.6-0.1,3,0.1,4.2c-0.8,1.1-1.4,2.4-1.8,3.8c-0.8-0.6-1.9-1-3-1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0.4-3,1
@@ -67,8 +67,7 @@
                       <img src="assets/img/Casual/Casual_Dining.png" />
                       <div *ngIf="view === 'menu'" style="z-index:1;"><img [class.fade-in]="view === 'menu'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Variety_menu.png" /></div>
 
-                      <div *ngIf="view === 'menupresence'" style="z-index:1;"><img [class.fade-in]="view === 'menupresence'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Variety_menupresence.png" /></div>                      <div *ngIf="view === 'perfectparings'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_perfectparings.png" /></div>
-                      <div *ngIf="view === 'perfectparings-takeout'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings-takeout'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_perfectparings.png" /></div>
+                      <div *ngIf="view === 'menupresence'" style="z-index:1;"><img [class.fade-in]="view === 'menupresence'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Variety_menupresence.png" /></div>
                       <div *ngIf="view === 'menutipins'" style="z-index:1;"><img [class.fade-in]="view === 'menutipins'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_menutipins.png" /></div>
                       <div *ngIf="view === 'tabletent'" style="z-index:1;"><img [class.fade-in]="view === 'tabletent'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_tabletent.png" /></div>
                       <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_staffsuggestion.png" /></div>
@@ -82,22 +81,22 @@
                 <div  [class.environment-view-casual-takeout-value]="type === 'value'" [class.environment-view-casual-takeout-visibility]="type === 'visibility'" [class.environment-view-casual-takeout-variety]="type === 'variety'" class="shadow easing">
                   <div [class.imgHolder-casual-takeout-value]="type === 'value'" [class.imgHolder-casual-takeout-visibility]="type === 'visibility'" [class.imgHolder-casual-takeout-variety]="type === 'variety'" class="easing" >
                     <div [class.casual-takeout-value]="type === 'value'" [class.casual-takeout-visibility]="type === 'visibility'" [class.casual-takeout-variety]="type === 'variety'" class="easing" >
-                      <img src="assets/img/Casual/Casual_Takeout.png" />
-                      <div *ngIf="view === 'snackracktopper'" style="z-index:1;"><img [class.fade-in]="view === 'snackracktopper'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_snackracktopper.png" /></div>
-                      <div *ngIf="view === 'innovationshowcase'" style="z-index:1;"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="" /></div>
-                      <div *ngIf="view === 'innovationwindow'" style="z-index:1;"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_innovationwindow.png" /></div>
-                      <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_staffsuggestion_takeout.png" /></div>
-                      <div *ngIf="view === 'staffsuggestion-takeout'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion-takeout'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Value_staffsuggestion_takeout.png" /></div>
+                      <img src="assets/img/Casual/CasualTakeout.jpg" />
+                      <div *ngIf="view === 'valuetakeout01'" style="z-index:1;"><img [class.fade-in]="view === 'valuetakeout01'" onload="this.style.opacity='1';" src="assets/img/Casual/valuetakeout01.png" /></div>
+                      <div *ngIf="view === 'staffsuggestion'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="" /></div>
+                      <div *ngIf="view === 'staffsuggestion-takeout'" style="z-index:1;"><img [class.fade-in]="view === 'staffsuggestion-takeout'" onload="this.style.opacity='1';" src="" /></div>
 
+<!--
                       <div *ngIf="view === 'featurechalkboard'" style="z-index:1;"><img [class.fade-in]="view === 'featurechalkboard'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_featurechalkboard.png" /></div>
                       <div *ngIf="view === 'menuboards'" style="z-index:1;"><img [class.fade-in]="view === 'menuboards'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_menuboards.png" /></div>
+-->
+
                       <div *ngIf="view === 'menu'" style="z-index:1;"><img [class.fade-in]="view === 'menu'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_menu.png" /></div>
-                      <div *ngIf="view === 'perfectparings'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_perfectparings_takeout.png" /></div>
-                      <div *ngIf="view === 'perfectparings-takeout'" style="z-index:1;"><img [class.fade-in]="view === 'perfectparings-takeout'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Visibility_perfectparings_takeout.png" /></div>
 
+                      <div *ngIf="view === 'visibilitytakeout03'" style="z-index:1;"><img [class.fade-in]="view === 'visibilitytakeout03'" onload="this.style.opacity='1';" src="assets/img/Casual/varietytakeout02.png" /></div>
 
-                      <div *ngIf="view === 'fritosnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Variety_fritosnackrack.png" /></div>
-                      <div *ngIf="view === 'beveragecooler'" style="z-index:1;"><img [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" src="assets/img/Casual/Casual_Variety_beveragecooler.png" /></div>
+                      <div *ngIf="view === 'fritosnackrack'" style="z-index:1;"><img [class.fade-in]="view === 'fritosnackrack'" onload="this.style.opacity='1';" src="assets/img/Casual/varietytakeout02.png" /></div>
+                      <div *ngIf="view === 'beveragecooler'" style="z-index:1;"><img [class.fade-in]="view === 'beveragecooler'" onload="this.style.opacity='1';" src="assets/img/Casual/varietytakeout01.png" /></div>
 
                     </div>
                   </div>
@@ -108,9 +107,7 @@
 
             <div [ngSwitch]="type">
               <div *ngSwitchCase="'value'">
-                      <button [class.active]="view === 'snackracktopper'" class="btn-bullseye snackracktopper" title="" (click)="view = 'snackracktopper';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'innovationshowcase'" class="btn-bullseye innovationshowcase" title=""  (click)="view = 'innovationshowcase';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'innovationwindow'" class="btn-bullseye innovationwindow" title=""  (click)="view = 'innovationwindow';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'valuetakeout01'" class="btn-bullseye valuetakeout01" title=""  (click)="view = 'valuetakeout01';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'staffsuggestion'" class="btn-bullseye staffsuggestion" title=""  (click)="view = 'staffsuggestion';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'staffsuggestion-takeout'" class="btn-bullseye staffsuggestion-takeout" title=""  (click)="view = 'staffsuggestion-takeout';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase value -->
@@ -118,10 +115,14 @@
               <div *ngSwitchCase="'visibility'">
                       <button [class.active]="view === 'menupresence'" class="btn-bullseye menupresence" title="" (click)="view = 'menupresence'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'tabletent'" class="btn-bullseye tabletent" title="" (click)="view = 'tabletent'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+
+                      <button [class.active]="view === 'visibilitytakeout03'" class="btn-bullseye visibilitytakeout03" title=""  (click)="view = 'visibilitytakeout03';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+
+<!--
                       <button [class.active]="view === 'featurechalkboard'" class="btn-bullseye featurechalkboard" title=""  (click)="view = 'featurechalkboard';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'menuboards'" class="btn-bullseye menuboards" title=""  (click)="view = 'menuboards';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'perfectparings'" class="btn-bullseye perfectparings" title=""  (click)="view = 'perfectparings';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'perfectparings-takeout'" class="btn-bullseye perfectparings-takeout" title=""  (click)="view = 'perfectparings-takeout';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+-->
+
               </div><!-- ngSwitchCase visibility -->
 
               <div *ngSwitchCase="'variety'">
@@ -143,8 +144,7 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li>Le principal obstacle à l'achat est le manque de choix. Offrir une variété adéquate maximise les ventes.</li>
-                          <li>La variété importe surtout dans le cas des repas à emporter, car moins de 50 % des consommateurs savent ce qu'ils veulent avant de commander.</li>
+                          <li>Le principal obstacle à l'achat est le manque de choix. Offrir une variété adéquate maximise la portée et les ventes.</li>
                       </ol>
                   </ion-list>
 
@@ -158,8 +158,8 @@
 
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
-                          <li>La valeur augmente les ventes dans les restaurants décontractés - l'inclusion en combos et les promotions augmentent les achats totaux.</li>
-                          <li>Les repas à emporter et la livraison sont en hausse de 8 %, ce qui favorisent la croissance future dans le segment.</li>
+                          <li>L'inclusion en combo et les articles « en vedette » permettent d'accroître la fréquence d'achat et, en bout de ligne, la valeur des achats.</li>
+                          <li>La consommation hors des lieux de vente est en hausse de +8 % pour l'année à ce jour et ce segment devrait générer la croissance future.</li>
                       </ol>
                   </ion-list>
 
@@ -173,76 +173,56 @@
 
 <!-- Variety -->
                       <div *ngSwitchCase="'menu'">
-                        <h3>Menu</h3>
+                        <h3>Beverage Variety</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Menu Presence - Pepsi.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Menu Presence - Brisk.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Menu Presence - Montellier.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Menu Presence - Pure Leaf.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/variety01hotspot01.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/variety01hotspot02FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/variety01hotspot03.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/variety01hotspot04FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/variety01hotspot05FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/variety01hotspot06.png" class="slide-image"></ion-slide>
+
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
                             <ul>
-                              <li>Les consommateurs recherchent divers types de boissons pour accompagner leur plat principal.</li>
-                              <li>Obtenez des ventes, peu importe les préférences du consommateur en offrant des boissons en fontaine et en bouteille.</li>
+                              <li>Les consommateurs recherchent divers types de boissons pour accompagner leur plat principal et compléter leur repas.</li>
+                              <li>Obtenir des ventes, peu importe les préférences du consommateur en offrant des boissons en fontaine et en bouteille.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase menu -->
 
                       <div *ngSwitchCase="'beveragecooler'">
                         <h3>Réfrigérateur de boissons :</h3>
-                        <ion-slides pager="true">
-                          <ion-slide>
-                            <div class="slider-section-img">
-                              <img src="assets/img/Slides/Cooler - Two-Door.jpg" class="slide-image">
-                            </div>
-                            <div class="slider-section-copy">
-                                <ul>
-                                  <li>Les consommateurs de repas à emporter à consommer sur le pouce préfèrent les bouteilles en raison de l'aspect pratique.</li>
-                                  <li>L'exécution entière des planogrammes permet d'accroître les ventes tout en évitant les ruptures de stock.</li>
-                                  <li>Les planogrammes complets sont accessibles dans Advantage.</li>
-                                </ul>
-                            </div>
-                          </ion-slide>
-                          <ion-slide>
-                            <div class="slider-section-img">
-                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler.png" class="slide-image">
-                            </div>
-                            <div class="slider-section-copy">
-                                <ul>
-                                  <li>PepsiCo offre une gamme de saveurs avantageuse pour favoriser la croissance.</li>
-                                  <li>Les bouteilles sont un bon moyen de favoriser la croissance et le profit.</li>
-                                  <li>Échanger les cannettes pour des bouteilles de 591 ml.</li>
-                                </ul>
-                            </div>
-                          </ion-slide>
-                          <ion-slide>
-                            <div class="slider-section-img">
-                              <img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler_2.png" class="slide-image">
-                            </div>
-                            <div class="slider-section-copy">
-                                <ul>
-                                  <li>Les eaux, thés, jus et boissons isotoniques connaîtront une croissance combinée de 5 % au cours des 5 prochaines années.</li>
-                                </ul>
-                            </div>
-                          </ion-slide>
-                        </ion-slides>
+                        <div class="slider-section-img">
+                          <ion-slides pager="true">
+<!--                        <ion-slide><img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Cafeteria_Lunch_Beverage_Cooler_2.png" class="slide-image"></ion-slide>    -->
+                            <ion-slide><img src="assets/img/Casual/varietytakeout01hotspot01.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/varietytakeout01hotspot02.png" class="slide-image"></ion-slide>
+                          </ion-slides>
+                        </div>
+                        <div class="slider-section-copy">
+                          <ul>
+                            <li>Les consommateurs de produits à emporter préfèrent les bouteilles et ce format contribue à accroître le profit des exploitants.</li>
+                            <li>L'exécution entière des planogrammes permet d'accroître les ventes tout en évitant les ruptures de stock.</li>
+                            <li>Les planogrammes complets sont accessibles dans Advantage.</li>
+                          </ul>
+                        </div>
                       </div><!-- *ngSwitchCase beveragecooler -->
 
                       <div *ngSwitchCase="'fritosnackrack'">
                         <h3>Présentoir métallique de collations Frito :</h3>
                         <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
+                          <ion-slides pager="false">
+                            <ion-slide><img src="assets/img/Casual/varietytakeout02hotspot01FR.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Utiliser les surmontoirs de présentoir de collations pour mettre en vedette les nouvelles paires ou les promotions de marketing avantageuses pour les consommateurs et augmenter l'ensemble des ventes.</li>
-                            <li>Ces surmontoirs de présentoir de collations peuvent être commandés sur le portail MSO.</li>
+                            <li>Utiliser les bons présentoirs pour l'exécution des planogrammes régionaux et des produits « Meilleurs pour vous » qui comprennent la gamme de collations adéquate et accroître les ventes.</li>
+                            <li>Les présentoirs peuvent être commandés dans MSO et les planogrammes sont accessibles dans Advantage.</li>
                           </ul>
                         </div>
                       </div><!-- *ngSwitchCase fritosnackrack -->
@@ -253,12 +233,12 @@
                       <div *ngSwitchCase="'tabletent'">
                         <h3>Les affiches en chevalet sur les tables :</h3>
                         <div class="slider-section-img">
-                            <img src="assets/img/Slides/Table Tents - Plastic 1.jpg" class="slide-image">
+                            <img src="assets/img/Casual/visibility01hotspot01FR.png" class="slide-image">
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Utiliser les affiches en chevalet pour table comme outil d'information pour promouvoir les innovations et favoriser l'essai des nouveaux produits.</li>
-                            <li>Commander les affiches en chevalet pour table (surmontoirs en plastique et supports en acrylique avec encarts) auprès de nos fournisseurs privilégiés.</li>
+                            <li>Utiliser les affiches en chevalet comme outil pour accroître la notoriété des innovations et favoriser l'essai des nouveaux produits.</li>
+                            <li>Les affiches en chevalet (en plastique et en acryliques avec encart) peuvent être commandés par le biais des fournisseurs privilégiés d'outils PepsiCo.</li>
                           </ul>
                         </div>
                       </div><!-- *ngSwitchCase tabletent -->
@@ -268,17 +248,17 @@
                         <div class="slider-section-img">
                           <ion-slides pager="true">
                             <ion-slide><img src="assets/img/Slides/Menu Presence - Pepsi.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Menu Presence - Brisk.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/visibility02hotspot02FR.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Menu Presence - Montellier.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Menu Presence - Pure Leaf.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/visibility02hotspot04FR.png" class="slide-image"></ion-slide>
                             <ion-slide><img src="assets/img/Slides/Mountain Dew 591mL DRY Straight Bilingual_MTN DEW_NEW__BOTTLE_Rev3.png" class="slide-image"></ion-slide>
 
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
                             <ul>
-                              <li>La présence sur le menu est ce qui influence le plus les ventes dans les restaurants décontractés, ce qui en fait un élément crucial pour accroître les ventes.</li>
-                              <li>Tirez profit du matériel numérique accessible dans Advantage et de la galerie d'images de PepsiCo pour ajouter des images sur le menu.</li>
+                              <li>La visibilité sur le menu est l'un des facteurs qui contribue le plus aux ventes de boissons dans les restaurants décontractés.</li>
+                              <li>Tirer profit du matériel numérique et des photos accessibles dans Advantage et la galerie d'images de PepsiCo.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase menupresence -->
@@ -290,8 +270,8 @@
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Les tableaux noirs pour les promotions répondent aux 4 principaux facteurs influençant les commandes à emporter : présence sur le menu, inclusion en combo, promotion spéciale et articles en vedette.</li>
-                            <li>Les tableaux noirs peuvent être commandés dans le portail MSO.</li>
+                            <li>Les tableaux noirs des promotions se classent parmi les 4 principaux facteurs qui influencent les commandes pour emporter : présence sur le menu, inclusion en combo, promotions et articles en vedette.</li>
+                            <li>Les tableaux peuvent être commandés par le biais de nos fournisseurs privilégiés.</li>
                           </ul>
                         </div>
                       </div><!-- *ngSwitchCase featurechalkboard -->
@@ -310,111 +290,69 @@
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Plus plus grande spontanéité pour les repas à emporter. Utiliser de nouvelles photos favorisant l'appétit et la fréquence d'achat de boissons.</li>
+                            <li>Les consommateurs de produits à emporter génèrent plus de ventes spontanées et sont plus influencés par les images de boissons rafraîchissantes.</li>
                             <li>+100 nouvelles images de boissons et d'aliments pour le contenu numérique visant les produits à emporter : site Web, commande à l'auto et contenu rotatif.</li>
                             <li>Images dans la galerie de PepsiCo.</li>
                           </ul>
                         </div>
                       </div><!-- *ngSwitchCase menuboards -->
 
-                      <div *ngSwitchCase="'perfectparings'" >
-                        <h3>Les paires parfaites :</h3>
+                      <div *ngSwitchCase="'visibilitytakeout03'">
+                        <h3>Présentoir métallique de collations Frito :</h3>
                         <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/17633 LG IN1 PEPSICO 3V IMAGE-01.jpg" class="slide-image"></ion-slide>
+                          <ion-slides pager="false">
+                            <ion-slide><img src="assets/img/Casual/varietytakeout02hotspot01.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Tirer profit de la variété de la gamme pour offrir la boisson adéquate avec le bon repas sur votre menu afin d'étendre la portée.</li>
-                            <li>Tirer profit des +100 nouvelles images de boissons et repas dans la galerie d'images de PepsiCo.</li>
-                            <li>Les supports en acrylique peuvent être commandés dans le portail MSO.</li>
+                            <li>Utiliser les affiches pour présentoir métallique afin d'attirer l'attention sur les produits, les caractéristiques et les promotions, et augmenter les ventes.</li>
+                            <li>Les surmontoirs de présentoir de collations peuvent être commandés par le biais du portail MSO.</li>
                           </ul>
                         </div>
-                      </div> <!-- *ngSwitchCase="'perfectparings -->
-
-                      <div *ngSwitchCase="'perfectparings-takeout'" >
-                       <h3>Les paires parfaites :</h3>
-                        <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Les boissons et collations sont souvent un choix secondaire pour les consommateurs de repas à emporter.</li>
-                            <li>Suggérer des paires avec les repas aide donc à accroître les ventes.</li>
-                            <li>Tirer profit de plus de 100 nouvelles images de boissons et repas dans la galerie d'images de PepsiCo.</li>
-                          </ul>
-                        </div>
-                      </div> <!-- *ngSwitchCase="'perfectparings-takeout -->
+                      </div><!-- *ngSwitchCase fritosnackrack -->
 
 <!-- Value -->
 
-                      <div *ngSwitchCase="'snackracktopper'">
-                        <h3>Surmontoir pour présentoir métallique de  collations Frito <br/>- Texte sur les nouveautés :</h3>
+
+                      <div *ngSwitchCase="'valuetakeout01'">
+                      <h3>Matériel de présentation des innovations :</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/MissVickies_PureLeafLemon_Pairing Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/PepsiCO_MtnDew_Doritos_Right.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pepsico_LaysClassic_Right.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/valuetakeout01hotspot01.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Casual/valuetakeout01hotspot02.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Utilisez les surmontoirs de présentoirs métalliques pour présenter les nouvelles paires ou les promotions de marketing avantageuses pour les consommateurs et accroître les ventes de produits à emporter.</li>
-                            <li>Les surmontoirs de présentoirs métalliques peuvent être commandés dans le portail MSO.</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase snackracktopper -->
-
-                      <div *ngSwitchCase="'innovationshowcase'">
-                      <h3>Matériel de présentation des innovations :</h3>
-                        <div class="slider-section-img"><img [class.fade-in]="view === 'innovationshowcase'" onload="this.style.opacity='1';" src="assets/img/Slides/FS18018_P3_MSV_Sweet_Southern_BBQ_Render_ENG_P1.png" class="slide-image"></div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Les innovations pour les collations peuvent être ajoutées aux repas par les consommateurs de produits à emporter si celles-ci sont présentées dans les zones achalandées pour générer des ventes supplémentaires.</li>
+                            <li>Favoriser les comportements spontanés en plaçant les innovations de la catégorie des collations dans des zones achalandées du commerce.</li>
                             <li>Les présentoirs « Weekenders » et métalliques peuvent être commandés dans le portail MSO.</li>
                           </ul>
                         </div>
-                      </div><!-- *ngSwitchCase innovationshowcase -->
+                      </div><!-- *ngSwitchCase valuetakeout01 -->
 
                       <div *ngSwitchCase="'staffsuggestion'">
                         <h3>Suggestions des membres du personnel :</h3>
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
+                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Casual/value01hotspot01.png" class="slide-image"></div>
                           <div class="slider-section-copy">
                             <ul>
                               <li>38 % des consommateurs choisissent en fonction des suggestions du serveur.</li>
-                              <li>Développez des campagnes et du matériel à l'intention des membres du personnel pour encourager tous les consommateurs à ajouter les boissons et les collations à leur repas.</li>
+                              <li>Développer des campagnes et du matériel pour aider le personnel à encourager les consommateurs à ajouter les boissons et collations à leur repas.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase staffsuggestion -->
 
                       <div *ngSwitchCase="'staffsuggestion-takeout'">
                         <h3>Suggestions des membres du personnel :</h3>
-                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Slides/Staff Suggestion Button EN.jpg" class="slide-image"></div>
+                          <div class="slider-section-img"><img [class.fade-in]="view === 'staffsuggestion'" onload="this.style.opacity='1';" src="assets/img/Casual/valuetakeout02hotspot01.png" class="slide-image"></div>
                           <div class="slider-section-copy">
                             <ul>
-                              <li>Lorsqu'elles sont suggérées en complément des commandes à emporter, les boissons et les collations obtiennent un faible taux de refus.</li>
-                              <li>Développez une campagne pour les suggestions des membres du personnel afin qu'une collation et une boisson soient ajoutées à tous les repas.</li>
+                              <li>Lorsqu'ils sont suggérés comme accompagnement avec les repas, les aliments et les boissons obtiennent un faible taux de refus.</li>
+                              <li>Développer une campagne pour les suggestions des membres du personnel afin qu'une collation et une boisson soient ajoutées à tous les repas.</li>
+                              <li>Miser sur le support pour 4 produits comme solution pour favoriser la hausse des ventes des produits multiples à emporter.</li>
                             </ul>
                           </div>
                       </div><!-- *ngSwitchCase staffsuggestion-takeout -->
-
-                      <div *ngSwitchCase="'innovationwindow'">
-                      <h3>l'électrostatique pour fenêtre présentant les innovations :</h3>
-                        <div class="slider-section-img"><img [class.fade-in]="view === 'innovationwindow'" onload="this.style.opacity='1';" src="assets/img/Slides/ENG Bev Cling.png" class="slide-image"></div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Le rôle des innovations est de générer des ventes supplémentaires. Utilisez l'électrostatique pour fenêtre pour présenter les innovations, générer des ventes spontanées et favoriser l'essai.</li>
-                            <li>Les électrostatiques pour fenêtre présentant les innovations peuvent être commandés dans le portail MSO.</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase innovationwindow -->
 
                   </div> <!-- [ngSwitch]="view" -->
 

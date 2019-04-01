@@ -12,7 +12,7 @@ export class CafeteriaLunchFRPage {
     pager: true
   };
 
-  public view = "beveragecooler";
+  public view = "variety01";
   public type = "variety";
   public key = "lunch";
 

@@ -1,10 +1,10 @@
 .casual-page-FR {
 
 .snackracktopper {left: 875px; top: 255px;}
-.innovationshowcase {left: 600px; top: 210px;}
+.valuetakeout01 {left: 630px; top: 280px;}
 .innovationwindow {left: 742px; top: 167px;}
 .staffsuggestion {left: 275px; top: 215px;}
-.staffsuggestion-takeout {left: 835px; top: 210px;}
+.staffsuggestion-takeout {left: 880px; top: 260px;}
 
 
 .featurechalkboard {left: 650px; top: 150px;}
@@ -15,33 +15,24 @@
 .menu {left: 320px; top: 290px;}
 .menupresence {left: 320px; top: 290px;}
 .tabletent {left: 270px; top: 270px;}
-.fritosnackrack {left: 780px; top: 270px;}
-.beveragecooler {left: 750px; top: 180px;}
+
+.visibilitytakeout03 {left: 610px; top: 270px;}
+
+.fritosnackrack {left: 610px; top: 270px;}
+.beveragecooler {left: 750px; top: 220px;}
 
 
 background-color: $pepsico-lightblueoffwhite;
 
-
-
-.slider-section-copy ul,
-.slider-section-copy p {
-    line-height: 1.1em;
-    font-size: .9em;
-}
-
-
-
-
-
 /* Environment views section */
 
 
-.environment-view-casual-dining-value {width:450px;}
-.environment-view-casual-takeout-value {width: 450px; margin-left:16px;}
-.environment-view-casual-dining-visibility {width:450px;}
-.environment-view-casual-takeout-visibility {width: 450px; margin-left:16px;}
-.environment-view-casual-dining-variety {width:450px;}
-.environment-view-casual-takeout-variety {width: 450px; margin-left:16px;}
+.environment-view-casual-dining-value {width:434px;}
+.environment-view-casual-takeout-value {width: 434px; margin-left:16px;}
+.environment-view-casual-dining-visibility {width:434px;}
+.environment-view-casual-takeout-visibility {width: 434px; margin-left:16px;}
+.environment-view-casual-dining-variety {width:434px;}
+.environment-view-casual-takeout-variety {width: 434px; margin-left:16px;}
 
 
 
@@ -96,16 +87,6 @@ background-color: $pepsico-lightblueoffwhite;
     left:0;
     width:100%;
     }
-
-/* Value */
-.staffsuggestion ul {line-height: 1.3em;font-size: .9em; padding-top:50px;}
-.staffsuggestion-takeout ul {line-height: 1.3em;font-size: .9em; padding-top:50px;}
-.snackracktopper ul {line-height: 1em;font-size: .9em; padding-top:50px;}
-
-/* Variety */
-
-
-/* Visibility */
 
 
 }

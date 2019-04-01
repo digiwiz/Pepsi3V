@@ -30,6 +30,14 @@ import { CHARTCafeteriaBreakfastPage } from '../pages/chart-cafeteria-breakfast/
 import { CHARTCafeteriaLunchPage } from '../pages/chart-cafeteria-lunch/cafeteria-lunch';
 import { CHARTCertificationPage } from '../pages/chart-certification/chart-certification';
 
+import { CHARTOverviewFRPage } from '../pages/chart-overview-FR/overview-FR';
+import { CHARTQsrRestaurantFRPage } from '../pages/chart-qsr-restaurant-FR/qsr-restaurant-FR';
+import { CHARTRecreationFRPage } from '../pages/chart-recreation-FR/recreation-FR';
+import { CHARTCasualFRPage } from '../pages/chart-casual-FR/casual-FR';
+import { CHARTCafeteriaBreakfastFRPage } from '../pages/chart-cafeteria-breakfast-FR/cafeteria-breakfast-FR';
+import { CHARTCafeteriaLunchFRPage } from '../pages/chart-cafeteria-lunch-FR/cafeteria-lunch-FR';
+import { CHARTCertificationFRPage } from '../pages/chart-certification-FR/chart-certification-FR';
+
 
 
 @NgModule({
@@ -59,7 +67,15 @@ import { CHARTCertificationPage } from '../pages/chart-certification/chart-certi
     CHARTCasualPage,
     CHARTCafeteriaBreakfastPage,
     CHARTCafeteriaLunchPage,
-    CHARTCertificationPage
+    CHARTCertificationPage,
+
+    CHARTOverviewFRPage,
+    CHARTQsrRestaurantFRPage,
+    CHARTRecreationFRPage,
+    CHARTCasualFRPage,
+    CHARTCafeteriaBreakfastFRPage,
+    CHARTCafeteriaLunchFRPage,
+    CHARTCertificationFRPage
   ],
   imports: [
     BrowserModule,
@@ -100,7 +116,16 @@ import { CHARTCertificationPage } from '../pages/chart-certification/chart-certi
     CHARTCasualPage,
     CHARTCafeteriaBreakfastPage,
     CHARTCafeteriaLunchPage,
-    CHARTCertificationPage
+    CHARTCertificationPage,
+
+    CHARTOverviewFRPage,
+    CHARTQsrRestaurantFRPage,
+    CHARTRecreationFRPage,
+    CHARTCasualFRPage,
+    CHARTCafeteriaBreakfastFRPage,
+    CHARTCafeteriaLunchFRPage,
+    CHARTCertificationFRPage
+
   ],
   providers: [
     EmailComposer,

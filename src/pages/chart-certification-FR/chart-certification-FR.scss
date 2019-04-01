@@ -1,0 +1,99 @@
+.chart-certification-page-FR {
+
+h2 {
+    font-family: Futura;
+    line-height: 36px;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    }
+
+h3 {
+    font-family: Futura;
+    line-height: 22px;
+    font-size: 22px;
+    color: white;
+    padding-left: 0;
+    margin-bottom:0;
+    }
+
+h4 {
+    font-family: Futura;
+    line-height: 20px;
+    font-size: 20px;
+    color: white;
+    padding-left: 0;
+    margin-bottom:0;
+    }
+
+.score {
+    font-family: Futura;
+    line-height: 20px;
+    font-size: 20px;
+    color: white;
+    }
+
+.title-header {
+    margin-top: 32px;
+    width: 881px;
+    font-family: Futura;
+    line-height: 36px;
+    font-size: 36px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    text-align: center;
+    }
+
+ion-item, ion-label, .label-md, .item-input  {
+	background-color: transparent !important;
+	color: white;
+	border-bottom: none;
+  margin: 0px 2px 0px 0 !important;
+  padding: 0 !important;
+  white-space: normal;
+}
+
+.item-input ion-label {
+  max-width: none;
+}
+.col {
+  padding: 0;
+}
+
+
+
+ion-textarea {
+  background-color: white;
+  color: black;
+  }
+.item-md .radio-md,
+.item .radio {
+  margin: 0px 5px 0px 0 !important;
+  padding: 0 !important;
+  padding-right: 5px;
+  width: 20px;
+}
+.item-md .radio-md[item-left],
+.item .radio[item-left] {
+  margin: 0px 0px 0px 0 !important;
+  padding: 0 !important;
+  width: 20px;
+}
+
+.title-header {color: white;}
+
+.item-block {
+  min-height: 0;
+}
+
+.item-button {
+  height: 60px;
+  width: 60px;
+  border: 5px;
+}
+
+.yes, .no {width: 60px;}
+
+}
+

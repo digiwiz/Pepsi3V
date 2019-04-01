@@ -13,7 +13,7 @@
             <ion-col col-6 class="title-header">CAFÉTÉRIAS DÉJEUNER</ion-col>
 
             <ion-col col-6 no-padding >
-                <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'quakerseasonalflavours'" >
+                <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'value01'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
@@ -24,7 +24,7 @@
                     </svg>
                   VALEUR
                 </button>
-                <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'quakermuffinrackheader'" >
+                <button [class.active]="type === 'visibility'" class="shadow easing segment-button btn_visibility" title="" (click)="type = 'visibility'; view = 'visibility01'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 84.3 64" style="enable-background:new 0 0 84.3 64;" xml:space="preserve">
                     <path class="st0" d="M68.3,12.7C67,10.9,65.1,9.4,63,8.5c-1.1-2.1-2.8-4.3-3.7-5.2c-1.3-1.2-3-1.9-4.9-1.9c-4,0-7.3,3.3-7.3,7.3
                       c0,1.6-0.1,3,0.1,4.2c-0.8,1.1-1.4,2.4-1.8,3.8c-0.8-0.6-1.9-1-3-1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0.4-3,1
@@ -40,7 +40,7 @@
                   </svg>
                   VISIBILITÉ
                 </button>
-                <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'quakermuffinrack'" >
+                <button [class.active]="type === 'variety'" class="shadow easing segment-button btn_variety" title="" (click)="type = 'variety'; view = 'variety01'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-245.2 381 39.7 32" style="enable-background:new -245.2 381 39.7 32;" xml:space="preserve">
                   <path class="st0" d="M-215.9,383.1c0-2.1-7.9-2.1-8.3-2.1c-0.4,0-8.3,0.1-8.3,2.1c0,0.4,0.3,0.7,0.8,1l1.6,23.7
                     c0,0.8,2.6,1.5,5.9,1.5c3.3,0,5.9-0.7,5.9-1.5l1.7-23.7C-216.1,383.8-215.9,383.5-215.9,383.1z M-224.2,381.9c4.5,0,7.1,0.8,7.3,1.2
@@ -64,18 +64,16 @@
                 <div  [class.environment-view-cafeteria-breakfast-int-value]="type === 'value'" [class.environment-view-cafeteria-breakfast-int-visibility]="type === 'visibility'" [class.environment-view-cafeteria-breakfast-int-variety]="type === 'variety'" class="shadow easing">
                   <div [class.imgHolder-cafeteria-breakfast-int-value]="type === 'value'" [class.imgHolder-cafeteria-breakfast-int-visibility]="type === 'visibility'" [class.imgHolder-cafeteria-breakfast-int-variety]="type === 'variety'" class="easing" >
                     <div [class.cafeteria-breakfast-int-value]="type === 'value'" [class.cafeteria-breakfast-int-visibility]="type === 'visibility'" [class.cafeteria-breakfast-int-variety]="type === 'variety'" class="easing" >
-                      <img src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast.png" />
+                      <img src="assets/img/Cafeteria_Breakfast/CafeteriaBreakfast.jpg" />
 
-                      <div *ngIf="view === 'quakerseasonalflavours'" style="z-index:1;"><img [class.fade-in]="view === 'btgcling'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Value_quakerseasonalflavours.png" /></div>
-                      <div *ngIf="view === 'premiumproducts'" style="z-index:1;"><img [class.fade-in]="view === 'premiumproducts'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Value_premiumproducts.png" /></div>
+                      <div *ngIf="view === 'value01'" style="z-index:1;"><img [class.fade-in]="view === 'btgcling'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/value01.png" /></div>
+                      <div *ngIf="view === 'value02'" style="z-index:1;"><img [class.fade-in]="view === 'value02'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/value02.png" /></div>
 
-                      <div *ngIf="view === 'quakermuffinrack'" style="z-index:1;"><img [class.fade-in]="view === 'quakermuffinrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Variety_quakermuffinrack.png" /></div>
-                      <div *ngIf="view === 'galvanizedtub'" style="z-index:1;"><img [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Variety_galvanizedtub.png" /></div>
+                      <div *ngIf="view === 'variety01'" style="z-index:1;"><img [class.fade-in]="view === 'variety01'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/variety01.png" /></div>
+                      <div *ngIf="view === 'variety02'" style="z-index:1;"><img [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/variety02.png" /></div>
 
-                      <div *ngIf="view === 'quakermuffinrackheader'" style="z-index:1;"><img [class.fade-in]="view === 'quakermuffinrackheader'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Visibility_quakermuffinrackheader.png" /></div>
-                      <div *ngIf="view === 'quakerflavourcards'" style="z-index:1;"><img [class.fade-in]="view === 'quakerflavourcards'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Visibility_quakerflavourcards.png" /></div>
-                      <div *ngIf="view === 'breakfastpos'" style="z-index:1;"><img [class.fade-in]="view === 'breakfastpos'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Visibility_breakfastpos.png" /></div>
-                      <div *ngIf="view === 'galvanizedtubcling'" style="z-index:1;"><img [class.fade-in]="view === 'galvanizedtubcling'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/Cafeteria_Breakfast_Visibility_galvanizedtubcling.png" /></div>
+                      <div *ngIf="view === 'visibility01'" style="z-index:1;"><img [class.fade-in]="view === 'visibility01'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility01.png" /></div>
+                      <div *ngIf="view === 'visibility03'" style="z-index:1;"><img [class.fade-in]="view === 'visibility03'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility03.png" /></div>
 
                     </div>
                   </div>
@@ -85,21 +83,21 @@
 
 
             <div [ngSwitch]="type">
-              <div *ngSwitchCase="'value'">
-                      <button [class.active]="view === 'quakerseasonalflavours'" class="btn-bullseye quakerseasonalflavours" title="" (click)="view = 'quakerseasonalflavours';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'premiumproducts'" class="btn-bullseye premiumproducts" title=""  (click)="view = 'premiumproducts';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-              </div><!-- ngSwitchCase value -->
 
               <div *ngSwitchCase="'variety'">
-                      <button [class.active]="view === 'quakermuffinrack'" class="btn-bullseye quakermuffinrack" title="" (click)="view = 'quakermuffinrack'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'galvanizedtub'" class="btn-bullseye galvanizedtub" title="" (click)="view = 'galvanizedtub'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'variety01'" class="btn-bullseye variety01" title="" (click)="view = 'variety01'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'variety02'" class="btn-bullseye variety02" title="" (click)="view = 'variety02'"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase variety -->
 
+              <div *ngSwitchCase="'value'">
+                      <button [class.active]="view === 'value01'" class="btn-bullseye value01" title="" (click)="view = 'value01';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'value02'" class="btn-bullseye value02" title=""  (click)="view = 'value02';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+              </div><!-- ngSwitchCase value -->
+
+
               <div *ngSwitchCase="'visibility'">
-                      <button [class.active]="view === 'quakermuffinrackheader'" class="btn-bullseye quakermuffinrackheader" title=""  (click)="view = 'quakermuffinrackheader';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'quakerflavourcards'" class="btn-bullseye quakerflavourcards" title=""  (click)="view = 'quakerflavourcards';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'breakfastpos'" class="btn-bullseye breakfastpos" title=""  (click)="view = 'breakfastpos';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'galvanizedtubcling'" class="btn-bullseye galvanizedtubcling" title=""  (click)="view = 'galvanizedtubcling';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'visibility01'" class="btn-bullseye visibility01" title=""  (click)="view = 'visibility01';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
+                      <button [class.active]="view === 'visibility03'" class="btn-bullseye visibility03" title=""  (click)="view = 'visibility03';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase visibility -->
 
             </div><!-- ngSwitch type -->
@@ -115,22 +113,22 @@
                   <ion-list *ngSwitchCase="'variety'">
 
                       <ol>
-                          <li>Miser sur les marques principales (Tropicana et Quaker) pour promouvoir le déjeuner, l'occasion de repas à la croissance la plus rapide.</li>
+                          <li>Tirer profit des produits Tropicana, Naked et Quaker pour activer nos campagnes pour le déjeuner, l'une des occasions de consommation les plus populaires.</li>
                           <li>Les muffins sont 2e dans la catégorie et en hausse, et le jus est la boisson froide la plus vendue au déjeuner.</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'visibility'">
                       <ol>
-                          <li>Notre matériel accrocheur est conçu pour informer les consommateurs des bienfaits nutritionnels de notre gamme de produits pour le déjeuner.</li>
-                          <li>Des marques comme Tropicana et Quaker offrent un départ fulgurant et le matériel de promotion renforce ces énoncés.</li>
+                          <li>Les nouveaux outils de marchandisage sont conçus pour présenter l'ensemble de la gamme de produits.</li>
+                          <li>Les marques Tropicana et Quaker offrent un départ fulgurant et le matériel de promotion renforce ces énoncés.</li>
                       </ol>
                   </ion-list>
 
                  <ion-list *ngSwitchCase="'value'">
                       <ol>
                           <li>Principaux motifs pour les achats au déjeuner : pratique/transportabilité, goût et aspect santé.</li>
-                          <li>Les innovations saisonnières et les produits avec grands avantages nutritionnels offrent aux consommateurs une valeur ajoutée et accroître les ventes.</li>
+                          <li>Les innovations saisonnières et les produits avec grands avantages nutritionnels offrent aux consommateurs une valeur ajoutée et accroissent les ventes.</li>
                       </ol>
                   </ion-list>
 
@@ -142,158 +140,109 @@
                   <div [ngSwitch]="view">
 
 <!-- Variety -->
-                      <div *ngSwitchCase="'quakermuffinrack'">
+                      <div *ngSwitchCase="'variety01'">
                         <h3>Présentoir métallique de muffins Quaker :</h3>
                         <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/FS17182_Quaker Header Card_FR_P1_Artboard.png" class="slide-image "></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY_FRE.jpg" class="slide-image "></ion-slide>
+                          <ion-slides pager="false">
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/variety01slide01.jpg" class="slide-image "></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Quaker est une marque de confiance qui couvre les grandes catégories de saveurs.</li>
-                            <li>Nos 6 saveurs les plus populaires représentent 60 % des ventes. Utilisez les saveurs saisonnières pour réaliser des ventes additionnelles.</li>
-                            <li>Les présentoirs pour muffins Quaker peuvent être commandés dans le portail MSO.</li>
+                            <li>La marque de confiance Quaker compte une gamme complète de produits cuits au four qui constituent d'excellentes solutions pour le déjeuner et la collation.</li>
+                            <li>Nos 6 saveurs de muffins les plus populaires représentent 60 % de nos ventes et nous misons sur les saveurs saisonnières our obtenir des ventes supplémentaires.</li>
+                            <li>Les nouveaux outils de marchandisage offrent une grande flexibilité pour des solutions autres que les muffins et peuvent être commandés par le biais du portail MSO.</li>
                           </ul>
                         </div>
-                      </div><!-- *ngSwitchCase quakermuffinrack -->
+                      </div><!-- *ngSwitchCase variety01 -->
 
-                      <div *ngSwitchCase="'galvanizedtub'">
+                      <div *ngSwitchCase="'variety02'">
                         <h3>Les bacs en acier galvanisé :</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/ONE Coconut Water 500 mL Pure 3D Dry Straight BIL.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D FR.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Montellier Natural Spring Water 500mL Straight Spritzed FRE.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Pure Leaf_Lemon 547 mL Straight Spritzed FRE.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappuccino 281 mL FRE.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/variety02slide01FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/variety02slide02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/variety02slide03.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                           <div class="slider-section-copy">
                             <ul>
-                              <li>Gardez les boissons froides à portée de main dans les zones achalandées pour générer des ventes spontanées additionnelles avec les boissons pour le matin.</li>
+                              <li>Maintenir les boissons réfrigérées près des zones achalandées pour générer des ventes spontanées additionnelles.</li>
                               <li>Des bacs en acier galvanisé peuvent être commandés dans le portail MSO.</li>
                             </ul>
                           </div>
-                      </div><!-- *ngSwitchCase galvanizedtub -->
+                      </div><!-- *ngSwitchCase variety02 -->
 
 
 <!-- Visibility -->
-                      <div *ngSwitchCase="'quakermuffinrackheader'">
+                      <div *ngSwitchCase="'visibility01'">
                         <h3>Présentoir métallique de muffins Quaker :</h3>
                         <div class="slider-section-img">
-                            <img src="assets/img/Slides/FS17182_Quaker Header Card_FR_P1_Artboard.png" class="slide-image">
+                            <img src="assets/img/Cafeteria_Breakfast/visibility01slide01FR.png" class="slide-image">
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Ces surmontoirs aident à transmettre le message sur la qualité et la fraîcheur de nos muffins, en plus d'attirer les consommateurs pour qu'ils goûtent à une nouvelle saveur.</li>
-                            <li>Les surmontoirs de présentoir des muffins Quaker seront inclus dans les commandes de nouveaux présentoirs.</li>
+                            <li>Le matériel de promotion aide à promouvoir la qualité et la fraîcheur des options Quaker pour le déjeuner et peut convaincre les consommateurs d'essayer une nouvelle gamme de produits.</li>
+                            <li>La nouvelle forme des produits qui peuvent maintenant être empilés ofrre une plus grande souplesse et permet d'adapter la taille de l'étalage dans le compte. Utilisez les cartes pour identifier les saveurs de muffins ou créez votre propre matériel avec les cartes à personnaliser.</li>
                           </ul>
                         </div>
-                      </div><!-- *ngSwitchCase quakermuffinrackheader -->
+                      </div><!-- *ngSwitchCase visibility01 -->
 
-                      <div *ngSwitchCase="'quakerflavourcards'">
-                        <h3>Cartes de saveurs Quaker :</h3>
+                      <div *ngSwitchCase="'visibility03'">
+                        <h3>Galvanized Tub Cling</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY_FRE.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROTS_FRE.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANAS_FRE.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME_FRE.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/visibility03slide01FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/visibility03slide02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/visibility03slide03.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Placer les cartes/aimants avec saveurs de muffins de Quaker pour informer clairement les consommateurs et influencer.</li>
-                            <li>Toutes les saveurs sont offertes! Les cartes peuvent être commandées dans MSO et les aimants sont inclus dans les commandes de nouveaux présentoirs.</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase quakerflavourcards -->
-
-                      <div *ngSwitchCase="'breakfastpos'">
-                          <h3>Matériel de promotion sur le déjeuner :</h3>
-                          <ion-slides pager="true">
-                            <ion-slide>
-                              <div class="slider-section-img">
-                                <img src="assets/img/Slides/FS18086_Q2_Quaker_OvernightOats_900x900_FRE_P1.png" class="slide-image shadow">
-                                <!-- Need French -->
-                              </div>
-                              <div class="slider-section-copy">
-                                <ul>
-                                  <li>Du matériel de promotion dans un endroit très visible misant sur les faits et avantages nutritionnels associés à nos produits pour le déjeuner peut  accroître nos ventes.</li>
-                                  <li>Développer les occasions culinaires avec le gruau Quaker régulier à préparer la veille et suivre la tendance.</li>
-                                  <li>Commander le matériel de promotion pour le déjeuner dans MSO.</li>
-                                </ul>
-                              </div>
-                            </ion-slide>
-                            <ion-slide>
-                              <div class="slider-section-img">
-                                <img src="assets/img/Slides/FS18066 AuntJemimaPancakeTuesday_900x900_FRE_HiRes.png" class="slide-image">
-                              </div>
-                              <div class="slider-section-copy">
-                                <ul>
-                                  <li>Les crêpes comptent parmi les 10 repas les plus populaires au déjeuner.</li>
-                                  <li>Mettre en vedette la marque Aunt Jemima avec du matériel numérique pour créer des activités accrocheuses liées aux crêpes.</li>
-                                </ul>
-                              </div>
-                            </ion-slide>
-                          </ion-slides>
-                      </div><!-- *ngSwitchCase breakfastpos -->
-
-                      <div *ngSwitchCase="'galvanizedtubcling'">
-                        <h3>Électrostatiques pour bacs en acier galvanisé :</h3>
-                        <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D FR.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappuccino 281 mL FRE.png" class="slide-image"></ion-slide>
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Placez l'électrostatique de la marque appropriée sur le bac en acier galvanisé pour attirer l'attention du consommateur et promouvoir les produits pour le déjeuner.</li>
+                            <li>Placer les électrostatiques de marque sur le bac en acier galvanisé pour attirer l'attention du consommateur et mettre en vedette les produits pour le déjeuner.</li>
                             <li>Une variété d'électrostatiques de marque sont fournis avec les bacs lorsqu'ils sont commandés dans le portail MSO.</li>
                           </ul>
                         </div>
-                      </div><!-- *ngSwitchCase galvanizedtubcling -->
+                      </div><!-- *ngSwitchCase visibility03 -->
 
 <!-- Value -->
-                      <div *ngSwitchCase="'quakerseasonalflavours'">
-                        <h3>Les saveurs saisonnières de produits Quaker :</h3>
+                      <div *ngSwitchCase="'value01'">
+                        <h3>Quaker Seasonal Flavours</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY_FRE.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROTS_FRE.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANAS_FRE.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME_FRE.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANA.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME.jpg" class="slide-image shadow"></ion-slide>
+                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROT.jpg" class="slide-image shadow"></ion-slide>
+                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY_FRE.jpg" class="slide-image shadow"></ion-slide> -->
+                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROTS_FRE.jpg" class="slide-image shadow"></ion-slide> -->
+                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANAS_FRE.jpg" class="slide-image shadow"></ion-slide> -->
+                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME_FRE.jpg" class="slide-image shadow"></ion-slide> -->
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Les consommateurs veulent des saveurs saisonnières pour de la nouveauté, en particulier les milléniaux, la plus grande population dans la main-d'œuvre au Canada.</li>
+                            <li>Les consommateurs recherchent des saveurs saisonnières pour obtenir des nouveautés, en particulier les membres de la génération du millénaire.</li>
                             <li>Promouvoir les saveurs saisonnières rotatives pour répondre aux préférences des consommateurs et générer des ventes supplémentaires.</li>
                           </ul>
                         </div>
-                      </div><!-- *ngSwitchCase quakerseasonalflavours -->
+                      </div><!-- *ngSwitchCase value01 -->
 
-                      <div *ngSwitchCase="'premiumproducts'">
-                        <h3>Les produits de première qualité :</h3>
+                      <div *ngSwitchCase="'value02'">
+                        <h3>Premium Products</h3>
                         <div class="slider-section-img">
                           <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Tropicana Pure Premium 355 mL Orange No Pulp  BIL.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/16835 PepsiCo Naked Relaunch Mighty Mango 450mL 3D FR.png" class="slide-image"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Starbucks Mocha Frappuccino 281 mL FRE.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/value02slide01FR.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/value02slide02.png" class="slide-image"></ion-slide>
+                            <ion-slide><img src="assets/img/Cafeteria_Breakfast/value02slide03.png" class="slide-image"></ion-slide>
                           </ion-slides>
                         </div>
                         <div class="slider-section-copy">
                           <ul>
-                            <li>Nos options de déjeuner fournissent la transportabilité, un goût savoureux et des bienfaits pour la santé - tous les facteurs recherchés pour le début de journée.</li>
-                            <li>Mettez en vedette nos produits froids haut de gamme pour le déjeuner avec des bacs dans des zones clés pour promouvoir ces bienfaits.</li>
+                            <li>Les options de boissons réfrigérées pour le déjeuner sont faciles à transporter et offrent un goût savoureux et des avantages pour la santé, tous les facteurs recherchés par les consommateurs pour le début de journée.</li>
                           </ul>
                         </div>
-                      </div><!-- *ngSwitchCase premiumproducts -->
+                      </div><!-- *ngSwitchCase value02 -->
 
                   </div> <!-- [ngSwitch]="view" -->
             </div>

@@ -18,76 +18,113 @@
   </button>
   <div>
 
-  <div [ngSwitch]="language">
-    <div *ngSwitchCase="'EN'">
-      <div class="accordion vertical" >
-        <ul>
-          <li>
-            <input type="radio" id="radio-1" name="radio-accordion"  />
-              <label for="radio-1" class="menu-item" (click)="openSection( pages[1] ); pagenumber = 1;" >3V Overview</label>
-              <div class="content">
-                <button ion-item class="menu-item" (click)="openPage( pages[2] ); pagenumber = 2;" >Cafeteria</button>
-                <button ion-item class="menu-item-child" (click)="openPage( pages[2] ); pagenumber = 2;" style="margin-left:16px;" >Breakfast</button>
-                <button ion-item class="menu-item-child" (click)="openPage( pages[3] ); pagenumber = 3;" style="margin-left:16px;" >Lunch & Cash</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[4] ); pagenumber = 4;" >Casual</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[5] ); pagenumber = 5;" >QSR</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[6] ); pagenumber = 6;" >Recreation</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[7] ); pagenumber = 7;" >Profit Calculator</button>
-              </div>
-          </li>
-          <li>
-            <input type="radio" id="radio-2" name="radio-accordion" checked="checked" />
-              <label for="radio-2" class="menu-item" (click)="openSection( pages[16] ); pagenumber = 16;" >CHART Overview</label>
-              <div class="content">
-                <button ion-item class="menu-item" (click)="openPage( pages[17] ); pagenumber = 17;" >Cafeteria</button>
-                <button ion-item class="menu-item-child" (click)="openPage( pages[17] ); pagenumber = 17;" style="margin-left:16px;" >Breakfast</button>
-                <button ion-item class="menu-item-child" (click)="openPage( pages[18] ); pagenumber = 18;" style="margin-left:16px;" >Lunch</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[19] ); pagenumber = 19;" >Casual</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[20] ); pagenumber = 20;" >QSR</button>
-                <button ion-item class="menu-item" (click)="openPage( pages[21] ); pagenumber = 21;" >Recreation</button>
-               <button ion-item class="menu-item" (click)="openPage( pages[22] ); pagenumber = 22;" >CHART Certification</button>
+    <div [ngSwitch]="language">
+      <div *ngSwitchCase="'EN'">
+        <div class="accordion vertical" >
+          <ul>
+            <li>
+              <input type="radio" id="radio-1" name="radio-accordion"  />
+                <label for="radio-1" class="menu-item" (click)="openSection( pages[1] ); pagenumber = 1;" >3V Overview</label>
+                <div class="content">
+                  <button ion-item class="menu-item" (click)="openPage( pages[2] ); pagenumber = 2;" >Cafeteria</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[2] ); pagenumber = 2;" style="margin-left:16px;" >Breakfast</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[3] ); pagenumber = 3;" style="margin-left:16px;" >Lunch & Cash</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[4] ); pagenumber = 4;" >Casual</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[5] ); pagenumber = 5;" >QSR</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[6] ); pagenumber = 6;" >Recreation</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[7] ); pagenumber = 7;" >Profit Calculator</button>
+                </div>
+            </li>
+            <li>
+              <input type="radio" id="radio-2" name="radio-accordion" checked="checked" />
+                <label for="radio-2" class="menu-item" (click)="openSection( pages[16] ); pagenumber = 16;" >CHART Overview</label>
+                <div class="content">
+                  <button ion-item class="menu-item" (click)="openPage( pages[17] ); pagenumber = 17;" >Cafeteria</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[17] ); pagenumber = 17;" style="margin-left:16px;" >Breakfast</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[18] ); pagenumber = 18;" style="margin-left:16px;" >Lunch</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[19] ); pagenumber = 19;" >Casual</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[20] ); pagenumber = 20;" >QSR</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[21] ); pagenumber = 21;" >Recreation</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[22] ); pagenumber = 22;" >CHART Certification</button>
+                </div>
+            </li>
+          </ul>
+        </div> <!-- .accordion vertical -->
+        <br/><br/>
+        <div class="content">
+          <button *ngIf="pagenumber == 0" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[8] ); pagenumber = 8;" >Française</button>
+          <button *ngIf="pagenumber == 1" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[9] ); pagenumber = 9;" >Française</button>
+          <button *ngIf="pagenumber == 2" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[10] ); pagenumber = 10;" >Française</button>
+          <button *ngIf="pagenumber == 3" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[11] ); pagenumber = 11;" >Française</button>
+          <button *ngIf="pagenumber == 4" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[12] ); pagenumber = 12;" >Française</button>
+          <button *ngIf="pagenumber == 5" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[13] ); pagenumber = 13;" >Française</button>
+          <button *ngIf="pagenumber == 6" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[14] ); pagenumber = 14;" >Française</button>
+          <button *ngIf="pagenumber == 7" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[15] ); pagenumber = 15;" >Française</button>
 
-              </div>
-          </li>
-        </ul>
-    </div> <!-- .accordion vertical -->
-              <br/><br/>
-              <div class="content">
-                <button *ngIf="pagenumber == 0" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[8] ); pagenumber = 8;" >Française</button>
-                <button *ngIf="pagenumber == 1" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[9] ); pagenumber = 9;" >Française</button>
-                <button *ngIf="pagenumber == 2" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[10] ); pagenumber = 10;" >Française</button>
-                <button *ngIf="pagenumber == 3" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[11] ); pagenumber = 11;" >Française</button>
-                <button *ngIf="pagenumber == 4" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[12] ); pagenumber = 12;" >Française</button>
-                <button *ngIf="pagenumber == 5" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[13] ); pagenumber = 13;" >Française</button>
-                <button *ngIf="pagenumber == 6" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[14] ); pagenumber = 14;" >Française</button>
-                <button *ngIf="pagenumber == 7" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[15] ); pagenumber = 15;" >Française</button>
-              </div>
+          <button *ngIf="pagenumber == 16" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[23] ); pagenumber = 23;" >Française</button>
+          <button *ngIf="pagenumber == 17" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[24] ); pagenumber = 24;" >Française</button>
+          <button *ngIf="pagenumber == 18" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[25] ); pagenumber = 25;" >Française</button>
+          <button *ngIf="pagenumber == 19" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[26] ); pagenumber = 26;" >Française</button>
+          <button *ngIf="pagenumber == 20" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[27] ); pagenumber = 27;" >Française</button>
+          <button *ngIf="pagenumber == 21" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[28] ); pagenumber = 28;" >Française</button>
+          <button *ngIf="pagenumber == 22" ion-item class="menu-item" (click)="language = 'FR'; openPage( pages[29] ); pagenumber = 29;" >Française</button>
+        </div>
+      </div> <!-- ngSwitchCase EN  -->
 
+      <div *ngSwitchCase="'FR'">
+        <div class="accordion vertical" >
+          <ul>
+            <li>
+              <input type="radio" id="radio-1" name="radio-accordion"  />
+                <label for="radio-1" class="menu-item" (click)="openSection( pages[9] ); pagenumber = 9;" >Aperçu des 3 V</label>
+                <div class="content">
+                  <button ion-item class="menu-item" (click)="openPage( pages[10] ); pagenumber = 10;" >Cafétéria</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[10] ); pagenumber = 10;" style="margin-left:16px;" >Déjeuner</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[11] ); pagenumber = 11;" style="margin-left:16px;" >Dîner et caisse</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[12] ); pagenumber = 12;" >Repas décontractés</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[13] ); pagenumber = 13;" >Restauration rapide</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[14] ); pagenumber = 14;" >Divertissement</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[15] ); pagenumber = 15;" >Calculatrice de profit</button>
+                </div>
+            </li>
+            <li>
+              <input type="radio" id="radio-2" name="radio-accordion" checked="checked" />
+                <label for="radio-2" class="menu-item" (click)="openSection( pages[23] ); pagenumber = 23;" >Aperçu des CHART</label>
+                <div class="content">
+                  <button ion-item class="menu-item" (click)="openPage( pages[24] ); pagenumber = 24;" >Cafétéria</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[24] ); pagenumber = 24;" style="margin-left:16px;" >Déjeuner</button>
+                  <button ion-item class="menu-item-child" (click)="openPage( pages[25] ); pagenumber = 25;" style="margin-left:16px;" >Dîner et caisse</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[26] ); pagenumber = 26;" >Repas décontractés</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[27] ); pagenumber = 27;" >Restauration rapide</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[28] ); pagenumber = 28;" >Divertissement</button>
+                  <button ion-item class="menu-item" (click)="openPage( pages[29] ); pagenumber = 29;" >CHART Certification</button>
+                </div>
+            </li>
+          </ul>
+        </div> <!-- .accordion vertical -->
+        <br/><br/>
+        <div class="content">
+          <button *ngIf="pagenumber == 8" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[0] ); pagenumber = 0" >English</button>
+          <button *ngIf="pagenumber == 9" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[1] ); pagenumber = 1" >English</button>
+          <button *ngIf="pagenumber == 10" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[2] ); pagenumber = 2" >English</button>
+          <button *ngIf="pagenumber == 11" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[3] ); pagenumber = 3" >English</button>
+          <button *ngIf="pagenumber == 12" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[4] ); pagenumber = 4" >English</button>
+          <button *ngIf="pagenumber == 13" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[5] ); pagenumber = 5" >English</button>
+          <button *ngIf="pagenumber == 14" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[6] ); pagenumber = 6" >English</button>
+          <button *ngIf="pagenumber == 15" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[7] ); pagenumber = 7" >English</button>
 
-    </div>
+          <button *ngIf="pagenumber == 23" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[16] ); pagenumber = 16" >English</button>
+          <button *ngIf="pagenumber == 24" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[17] ); pagenumber = 17" >English</button>
+          <button *ngIf="pagenumber == 25" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[18] ); pagenumber = 18" >English</button>
+          <button *ngIf="pagenumber == 26" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[19] ); pagenumber = 19" >English</button>
+          <button *ngIf="pagenumber == 27" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[20] ); pagenumber = 20" >English</button>
+          <button *ngIf="pagenumber == 28" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[21] ); pagenumber = 21" >English</button>
+          <button *ngIf="pagenumber == 29" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[22] ); pagenumber = 22" >English</button>
+          <button *ngIf="pagenumber == 30" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[23] ); pagenumber = 23" >English</button>
 
-    <div *ngSwitchCase="'FR'">
-      <button ion-item class="menu-item" (click)="openPage( pages[9] ); pagenumber = 9;" >Aperçu des 3 V</button>
-      <button ion-item class="menu-item" (click)="openPage( pages[10] ); pagenumber = 10;" >Cafétéria</button>
-      <button ion-item class="menu-item-child" (click)="openPage( pages[10] ); pagenumber = 10;" style="margin-left:16px;" >Déjeuner</button>
-      <button ion-item class="menu-item-child" (click)="openPage( pages[11] ); pagenumber = 11;" style="margin-left:16px;" >Dîner et caisse</button>
-      <button ion-item class="menu-item" (click)="openPage( pages[12] ); pagenumber = 12;" >Repas décontractés</button>
-      <button ion-item class="menu-item" (click)="openPage( pages[13] ); pagenumber = 13;" >Restauration rapide</button>
-      <button ion-item class="menu-item" (click)="openPage( pages[14] ); pagenumber = 14;" >Divertissement</button>
-      <button ion-item class="menu-item" (click)="openPage( pages[15] ); pagenumber = 15;" >Calculatrice de profit</button>
-      <br/><br/>
-      <button *ngIf="pagenumber == 8" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[0] ); pagenumber = 0" >English</button>
-      <button *ngIf="pagenumber == 9" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[1] ); pagenumber = 1" >English</button>
-      <button *ngIf="pagenumber == 10" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[2] ); pagenumber = 2" >English</button>
-      <button *ngIf="pagenumber == 11" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[3] ); pagenumber = 3" >English</button>
-      <button *ngIf="pagenumber == 12" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[4] ); pagenumber = 4" >English</button>
-      <button *ngIf="pagenumber == 13" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[5] ); pagenumber = 5" >English</button>
-      <button *ngIf="pagenumber == 14" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[6] ); pagenumber = 6" >English</button>
-      <button *ngIf="pagenumber == 15" ion-item class="menu-item" (click)="language = 'EN'; openPage( pages[7] ); pagenumber = 7" >English</button>
-    </div>
-  </div>
-
-
+        </div>
+      </div> <!-- ngSwitchCase FR  -->
+    </div> <!-- ngSwitch language -->
 
   </div>
 

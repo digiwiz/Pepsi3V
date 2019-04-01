@@ -1,14 +1,14 @@
 .qsr-restaurant-page {
 
-.beveragecooler {left: 180px; top: 145px;}
-.fountain {left: 123px; top: 202px;}
-.fritosnackrack {left: 490px; top: 260px;}
+.beveragecooler {left: 180px; top: 180px !important;}
+.fountain {left: 130px; top: 230px !important;}
+.fritosnackrack {left: 860px !important; top: 260px;}
 .perfectparings {left: 540px; top: 190px;}
-.menuboards {left: 355px; top: 125px;}
-.tabletent {left: 230px; top: 235px;}
+.menuboards {left: 420px !important; top: 125px;}
+.tabletent {left: 230px; top: 300px !important;}
 .sandwichboard {left: 900px; top: 350px;}
 .pushpullsign {left: 725px; top: 180px;}
-.innovationshowcase {left: 325px !important; top: 195px;}
+.innovationshowcase {left: 345px !important; top: 245px !important;}
 .marketingwindowcling {left: 870px; top: 165px;}
 .innovationwindow {left: 254px !important; top: 155px;}
 .snackracktopper {left: 410px !important; top: 230px;}
@@ -48,7 +48,7 @@ background-color: $pepsico-lightblueoffwhite;
 .imgHolder-qsr-int-visibility {width:524px;}
 .imgHolder-qsr-ext-value,
 .imgHolder-qsr-ext-visibility {width:344px;}
-.imgHolder-qsr-int-variety {width:882px;}
+.imgHolder-qsr-int-variety {width:1165px;}
 .imgHolder-qsr-ext-variety {width:0px;}
 
 .qsr-int-value,
@@ -65,12 +65,13 @@ background-color: $pepsico-lightblueoffwhite;
     overflow:hidden;
     }
 
-.qsr-int-value { width:1165px; height:600px; left: -150px !important; top: -130px; }
+.qsr-int-value { width:1035px !important; height:600px; left: -150px !important; top: 0px !important; }
 .qsr-ext-value { width:816px; height:420px; left: -300px; top: -25px; }
-.qsr-int-visibility { width:1165px; height:600px; left: -250px; top: -130px; }
+.qsr-int-visibility { width:1165px; height:600px; left: -300px !important; top: 0px !important; }
 .qsr-ext-visibility { width:816px; height:420px; left: -300px; top: -25px; }
-.qsr-int-variety { width:1458px; height:750px; left: -200px; top: -200px; }
+.qsr-int-variety { width:1035px !important; height:600px !important; left: -150px !important; top: 0px !important; }
 .qsr-ext-variety { width:816px; height:420px; left: -300px; top: -25px; }
+
 
 .qsr-int-value img,
 .qsr-ext-value img,

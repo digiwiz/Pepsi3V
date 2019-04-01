@@ -5,7 +5,7 @@
 .btgcling {left: 395px; top: 320px;}
 .hydrationmarketingposter {left: 330px; top: 280px;}
 .innovationwindow {left: 610px; top: 275px;}
-.staffsuggestion {left: 540px; top: 310px;}
+.staffsuggestion {left: 550px !important; top: 340px !important;}
 
 .beveragecooler {left: 690px; top: 280px;}
 .beveragevendor {left: 275px; top: 270px;}
@@ -61,11 +61,12 @@ background-color: $pepsico-lightblueoffwhite;
 .recreation-ext-visibility,
 .recreation-int-variety,
 .recreation-ext-variety {
-    height:354px;
+    height:460px !important;
     display:block;
     position:relative;
     z-index:1;
     overflow:hidden;
+    top: -30px;
     }
 
 .recreation-int-value img,

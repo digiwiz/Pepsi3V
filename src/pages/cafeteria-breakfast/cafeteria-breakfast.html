@@ -73,9 +73,7 @@
                       <div *ngIf="view === 'variety02'" style="z-index:1;"><img [class.fade-in]="view === 'countertopsnackrack'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/variety02.png" /></div>
 
                       <div *ngIf="view === 'visibility01'" style="z-index:1;"><img [class.fade-in]="view === 'visibility01'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility01.png" /></div>
-                      <div *ngIf="view === 'visibility012'" style="z-index:1;"><img [class.fade-in]="view === 'visibility012'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility012.png" /></div>
-                      <div *ngIf="view === 'visibility03'" style="z-index:1;"><img [class.fade-in]="view === 'visibility02'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility03.png" /></div>
-                      <div *ngIf="view === 'visibility03'" style="z-index:1;"><img [class.fade-in]="view === 'variety02'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility03.png" /></div>
+                      <div *ngIf="view === 'visibility03'" style="z-index:1;"><img [class.fade-in]="view === 'visibility03'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/visibility03.png" /></div>
 
                     </div>
                   </div>
@@ -99,7 +97,6 @@
 
               <div *ngSwitchCase="'visibility'">
                       <button [class.active]="view === 'visibility01'" class="btn-bullseye visibility01" title=""  (click)="view = 'visibility01';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
-                      <button [class.active]="view === 'visibility02'" class="btn-bullseye visibility02" title=""  (click)="view = 'visibility02';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'visibility03'" class="btn-bullseye visibility03" title=""  (click)="view = 'visibility03';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase visibility -->
 
@@ -179,7 +176,7 @@
 
 <!-- Visibility -->
                       <div *ngSwitchCase="'visibility01'">
-                        <h3>Quaker Muffin Rack Header</h3>
+                        <h3>Quaker Rack</h3>
                         <div class="slider-section-img">
                             <img src="assets/img/Cafeteria_Breakfast/visibility01slide01.png" class="slide-image">
                         </div>
@@ -190,30 +187,6 @@
                           </ul>
                         </div>
                       </div><!-- *ngSwitchCase visibility01 -->
-
-                      <div *ngSwitchCase="'visibility02'">
-                        <h3>Quaker Flavour Cards</h3>
-                        <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANA.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROT.jpg" class="slide-image shadow"></ion-slide>
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROTS_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANAS_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Execute the Quaker Flavour Cards/Magnets to highlight the muffin flavours, providing clarity to the consumers and influencing their purchase decisions</li>
-                            <li>All flavours available! Cards can be ordered through the MSO Portal and Magnets are included in new rack orders</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase visibility02 -->
-
-
 
                       <div *ngSwitchCase="'visibility03'">
                         <h3>Galvanized Tub Cling</h3>

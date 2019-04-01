@@ -30,6 +30,13 @@ import { CHARTCafeteriaBreakfastPage } from '../pages/chart-cafeteria-breakfast/
 import { CHARTCafeteriaLunchPage } from '../pages/chart-cafeteria-lunch/cafeteria-lunch';
 import { CHARTCertificationPage } from '../pages/chart-certification/chart-certification';
 
+import { CHARTOverviewFRPage } from '../pages/chart-overview-FR/overview-FR';
+import { CHARTQsrRestaurantFRPage } from '../pages/chart-qsr-restaurant-FR/qsr-restaurant-FR';
+import { CHARTRecreationFRPage } from '../pages/chart-recreation-FR/recreation-FR';
+import { CHARTCasualFRPage } from '../pages/chart-casual-FR/casual-FR';
+import { CHARTCafeteriaBreakfastFRPage } from '../pages/chart-cafeteria-breakfast-FR/cafeteria-breakfast-FR';
+import { CHARTCafeteriaLunchFRPage } from '../pages/chart-cafeteria-lunch-FR/cafeteria-lunch-FR';
+import { CHARTCertificationFRPage } from '../pages/chart-certification-FR/chart-certification-FR';
 
 
 @Component({
@@ -53,32 +60,39 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'Overview', component: OverviewPage },
-      { title: 'Cafeteria Breakfast', component: CafeteriaBreakfastPage },
-      { title: 'Cafeteria Lunch', component: CafeteriaLunchPage },
-      { title: 'Casual', component: CasualPage },
-      { title: 'QSR', component: QsrRestaurantPage },
-      { title: 'Recreation', component: RecreationPage },
-      { title: 'Calculator', component: CalculatorPage },
+      { title: 'Hello Ionic', component: HelloIonicPage },                                            //0
+      { title: 'Overview', component: OverviewPage },                                                 //1
+      { title: 'Cafeteria Breakfast', component: CafeteriaBreakfastPage },                            //2
+      { title: 'Cafeteria Lunch', component: CafeteriaLunchPage },                                    //3
+      { title: 'Casual', component: CasualPage },                                                     //4
+      { title: 'QSR', component: QsrRestaurantPage },                                                 //5
+      { title: 'Recreation', component: RecreationPage },                                             //6
+      { title: 'Calculator', component: CalculatorPage },                                             //7
 
-      { title: 'Hello Ionic FR', component: HelloIonicFRPage },
-      { title: 'Overview FR', component: OverviewFRPage },
-      { title: 'Cafétérias DÉJEUNER', component: CafeteriaBreakfastFRPage },
-      { title: 'Cafétérias DÎNER', component: CafeteriaLunchFRPage },
-      { title: 'Secteur des restaurants décontractés', component: CasualFRPage },
-      { title: 'Restauration rapide', component: QsrRestaurantFRPage },
-      { title: 'Secteur récréatif', component: RecreationFRPage },
-      { title: 'Calculator FR', component: CalculatorFRPage },
+      { title: 'Hello Ionic FR', component: HelloIonicFRPage },                                       //8
+      { title: 'Overview FR', component: OverviewFRPage },                                            //9
+      { title: 'Cafétérias DÉJEUNER', component: CafeteriaBreakfastFRPage },                          //10
+      { title: 'Cafétérias DÎNER', component: CafeteriaLunchFRPage },                                 //11
+      { title: 'Secteur des restaurants décontractés', component: CasualFRPage },                     //12
+      { title: 'Restauration rapide', component: QsrRestaurantFRPage },                               //13
+      { title: 'Secteur récréatif', component: RecreationFRPage },                                    //14
+      { title: 'Calculator FR', component: CalculatorFRPage },                                        //15
 
-      { title: 'CHART Overview', component: CHARTOverviewPage },
-      { title: 'CHART Cafeteria Breakfast', component: CHARTCafeteriaBreakfastPage },
-      { title: 'CHART Cafeteria Lunch', component: CHARTCafeteriaLunchPage },
-      { title: 'CHART Casual', component: CHARTCasualPage },
-      { title: 'CHART QSR', component: CHARTQsrRestaurantPage },
-      { title: 'CHART Recreation', component: CHARTRecreationPage },
-      { title: 'CHART Certification', component: CHARTCertificationPage }
+      { title: 'CHART Overview', component: CHARTOverviewPage },                                      //16  > 23
+      { title: 'CHART Cafeteria Breakfast', component: CHARTCafeteriaBreakfastPage },                 //17  > 24
+      { title: 'CHART Cafeteria Lunch', component: CHARTCafeteriaLunchPage },                         //18  > 25
+      { title: 'CHART Casual', component: CHARTCasualPage },                                          //19  > 26
+      { title: 'CHART QSR', component: CHARTQsrRestaurantPage },                                      //20  > 27
+      { title: 'CHART Recreation', component: CHARTRecreationPage },                                  //21  > 28
+      { title: 'CHART Certification', component: CHARTCertificationPage },                            //22  > 29
 
+      { title: 'CHART Overview', component: CHARTOverviewFRPage },                                    //23  > 16
+      { title: 'CHART Cafeteria Breakfast', component: CHARTCafeteriaBreakfastFRPage },               //24  > 17
+      { title: 'CHART Cafeteria Lunch', component: CHARTCafeteriaLunchFRPage },                       //25  > 18
+      { title: 'CHART Casual', component: CHARTCasualFRPage },                                        //26  > 19
+      { title: 'CHART QSR', component: CHARTQsrRestaurantFRPage },                                    //27  > 20
+      { title: 'CHART Recreation', component: CHARTRecreationFRPage },                                //28  > 21
+      { title: 'CHART Certification', component: CHARTCertificationFRPage }                           //29  > 22
     ];
   }
 
@@ -103,5 +117,6 @@ export class MyApp {
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
   }
+
 
 }
