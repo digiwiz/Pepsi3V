@@ -13,7 +13,7 @@
             <ion-col col-6 class="title-header">CAFÉTÉRIAS DÉJEUNER</ion-col>
 
             <ion-col col-6 no-padding >
-                <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'value01'" >
+                <button [class.active]="type === 'value'" class="shadow easing segment-button btn_value" title="" (click)="type = 'value'; view = 'value02'" >
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                     <path class="st0" d="M38,44c0-1.7-0.5-3.1-1.4-4c-0.9-1-2.5-1.9-4.9-2.8c-5.7-2.1-9.8-4.2-12.4-6.3c-2.6-2.1-3.9-5.2-3.9-9.4
                       c0-3.7,1.4-6.8,4.1-9.2c2.7-2.4,6.4-3.8,11-4.2V0.1h5.7v8.2c4.3,0.6,7.8,2.2,10.3,4.9c2.5,2.7,3.8,6.1,3.7,10.3l-0.1,0.2H38.2
@@ -66,7 +66,6 @@
                     <div [class.cafeteria-breakfast-int-value]="type === 'value'" [class.cafeteria-breakfast-int-visibility]="type === 'visibility'" [class.cafeteria-breakfast-int-variety]="type === 'variety'" class="easing" >
                       <img src="assets/img/Cafeteria_Breakfast/CafeteriaBreakfast.jpg" />
 
-                      <div *ngIf="view === 'value01'" style="z-index:1;"><img [class.fade-in]="view === 'btgcling'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/value01.png" /></div>
                       <div *ngIf="view === 'value02'" style="z-index:1;"><img [class.fade-in]="view === 'value02'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/value02.png" /></div>
 
                       <div *ngIf="view === 'variety01'" style="z-index:1;"><img [class.fade-in]="view === 'variety01'" onload="this.style.opacity='1';" src="assets/img/Cafeteria_Breakfast/variety01.png" /></div>
@@ -90,7 +89,6 @@
               </div><!-- ngSwitchCase variety -->
 
               <div *ngSwitchCase="'value'">
-                      <button [class.active]="view === 'value01'" class="btn-bullseye value01" title="" (click)="view = 'value01';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
                       <button [class.active]="view === 'value02'" class="btn-bullseye value02" title=""  (click)="view = 'value02';"><svg><circle class="st1" cx="18" cy="18" r="15.75"/><circle class="st2" cx="18" cy="18" r="6.3"/><circle class="st3" cx="18" cy="18" r="14.4"/><circle class="st4" cx="18" cy="18" r="9.5"/></svg></button>
               </div><!-- ngSwitchCase value -->
 
@@ -206,27 +204,7 @@
                       </div><!-- *ngSwitchCase visibility03 -->
 
 <!-- Value -->
-                      <div *ngSwitchCase="'value01'">
-                        <h3>Quaker Seasonal Flavours</h3>
-                        <div class="slider-section-img">
-                          <ion-slides pager="true">
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANA.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME.jpg" class="slide-image shadow"></ion-slide>
-                            <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROT.jpg" class="slide-image shadow"></ion-slide>
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BLUEBERRY_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_CARROTS_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_BANANAS_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                            <!-- <ion-slide><img src="assets/img/Slides/Quaker Flavour Cards/MAGNET ID_FRUIT EXTREME_FRE.jpg" class="slide-image shadow"></ion-slide> -->
-                          </ion-slides>
-                        </div>
-                        <div class="slider-section-copy">
-                          <ul>
-                            <li>Les consommateurs recherchent des saveurs saisonnières pour obtenir des nouveautés, en particulier les membres de la génération du millénaire.</li>
-                            <li>Promouvoir les saveurs saisonnières rotatives pour répondre aux préférences des consommateurs et générer des ventes supplémentaires.</li>
-                          </ul>
-                        </div>
-                      </div><!-- *ngSwitchCase value01 -->
+
 
                       <div *ngSwitchCase="'value02'">
                         <h3>Premium Products</h3>
