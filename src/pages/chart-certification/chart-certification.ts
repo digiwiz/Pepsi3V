@@ -78,8 +78,8 @@ findScore() {
     console.log(this.message);
 
     let email: any = {
-              to          : ['Dana.Mcgee@pepsico.com', 'Brenda.Ung@pepsico.com', 'lsmale@sld.com', 'lsrutwa@sld.com'],
-              cc          : 'dterenzio@sld.com',
+              to          : '',
+              cc          : '',
               subject     : 'CHART Certification',
               body        : this.message,
               isHtml      : true
