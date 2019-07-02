@@ -38,6 +38,8 @@ import { CHARTCafeteriaBreakfastFRPage } from '../pages/chart-cafeteria-breakfas
 import { CHARTCafeteriaLunchFRPage } from '../pages/chart-cafeteria-lunch-FR/cafeteria-lunch-FR';
 import { CHARTCertificationFRPage } from '../pages/chart-certification-FR/chart-certification-FR';
 
+import { CaseStudyPage } from '../pages/case-study/case-study';
+
 
 
 @NgModule({
@@ -75,7 +77,9 @@ import { CHARTCertificationFRPage } from '../pages/chart-certification-FR/chart-
     CHARTCasualFRPage,
     CHARTCafeteriaBreakfastFRPage,
     CHARTCafeteriaLunchFRPage,
-    CHARTCertificationFRPage
+    CHARTCertificationFRPage,
+
+    CaseStudyPage
   ],
   imports: [
     BrowserModule,
@@ -124,7 +128,8 @@ import { CHARTCertificationFRPage } from '../pages/chart-certification-FR/chart-
     CHARTCasualFRPage,
     CHARTCafeteriaBreakfastFRPage,
     CHARTCafeteriaLunchFRPage,
-    CHARTCertificationFRPage
+    CHARTCertificationFRPage,
+    CaseStudyPage
 
   ],
   providers: [

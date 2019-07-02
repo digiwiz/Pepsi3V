@@ -4,49 +4,65 @@
 /* Menu Tabs */
 
 
-.btn_variety .st0{display:none;}
-.btn_variety .st1{display:inline;}
-.btn_variety .st2{fill:url(#SVGID_1_);}
-.btn_variety .st3 {fill:#519bec; stroke: $pepsico-brightblue;}
-.btn_variety .st4 {fill:#408adb;  stroke: $pepsico-brightblue;}
-.btn_variety .st5{fill:none;stroke:$pepsico-brightblue;stroke-width:5.4036;stroke-miterlimit:10;}
-.btn_variety .st6{font-family:'Futura-Bold';}
-.btn_variety .st7{font-size:67px;}
-.btn_variety .st8{letter-spacing:-9.1;}
-.btn_variety .st9{letter-spacing:-4;}
+.btn_variety .cls-1 {fill:#429fbf;}
+.btn_variety .cls-2 {fill:#1776b3;}
+.btn_variety .cls-3, .btn_variety .cls-4 {fill:#368eb2;}
+.btn_variety .cls-4 {opacity:0.01;}
+.btn_variety .cls-5 {fill:#1288be;}
 
-.btn_variety.active .st3 {fill:white;  stroke:white;}
-.btn_variety.active .st4 {fill:#D3D3D3;  stroke:#D3D3D3;}
-.btn_variety.active .st5 {fill:none;  stroke:white;}
+.btn_variety.active .cls-1,
+.btn_variety.active .cls-2,
+.btn_variety.active .cls-3,
+.btn_variety.active .cls-4,
+.btn_variety.active .cls-5 {fill:#ffffff;}
 
+.btn_visibility .cls-1{fill:#1189be;}
+.btn_visibility .cls-2{fill:#429fbf;}
+.btn_visibility .cls-3{fill:#1776b3;}
+.btn_visibility .cls-4, .btn_visibility .cls-5 {fill:#368eb2;}
+.btn_visibility .cls-5{opacity:0.01;}
 
-
-.btn_visibility .st0{display:none;}
-.btn_visibility .st1{display:inline;}
-.btn_visibility .st2{fill:url(#SVGID_1_);}
-.btn_visibility .st3{fill:#519bec;}
-.btn_visibility .st4{fill:#408adb;}
-.btn_visibility .st5{fill:none;stroke:#519bec;stroke-width:26.0298;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.btn_visibility .st6{font-family:'Futura-Bold';}
-.btn_visibility .st7{font-size:67px;}
-.btn_visibility .st8{letter-spacing:-2;}
-.btn_visibility .st9{letter-spacing:-1;}
-
-.btn_visibility.active .st3 {fill:white;  stroke:white;}
-.btn_visibility.active .st4 {fill:#D3D3D3;  stroke:#D3D3D3;}
-.btn_visibility.active .st5 {fill:none;  stroke:white;}
+.btn_visibility.active .cls-1,
+.btn_visibility.active .cls-2,
+.btn_visibility.active .cls-3,
+.btn_visibility.active .cls-4,
+.btn_visibility.active .cls-5 {fill:#ffffff;}
 
 
-.btn_value .st0{display:none;}
-.btn_value .st1{display:inline;}
-.btn_value .st2{fill:url(#SVGID_1_);}
-.btn_value .st3{fill:#519bec;}
-.btn_value .st4{font-family:'Futura-Bold';}
-.btn_value .st5{font-size:67px;}
-.btn_value .st6{letter-spacing:-8.1;}
-.btn_value .st7{letter-spacing:-1;}
+.btn_value .cls-1 {fill:#1288be;}
+.btn_value .cls-2 {fill:#429fbf;}
+.btn_value .cls-3 {fill:#1776b3;}
+.btn_value .cls-4, .btn_value .cls-5 {fill:#368eb2;}
+.btn_value .cls-5 {opacity:0.01;}
 
-.btn_value.active .st3 {fill:white;}
+.btn_value.active .cls-1,
+.btn_value.active .cls-2,
+.btn_value.active .cls-3,
+.btn_value.active .cls-4,
+.btn_value.active .cls-5 {fill:#ffffff;}
+
+
+
+.btn_excecution .cls-1{fill:none;}
+.btn_excecution .cls-2{fill:#1288be;}
+.btn_excecution .cls-3{fill:#429fbf;}
+.btn_excecution .cls-4{fill:#1776b3;}
+.btn_excecution .cls-5, .btn_excecution .cls-6 {fill:#368eb2;}
+.btn_excecution .cls-6{opacity:0.01;isolation:isolate;}
+.btn_excecution .cls-7{fill:#e5df00;}
+
+
+
+
+
+
+.btn_excecution.active .cls-2,
+.btn_excecution.active .cls-3,
+.btn_excecution.active .cls-4,
+.btn_excecution.active .cls-5 {fill:#ffffff;}
+
+
+
 
 
 
@@ -86,7 +102,7 @@ button.overview-button.active {
   }
 
 .description ul {
-  font-family: Futura;
+  font-family: Futura-medium;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
@@ -102,34 +118,23 @@ button.overview-button.active {
   margin-top:20px;
 }
 
-.btn_visibility {
+.btn_visibility, .btn_value {
 
   margin-top:20px;
-  margin-left:60px;
-  margin-right:100px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
-.btn_value {
-  width:150px;
+
+.btn_excecution {
   margin-top:20px;
 }
 
-
-.btn_value svg {
-  vertical-align: middle;
-  height:140px;
-  width:120px;
-}
-.btn_visibility svg {
-  vertical-align: middle;
-  height:160px;
-  padding-top:10px;
-}
-.btn_variety svg {
-  vertical-align: middle;
-  height:160px;
+.btn_value svg,
+.btn_visibility svg,
+.btn_variety svg,
+.btn_excecution svg {
   width:130px;
-  padding-top:5px;
 }
 
 .circle {
@@ -141,7 +146,7 @@ button.overview-button.active {
 #element1 {
                width: 15px;
                height: 15px;
-               margin-left:430px;
+               margin-left:410px;
 
 }
 
@@ -151,6 +156,11 @@ button.overview-button.active {
 }
 
 #element3 {
+               width: 15px;
+               height: 15px;
+}
+
+#element4 {
                width: 15px;
                height: 15px;
                position: relative;
